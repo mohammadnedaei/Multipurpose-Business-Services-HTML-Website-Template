@@ -190,7 +190,7 @@ $(window).scroll(function () {
   if (scroll > 50) {
     $('.bg-scrolling-dark').css("background-color", "#000");
     $('.bg-scrolling-light').css("background-color", "#fff");
-    $('.bg-scrolling-light .nav-link, .bg-scrolling-light .search-button, .bg-scrolling-light #cart, .bg-scrolling-light .fa-bars, .bg-scrolling-light .navbar-brand,.glassy-header-light .nav-link, .glassy-header-light .search-button, .glassy-header-light #cart, glassy-header-light .fa-bars, glassy-header-light .navbar-brand, .bg-scrolling-yellow .nav-link, .bg-scrolling-yellow .search-button, .bg-scrolling-yellow #cart, .bg-scrolling-yellow .fa-bars, .bg-scrolling-yellow .day-btn, .bg-scrolling-yellow .navbar-brand').css("color", "#000");
+    $('.bg-scrolling-light .nav-link, .bg-scrolling-light .search-button, .bg-scrolling-light #cart, .bg-scrolling-light .fa-bars, .bg-scrolling-light .navbar-brand, .bg-scrolling-yellow .nav-link, .bg-scrolling-yellow .search-button, .bg-scrolling-yellow #cart, .bg-scrolling-yellow .fa-bars, .bg-scrolling-yellow .day-btn, .bg-scrolling-yellow .navbar-brand').css("color", "#000");
     $('.bg-scrolling-red').css("background-color", "#dc3545");
     $('.bg-scrolling-yellow').css("background-color", "#ffc107");
     $('.bg-scrolling-green').css("background-color", "#28a745");
