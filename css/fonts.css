@@ -1,0 +1,46 @@
+/* Place Your Custom Fonts Here */
+
+
+body,
+a,
+button,
+p,
+figure,
+b,
+div,
+ul,
+li,
+span,
+.services-down,
+.comment-item-data,
+.pricing-table-section,
+.flicker .first,
+.flicker .second,
+.flicker .third {
+         font-family: "Montserrat", sans-serif;
+}
+
+
+.font-alt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.pagination,
+.material-btn,
+.progress-bar-percent .progress-bar-number,
+.we-offer-area.item-border-less .item .number,
+.team-name, .nav-link {
+         font-family: "Poppins", sans-serif;
+}
+
+.first-heading {
+         font-family: "Potta one", cursive;
+}
+
+.font-pottaone,
+.logo-text-1 {
+         font-family: "Potta one", sans-serif !important;
+}
