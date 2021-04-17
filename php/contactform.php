@@ -7,7 +7,7 @@
   $message = $_POST['message'];
 
   // Put Your Support Email Address Here
-  $email_from = "CreativeThemes-Company@Support.com";
+  $email_from = "company@support.com";
 
   $email_subject = "New Form Submission";
   $email_body = "User Name: $name.\n".
@@ -17,7 +17,7 @@
                                  "User Message: $message.\n";
 
   // Put Your Own Email Address Here
-  $to = "amirhossainhakimifar@gmail.com";
+  $to = "your-mail@mail.com";
   $headers = "From: $email_from \r\n";
   $headers .= "Replay-To: $visitor_email \r\n";
 
