@@ -208,7 +208,6 @@ body {
 
 .active-theme {
   transform: scale(1.1);
-  box-shadow: 0 0 .20rem #fff, inset 0 0 .20rem #fff, 0 0 .8rem #08f, inset 0 0 0.8rem #08f, 0 0 1.6rem #08f, inset 0 0 1.6rem #08f;
   opacity: 1;
   font-size: 1.3em !important;
 }
