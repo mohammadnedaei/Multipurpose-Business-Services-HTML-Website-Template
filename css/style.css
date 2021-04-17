@@ -3288,6 +3288,10 @@ button:focus {
     color: #fff;
 }
 
+.topbar-dark, .topbar-light, .navbar {
+    z-index: 1;
+}
+
 .col-megamenu ul li a {
     transition: all 1s;
     font-size: 14px;
