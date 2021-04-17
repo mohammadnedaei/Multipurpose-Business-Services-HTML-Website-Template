@@ -51,83 +51,10 @@
    <!--* Page Loader End -->
    <!--* Page Wrap Start -->
    <div class="page" id="top">
-      <!--* Topbar Start -->
-      <div class="fixed-top topbar-light row">
-         <div class="col-lg-4 top-bar-column">
-            <a href="#" class="mx-2 topbar-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="mx-2 topbar-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="mx-2 topbar-icon"><i class="fab fa-pinterest"></i></a>
-            <a href="#" class="mx-2 topbar-icon"><i class="fab fa-linkedin"></i></a>
-         </div>
-         <div class="col-lg-4 top-bar-column">
-            <a class=" hs-line-1 logo-text-1 navbar-brand dark-logo" href="#" aria-label="nav-brand">
-               BIT
-            </a>
-         </div>
-         <div class="col-lg-4 top-bar-column">
-            <!--* Multi language Section Start -->
-            <li class="nav-item multilingual">
-               <div class="translate-wrapper">
-                  <div class="current-lang">
-                     <div class="lang">
-                        <img width="16" height="16" src="images/language/us.svg" alt="us-flag">
-                        <span class="lang-txt">EN</span>
-                        <span class="fa fa-chevron-down chevron"></span>
-                     </div>
-                  </div>
-                  <div class="more-lang">
-                     <div class="lang" data-value='cn'>
-                        <img width="16" height="16" src="images/language/china.svg" alt="china-flag">
-                        <span class="lang-txt">简体中文</span>
-                     </div>
-                     <div class="lang selected" data-value='en'>
-                        <img width="16" height="16" src="images/language/us.svg" alt="us-flag">
-                        <span class="lang-txt">English</span>
-                     </div>
-                     <div class="lang" data-value='de'>
-                        <img width="16" height="16" src="images/language/germany.svg" alt="germany-flag">
-                        <span class="lang-txt">Deutsch</span>
-                     </div>
-                     <div class="lang" data-value='es'>
-                        <img width="16" height="16" src="images/language/spain.svg" alt="spain-flag">
-                        <span class="lang-txt">Español</span>
-                     </div>
-                     <div class="lang" data-value='fr'>
-                        <img width="16" height="16" src="images/language/france.svg" alt="france-flag">
-                        <span class="lang-txt">Français</span>
-                     </div>
-                     <div class="lang" data-value="jp">
-                        <img width="16" height="16" src="images/language/japan.svg" alt="japan-flag">
-                        <span class="lang-txt">日本語<span></span></span>
-                     </div>
-                  </div>
-               </div>
-            </li>
-            <!--* Multi language Section End -->
-            <!--* Dark / Light Start -->
-            <div class="nav-item topbar-icon" id="dark-btn"> <span class="nav-btns bubbly-button night-btn"
-                  onclick="darkmode()" id="darkbutton">
-                  <i class="fas fa-moon"></i>
-               </span>
-            </div>
-            <div class="nav-item topbar-icon" id="light-btn"> <span class="nav-btns bubbly-button day-btn"
-                  onclick="lightmode()" id="lightbutton">
-                  <i class="fas fa-sun"></i>
-               </span>
-            </div>
-            <!--* Dark / Light End -->
-            <!--* Search Button Start -->
-            <div class="nav-item search-icon topbar-icon">
-               <a class="search-button" aria-label="Search Button">
-                  <i class="fas fa-search black"></i></a>
-            </div>
-            <!--* Search Button End -->
-         </div>
-      </div>
-      <!--* Topbar End -->
       <!--* Header Start -->
-      <nav id="main-nav" class="navbar topbar-nav fixed-top navbar-expand-lg bg-fixed-dark">
+      <nav id="main-nav" class="navbar fixed-top navbar-expand-lg bg-fixed-dark">
          <a class="logo-text-1 navbar-brand" href="javascript:void(0)" aria-label="nav-brand">
+            B I T
          </a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
             aria-expanded="false" aria-label="Toggle navigation" onclick='activescroll()'>
@@ -155,6 +82,30 @@
                   <a class="nav-link" href="#contact"> CONTACT US </a>
                </li>
             </ul>
+            <!--* Dark / Light Start -->
+            <ul class="right-nav">
+               <li class="nav-item" id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
+                     id="darkbutton">
+                     <i class="fas fa-moon"></i>
+                  </span>
+               </li>
+            </ul>
+            <ul class="right-nav">
+               <li class="nav-item" id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()"
+                     id="lightbutton">
+                     <i class="fas fa-sun"></i>
+                  </span>
+               </li>
+            </ul>
+            <!--* Dark / Light End -->
+            <!--* Search Button Start -->
+            <ul class="right-nav">
+               <li class="nav-item search-icon">
+                  <a class="search-button" aria-label="Search Button">
+                     <i class="fas fa-search"></i></a>
+               </li>
+            </ul>
+            <!--* Search Button End -->
             <!--* Search Wrapper Start -->
             <div id="search">
                <i class="fas fa-times-circle close"></i>

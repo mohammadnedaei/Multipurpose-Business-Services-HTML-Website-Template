@@ -51,83 +51,10 @@
    <!--* Page Loader End -->
    <!--* Page Wrap Start -->
    <div class="page" id="top">
-      <!--* Topbar Start -->
-      <div class="fixed-top topbar-dark row">
-         <div class="col-lg-4 top-bar-column">
-            <a href="#" class="mx-2 topbar-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="mx-2 topbar-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="mx-2 topbar-icon"><i class="fab fa-pinterest"></i></a>
-            <a href="#" class="mx-2 topbar-icon"><i class="fab fa-linkedin"></i></a>
-         </div>
-         <div class="col-lg-4 top-bar-column">
-            <a class=" hs-line-1 logo-text-1 navbar-brand light-logo" href="#" aria-label="nav-brand">
-               BIT
-            </a>
-         </div>
-         <div class="col-lg-4 top-bar-column">
-            <!--* Multi language Section Start -->
-            <li class="nav-item multilingual">
-               <div class="translate-wrapper">
-                  <div class="current-lang">
-                     <div class="lang">
-                        <img width="16" height="16" src="images/language/us.svg" alt="us-flag">
-                        <span class="lang-txt">EN</span>
-                        <span class="fa fa-chevron-down chevron"></span>
-                     </div>
-                  </div>
-                  <div class="more-lang">
-                     <div class="lang" data-value='cn'>
-                        <img width="16" height="16" src="images/language/china.svg" alt="china-flag">
-                        <span class="lang-txt">简体中文</span>
-                     </div>
-                     <div class="lang selected" data-value='en'>
-                        <img width="16" height="16" src="images/language/us.svg" alt="us-flag">
-                        <span class="lang-txt">English</span>
-                     </div>
-                     <div class="lang" data-value='de'>
-                        <img width="16" height="16" src="images/language/germany.svg" alt="germany-flag">
-                        <span class="lang-txt">Deutsch</span>
-                     </div>
-                     <div class="lang" data-value='es'>
-                        <img width="16" height="16" src="images/language/spain.svg" alt="spain-flag">
-                        <span class="lang-txt">Español</span>
-                     </div>
-                     <div class="lang" data-value='fr'>
-                        <img width="16" height="16" src="images/language/france.svg" alt="france-flag">
-                        <span class="lang-txt">Français</span>
-                     </div>
-                     <div class="lang" data-value="jp">
-                        <img width="16" height="16" src="images/language/japan.svg" alt="japan-flag">
-                        <span class="lang-txt">日本語<span></span></span>
-                     </div>
-                  </div>
-               </div>
-            </li>
-            <!--* Multi language Section End -->
-            <!--* Dark / Light Start -->
-            <div class="nav-item topbar-icon" id="dark-btn"> <span class="nav-btns bubbly-button night-btn"
-                  onclick="darkmode()" id="darkbutton">
-                  <i class="fas fa-moon"></i>
-               </span>
-            </div>
-            <div class="nav-item topbar-icon" id="light-btn"> <span class="nav-btns bubbly-button day-btn"
-                  onclick="lightmode()" id="lightbutton">
-                  <i class="fas fa-sun"></i>
-               </span>
-            </div>
-            <!--* Dark / Light End -->
-            <!--* Search Button Start -->
-            <div class="nav-item search-icon topbar-icon">
-               <a class="search-button" aria-label="Search Button">
-                  <i class="fas fa-search"></i></a>
-            </div>
-            <!--* Search Button End -->
-         </div>
-      </div>
-      <!--* Topbar End -->
       <!--* Header Start -->
-      <nav id="main-nav" class="navbar topbar-nav fixed-top navbar-expand-lg bg-fixed-light">
+      <nav id="main-nav" class="navbar fixed-top navbar-expand-lg bg-fixed-light">
          <a class="logo-text-1 navbar-brand" href="javascript:void(0)" aria-label="nav-brand">
+            B I T
          </a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
             aria-expanded="false" aria-label="Toggle navigation" onclick='activescroll()'>
@@ -137,8 +64,7 @@
             <!--* Mega Menu Start-->
             <ul class="navbar-nav mx-auto">
                <li class="nav-item dropdown has-megamenu">
-                  <a class="nav-link dropdown-toggle active" href="javascript:void(0)" data-bs-toggle="dropdown"> HOME
-                  </a>
+                  <a class="nav-link dropdown-toggle active" href="javascript:void(0)" data-bs-toggle="dropdown"> HOME </a>
                   <div class="dropdown-menu megamenu" role="menu">
                      <div class="row">
                         <div class="col-md-6">
@@ -248,8 +174,7 @@
                   </div>
                </li>
                <li class="nav-item dropdown has-megamenu">
-                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown"> PORTFOLIO
-                  </a>
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown"> PORTFOLIO </a>
                   <div class="dropdown-menu megamenu" role="menu">
                      <h6 class="title font-alt hs-line-8 pt-10"><strong>Portfolio</strong></h6>
                      <div class="row">
@@ -375,6 +300,23 @@
                </li>
             </ul>
             <!--* Mega Menu End-->
+
+            <!--* Dark / Light Start -->
+            <ul class="right-nav">
+               <li class="nav-item" id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
+                     id="darkbutton">
+                     <i class="fas fa-moon"></i>
+                  </span>
+               </li>
+            </ul>
+            <ul class="right-nav">
+               <li class="nav-item" id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()"
+                     id="lightbutton">
+                     <i class="fas fa-sun"></i>
+                  </span>
+               </li>
+            </ul>
+            <!--* Dark / Light End -->
             <!--* Cart Button Start-->
             <ul class="right-nav">
                <li class="nav-item cart-ico">
@@ -382,6 +324,14 @@
                </li>
             </ul>
             <!--* Cart Button End-->
+            <!--* Search Button Start -->
+            <ul class="right-nav">
+               <li class="nav-item search-icon">
+                  <a class="search-button" aria-label="Search Button">
+                     <i class="fas fa-search"></i></a>
+               </li>
+            </ul>
+            <!--* Search Button End -->
             <!--* Shopping Cart Start-->
             <ul class="shopping-cart-wrapper">
                <li class="nav-item">
@@ -493,7 +443,7 @@
       <section class="page-section" id="about">
          <div class="container relative m-auto align-center">
             <div class="row">
-               <div class="col-lg-12">
+                              <div class="col-lg-12">
                   <img width="512" height="512" class="about-logo" src="images/logo/logo-light.webp" alt="logo-light">
                </div>
             </div>
@@ -505,8 +455,7 @@
                   <div class="col-md-4">
                      <blockquote>
                         <p>
-                           &quot;Bit is a fully Responsive Multi-Purpose Template created and designed for personal
-                           &amp;
+                           &quot;Bit is a fully Responsive Multi-Purpose Template created and designed for personal &amp;
                            business
                            purposes.&quot;
                         </p>
@@ -563,13 +512,12 @@
                               Hey, I'm Angela. I love the power of Art. I used my full power to design Bit.
                            </p>
                            <div class="team-social-links">
-                              <a href="javascript:void(0)" aria-label="facebook"><i
-                                    class="fab fa-facebook fa-2x"></i></a>
+                              <a href="javascript:void(0)" aria-label="facebook"><i class="fab fa-facebook fa-2x"></i></a>
                               <a href="javascript:void(0)" aria-label="twitter"><i class="fab fa-twitter fa-2x"></i></a>
                               <a href="javascript:void(0)" aria-label="youtube"><i class="fab fa-youtube fa-2x"></i></a>
                            </div>
-                           <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20"
-                              aria-label="team-btn" role="button">
+                           <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20" aria-label="team-btn"
+                              role="button">
                               <i class="fas fa-briefcase hire-icon"></i>HIRE ME</a>
                         </div>
                      </div>
@@ -596,13 +544,12 @@
                               touch with me.
                            </p>
                            <div class="team-social-links">
-                              <a href="javascript:void(0)" aria-label="facebook"><i
-                                    class="fab fa-facebook fa-2x"></i></a>
+                              <a href="javascript:void(0)" aria-label="facebook"><i class="fab fa-facebook fa-2x"></i></a>
                               <a href="javascript:void(0)" aria-label="twitter"><i class="fab fa-twitter fa-2x"></i></a>
                               <a href="javascript:void(0)" aria-label="youtube"><i class="fab fa-youtube fa-2x"></i></a>
                            </div>
-                           <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20"
-                              aria-label="team-btn" role="button">
+                           <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20" aria-label="team-btn"
+                              role="button">
                               <i class="fas fa-briefcase hire-icon"></i>HIRE ME</a>
                         </div>
                      </div>
@@ -629,13 +576,12 @@
                               enjoy it.
                            </p>
                            <div class="team-social-links">
-                              <a href="javascript:void(0)" aria-label="facebook"><i
-                                    class="fab fa-facebook fa-2x"></i></a>
+                              <a href="javascript:void(0)" aria-label="facebook"><i class="fab fa-facebook fa-2x"></i></a>
                               <a href="javascript:void(0)" aria-label="twitter"><i class="fab fa-twitter fa-2x"></i></a>
                               <a href="javascript:void(0)" aria-label="youtube"><i class="fab fa-youtube fa-2x"></i></a>
                            </div>
-                           <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20"
-                              aria-label="team-btn" role="button">
+                           <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20" aria-label="team-btn"
+                              role="button">
                               <i class="fas fa-briefcase hire-icon"></i>HIRE ME</a>
                         </div>
                      </div>
@@ -722,8 +668,7 @@
                         <div class="col-md-4 mb-md-40 mb-xs-30">
                            <blockquote class="mb-0">
                               <p>
-                                 &quot;Your branding matters more than anything. If you want to win in companies league,
-                                 You
+                                 &quot;Your branding matters more than anything. If you want to win in companies league, You
                                  have to
                                  pick your brand up. Your website can be a start.&quot;
                               </p>
@@ -911,16 +856,15 @@
                <div class="col-md-12 col-lg-6">
                   <div class="mt-140 mt-lg-80 mb-140 mb-lg-80">
                      <div class="banner-content">
-                        <h2 class="banner-heading font-alt mb-40">Artistic &amp; Modern <strong>Brand</strong></h2>
+                        <h2 class="banner-heading font-alt mb-40">Artistic  &amp; Modern <strong>Brand</strong></h2>
                         <div class="banner-decription mb-40">
                            Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the
                            industry&rsquo;s
                            standard dummy. Lorem Ipsum has been the industry&rsquo;s standard dummy.
                         </div>
                         <div>
-                           <a href="javascript:void(0)" class="material-btn pulse-btn primary-btn"
-                              aria-label="banner-btn" role="button"><i class="fas fa-info banner-btn-icon"></i>LEARN
-                              MORE</a>
+                           <a href="javascript:void(0)" class="material-btn pulse-btn primary-btn" aria-label="banner-btn"
+                              role="button"><i class="fas fa-info banner-btn-icon"></i>LEARN MORE</a>
                         </div>
                      </div>
                   </div>
@@ -964,11 +908,9 @@
                <div class="items-filter font-alt align-center">
                   <a href="javascript:void(0)" class="filter active" data-filter="*" aria-label="bit-btn">All Other
                      works</a>
-                  <a href="javascript:void(0)" class="filter mt-xs-10" data-filter=".developing"
-                     aria-label="work-btn">web
+                  <a href="javascript:void(0)" class="filter mt-xs-10" data-filter=".developing" aria-label="work-btn">web
                      Developing</a>
-                  <a href="javascript:void(0)" class="filter mt-xs-10" data-filter=".designing"
-                     aria-label="work-btn">Art &amp;
+                  <a href="javascript:void(0)" class="filter mt-xs-10" data-filter=".designing" aria-label="work-btn">Art &amp;
                      Graphics</a>
                   <a href="javascript:void(0)" class="filter mt-xs-10 mt-lg-20" data-filter=".photography"
                      aria-label="work-btn">Photo
@@ -1094,8 +1036,8 @@
                   <p>CreativeThemes has provided a full time support and update for Bit. If you need any help,
                      CreativeThemes Support Team is here to help you.
                   </p>
-                  <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn pulse-btn"
-                     aria-label="service-btn"><i class="fas fa-angle-double-right"></i>READ MORE</a>
+                  <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn pulse-btn" aria-label="service-btn"><i
+                        class="fas fa-angle-double-right"></i>READ MORE</a>
                </div>
             </div>
             <!--* First Service End -->
@@ -1122,8 +1064,8 @@
                   <p>Every element and section used in Bit is customizable. Just make sure you read the documentation
                      before any editing.
                   </p>
-                  <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn pulse-btn"
-                     aria-label="service-btn"><i class="fas fa-angle-double-right"></i>READ MORE</a>
+                  <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn pulse-btn" aria-label="service-btn"><i
+                        class="fas fa-angle-double-right"></i>READ MORE</a>
                </div>
             </div>
             <!--* Third Service End -->
@@ -1135,8 +1077,8 @@
                   <p class="gray">Bit uses powerfull, modern &amp; new technologies. Clean coding &amp; High-Quality
                      Performance are our goals.
                   </p>
-                  <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn pulse-btn"
-                     aria-label="service-btn"><i class="fas fa-angle-double-right"></i>READ MORE</a>
+                  <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn pulse-btn" aria-label="service-btn"><i
+                        class="fas fa-angle-double-right"></i>READ MORE</a>
                </div>
             </div>
             <!--* Fourth Service End -->
@@ -1689,8 +1631,8 @@
                      pharetra duis amet orci. Nibh dictum.
                   </div>
                   <div class="post-prev-more">
-                     <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn"
-                        role="button"><i class="fas fa-book-reader"></i>FULL VIEW
+                     <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn" role="button"><i
+                           class="fas fa-book-reader"></i>FULL VIEW
                      </a>
                   </div>
                </div>
@@ -1713,8 +1655,8 @@
                      pharetra duis amet orci. Nibh dictum.
                   </div>
                   <div class="post-prev-more">
-                     <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn"
-                        role="button"><i class="fas fa-book-reader"></i>FULL VIEW
+                     <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn" role="button"><i
+                           class="fas fa-book-reader"></i>FULL VIEW
                      </a>
                   </div>
                </div>
@@ -1737,8 +1679,8 @@
                      pharetra duis amet orci. Nibh dictum.
                   </div>
                   <div class="post-prev-more">
-                     <a href="javascript:void(0)" class="material-btn dark-btn below rounded-btn" aria-label="blog-btn"
-                        role="button"><i class="fas fa-book-reader"></i>FULL VIEW
+                     <a href="javascript:void(0)" class="material-btn dark-btn below rounded-btn" aria-label="blog-btn" role="button"><i
+                           class="fas fa-book-reader"></i>FULL VIEW
                      </a>
                   </div>
                   <figure class="swing-badge swing-panel primary-swing-badge lg-swing-panel"><span>Added New March 2021
@@ -1763,8 +1705,8 @@
                      pharetra duis amet orci. Nibh dictum.
                   </div>
                   <div class="post-prev-more">
-                     <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn"
-                        role="button"><i class="fas fa-book-reader"></i>FULL VIEW
+                     <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn" role="button"><i
+                           class="fas fa-book-reader"></i>FULL VIEW
                      </a>
                   </div>
                </div>
