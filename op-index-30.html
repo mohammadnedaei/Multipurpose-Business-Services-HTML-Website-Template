@@ -291,76 +291,111 @@
    </div>
    <!--* Page Loader End -->
    <!--* Page Wrap Start -->
-   <div class="page" id="top">
-      <!--* Header Start -->
-      <nav id="main-nav" class="navbar fixed-top navbar-expand-lg bg-scrolling-dark">
-         <a class="logo-text-1 navbar-brand" href="javascript:void(0)" aria-label="nav-brand">
-            B I T
-         </a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-            aria-expanded="false" aria-label="Toggle navigation" onclick='activescroll()'>
-            <i class="fa fa-bars"></i>
-         </button>
-         <div class="collapse navbar-collapse" id="main_nav">
-            <ul class="navbar-nav mx-auto">
-               <!--! Make Sure To Update Section 21. in 'js/main.js' IF You Want to Change any of These Class Names.  -->
-               <li class="nav-item single-nav-item home-nav-item">
-                  <a class="nav-link" href="#home"> HOME </a>
+   <!--* Header Start -->
+   <nav id="main-nav" class="navbar fixed-top navbar-expand-lg bg-scrolling-dark">
+      <a class="logo-text-1 navbar-brand" href="javascript:void(0)" aria-label="nav-brand">
+         B I T
+      </a>
+      <div id="hamburger-menu-full" class="overlay from-right">
+         <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+         <div class="overlay-content">
+            <a href="#home"> HOME </a>
+            <a href="#about"> ABOUT US </a>
+            <a href="#tab-services"> SERVICES </a>
+            <a href="#portfolio"> PORTFOLIO </a>
+            <a href="#news"> BLOG </a>
+            <a href="#contact"> CONTACT US </a>
+            <ul class="mt-40">
+               <!--* Multi language Section Start -->
+               <li class="nav-item multilingual">
+                  <div class="translate-wrapper m-auto">
+                     <div class="current-lang">
+                        <div class="lang">
+                           <img width="16" height="16" src="images/language/us.svg" alt="us-flag">
+                           <span class="lang-txt">EN</span>
+                           <span class="fa fa-chevron-down chevron"></span>
+                        </div>
+                     </div>
+                     <div class="more-lang">
+                        <div class="lang" data-value='cn'>
+                           <img width="16" height="16" src="images/language/china.svg" alt="china-flag">
+                           <span class="lang-txt">简体中文</span>
+                        </div>
+                        <div class="lang selected" data-value='en'>
+                           <img width="16" height="16" src="images/language/us.svg" alt="us-flag">
+                           <span class="lang-txt">English</span>
+                        </div>
+                        <div class="lang" data-value='de'>
+                           <img width="16" height="16" src="images/language/germany.svg" alt="germany-flag">
+                           <span class="lang-txt">Deutsch</span>
+                        </div>
+                        <div class="lang" data-value='es'>
+                           <img width="16" height="16" src="images/language/spain.svg" alt="spain-flag">
+                           <span class="lang-txt">Español</span>
+                        </div>
+                        <div class="lang" data-value='fr'>
+                           <img width="16" height="16" src="images/language/france.svg" alt="france-flag">
+                           <span class="lang-txt">Français</span>
+                        </div>
+                        <div class="lang" data-value="jp">
+                           <img width="16" height="16" src="images/language/japan.svg" alt="japan-flag">
+                           <span class="lang-txt">日本語<span></span></span>
+                        </div>
+                     </div>
+                  </div>
                </li>
-               <li class="nav-item single-nav-item about-nav-item">
-                  <a class="nav-link" href="#about"> ABOUT US </a>
-               </li>
-               <li class="nav-item single-nav-item services-nav-item">
-                  <a class="nav-link" href="#tab-services"> SERVICES </a>
-               </li>
-               <li class="nav-item single-nav-item portfolio-nav-item">
-                  <a class="nav-link" href="#portfolio"> PORTFOLIO </a>
-               </li>
-               <li class="nav-item single-nav-item blog-nav-item">
-                  <a class="nav-link" href="#news"> BLOG </a>
-               </li>
-               <li class="nav-item single-nav-item contact-nav-item">
-                  <a class="nav-link" href="#contact"> CONTACT US </a>
-               </li>
+               <!--* Multi language Section End -->
             </ul>
-            <!--* Dark / Light Start -->
-            <ul class="right-nav">
-               <li class="nav-item" id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
-                     id="darkbutton">
-                     <i class="fas fa-moon"></i>
-                  </span>
-               </li>
-            </ul>
-            <ul class="right-nav">
-               <li class="nav-item" id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()"
-                     id="lightbutton">
-                     <i class="fas fa-sun"></i>
-                  </span>
-               </li>
-            </ul>
-            <!--* Dark / Light End -->
-            <!--* Search Button Start -->
-            <ul class="right-nav">
-               <li class="nav-item search-icon">
-                  <a class="search-button" aria-label="Search Button">
-                     <i class="fas fa-search"></i></a>
-               </li>
-            </ul>
-            <!--* Search Button End -->
-            <!--* Search Wrapper Start -->
-            <div id="search">
-               <i class="fas fa-times-circle close"></i>
-               <form class="searchform">
-                  <input id="search-keyword" type="search" placeholder="SEARCH KEYWORD(s)"><label
-                     for="search-keyword">Search</label>
-                  <a id="search-full-screen-btn" href="javascript:void(0)" class="material-btn secondary-btn medium-btn"
-                     aria-label="search-button"><i class="fas fa-search"></i>SEARCH</a>
-               </form>
-            </div>
-            <!--* Search Wrapper End -->
          </div>
-      </nav>
-      <!--* Header End -->
+      </div>
+      <div class="collapse navbar-collapse" id="main_nav">
+
+         <ul class="navbar-nav ml-auto">
+         </ul>
+
+         <!--* Dark / Light Start -->
+         <ul class="right-nav">
+            <li class="nav-item" id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
+                  id="darkbutton">
+                  <i class="fas fa-moon"></i>
+               </span>
+            </li>
+         </ul>
+         <ul class="right-nav">
+            <li class="nav-item" id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()"
+                  id="lightbutton">
+                  <i class="fas fa-sun"></i>
+               </span>
+            </li>
+         </ul>
+         <!--* Dark / Light End -->
+         <!--* Search Wrapper Start -->
+         <div id="search">
+            <i class="fas fa-times-circle close"></i>
+            <form class="searchform">
+               <input id="search-keyword" type="search" placeholder="SEARCH KEYWORD(s)"><label
+                  for="search-keyword">Search</label>
+               <a id="search-full-screen-btn" href="javascript:void(0)" class="material-btn secondary-btn medium-btn"
+                  aria-label="search-button"><i class="fas fa-search"></i>SEARCH</a>
+            </form>
+         </div>
+         <!--* Search Wrapper End -->
+      </div>
+      <!--* Search Button & Open Nav Button Start -->
+      <ul class="right-nav">
+         <li class="nav-item" style="display: inline;">
+            <a class="search-button" aria-label="Search Button">
+               <i class="fas fa-search"></i></a>
+         </li>
+         <li class="nav-item ml-30" style="display: inline;">
+            <a aria-label="OpenNav" onclick="openNav()">
+               <i class="fas fa-bars text-light"></i></a>
+         </li>
+      </ul>
+      <!--* Search Button & Open Nav Button End -->
+   </nav>
+   <!--* Header End -->
+   <div class="page" id="top">
       <!-- Home Section Start Is Here -->
       <section class="home-section bg-dark-alfa-70" style="background-image: url('images/full-width-image/20.webp')"
          id="home">
