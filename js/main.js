@@ -1145,20 +1145,21 @@ class TypeWriter {
     this.type();
     this.isDeleting = false;
   }
-
   type() {
     if (this.wordIndex > this.words.length) {
       this.wordIndex = 1;
     }
     const current = this.wordIndex % this.words.length;
     const fullTxt = this.words[current];
-
+    console.log(
+        `${this.wordIndex} % ${this.words.length} = ${current}, word length: ${fullTxt.length}`
+    );
     if (this.isDeleting) {
       this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
-    this.txtElement.innerHTML = <span class="txt">${this.txt}</span>;
+    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
     let typeSpeed = 150;
     if (this.isDeleting) {
       typeSpeed /= 2;
@@ -1174,7 +1175,6 @@ class TypeWriter {
     setTimeout(() => this.type(), typeSpeed);
   }
 }
-
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
