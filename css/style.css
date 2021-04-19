@@ -83,7 +83,7 @@
 *                          18. Services Intro Section
 *                          19. Testimonial Section
 ?                            --19.a Testimonial Clients
-*                          20. Particles
+*                          20. Particles (Coming Soon!)
 *                          21. Timer
 ?                            --21.a Timer Clock
 *                          22. Progress Bars
@@ -6781,41 +6781,6 @@ svg.top-left-square {
 
 .client-single.active img {
     animation: shadowPulseHeavy 2s infinite ease;
-}
-
-
-/*
-* ==============================
-!     20. Particles
-* ==============================
-*/
-
-canvas {
-    display: block;
-}
-
-.header-table {
-    display: table;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.particles-js-canvas-el {
-    position: absolute;
-}
-
-.header-table-center {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.particles-z-index {
-    z-index: 2;
-}
-
-.header-content {
-    max-width: 1200px;
 }
 
 /*
