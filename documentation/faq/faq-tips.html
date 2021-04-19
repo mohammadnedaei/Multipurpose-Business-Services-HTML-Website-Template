@@ -367,25 +367,115 @@
                                              </span>
             </li>
             <div class="row mb-130">
-                <h1>
+                <h1 class="mb-20">
                     FAQ &amp; Helper Tips
                 </h1>
-                <p class="text-muted">Yes! You made it 😃. You've passed documentation and now if you have any question
-                    about template, You can find it here. If you did not, we are always with you to help you.</p>
+                <p class="text-muted">Yes! You made it 😃. You've passed documentation steps and now if you have any
+                    question
+                    about template, You can find it here. If you cannot find it, we are always with you to help you.</p>
                 <hr>
                 <hr>
                 <div class="alert alert-success">
-                    <h5>-How to Set Contact Form PHP?</h5>
-                    <p>Setting up contact form is as easy as other BIT's setups you have passed till now. Just follow steps below:</p>
+                    <h5>1-How to Setup PHP Contact Form?</h5>
+                    <p>Setting up contact form is as easy as other BIT's setups you have passed till now. Just follow
+                        below steps:</p>
                     <ol>
                         <li>Go to <code>/php</code> and open <code>contact_me.php</code> File.</li>
                         <li>Replace recipient email address in the line below:
-                        <code class="language-php d-block">	$to_Email= "recipient@mail.com";
-                        </code></li>
+                            <code class="language-php d-block"> $to_Email= "recipient@mail.com";
+                            </code></li>
+                    </ol>
+                </div>
+                <div class="alert alert-warning">
+                    <h5>2-How to Use Text Rotator?</h5>
+                    <p class="text-muted">follow
+                        below steps:</p>
+                    <ol>
+                        <li>First of all make sure jQuery Text Rotator is attached to your <code>.html</code> File.
+                            Navigate to the bottom of the page and make sure you have the line below in your file before
+                            closing <code>&#x3C;/body&#x3E;</code> Tag.
+                            <code class="language-html d-block">&#x3C;script src=&#x22;js/jquery.simple-text-rotator.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+                            </code>
+                        </li>
+                        <li>Now copy below code example and change it to your own content. Notice that every rotate item
+                            should have a <code>,</code> before next one and the parent should have a
+                            <code>.rotate</code> class.
+                            <pre>
+<a class="btn btn-copy btn-sm btn-secondary"
+   data-clipboard-target="#rotator-sample"> <i
+        class="fas fa-clipboard mx-2"></i> Copy</a>
+                            <code id="rotator-sample" class="language-html d-block">
+ &#x3C;span class=&#x22;rotate font-pottaone&#x22;&#x3E;
+ Powerful &#x26;amp; Smart,
+ Luxyry &#x26;amp; Artistic,
+ Modern &#x26;amp; Creative,
+ Clean Code &#x26;amp; Neat Design,
+ Suitable For Personal Use,
+ Suitable For Business Use
+ &#x3C;/span&#x3E;</code>
+                                </pre>
+                        </li>
+                    </ol>
+                </div>
+                <div class="alert alert-success">
+                    <h5>3-How to Disable/Modify SmoothScroll?</h5>
+                    <p>You can Disable SmoothScroll by removing <code class="language-html">&#x3C;script src=&#x22;js/SmoothScroll.js&#x22;&#x3E;&#x3C;/script&#x3E;</code>
+                        from your file before closing <code>&#x3C;/body&#x3E;</code>
+                        Tag. You can also Edit SmoothScroll. Just follow
+                        below steps to edit it:</p>
+                    <ol>
+                        <li>Go to <code>/js</code> and open <code>SmoothScroll.js</code> File.</li>
+                        <li>Now You can edit any of below options as you wish.
+                            <pre>
+                                <code class="language-js">
+// Default Values
+
+frameRate: 150,
+animationTime: 400,
+stepSize: 100,
+pulseAlgorithm: !0,
+pulseScale: 4,
+pulseNormalize: 1,
+accelerationDelta: 50,
+accelerationMax: 3,
+keyboardSupport: !0,
+arrowScroll: 50,
+fixedBackground: !0,
+excluded: ""
+                                </code>
+                            </pre>
+                        </li>
+                    </ol>
+                </div>
+                <div class="alert alert-warning">
+                    <h5>4-How to Setup Lottie Files in my Website?</h5>
+                    <p>Just follow
+                        below steps to add Lottie to your website:</p>
+                    <ol>
+                        <li>First of all remove <code class="language-html">&#x3C;script src=&#x22;js/lottie.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code>
+                            from your <code>.html</code> file before closing <code>&#x3C;/body&#x3E;</code>
+                            Tag.
+                        </li>
+                        <li>Go to <a href="https://lottiefiles.com/" target="_blank"
+                                     class="badge bg-primary text-light">Lottie Animations</a> Website &amp; discover
+                            your
+                            animation.
+                        </li>
+                        <li>Add the below code snippet to your <code>.html</code> File &amp; replace the
+                            <code>src</code> with the <code>.json</code> Lottie URL you want.
+                            <pre>
+<a class="btn btn-copy btn-sm btn-secondary"
+   data-clipboard-target="#lottie-sample"> <i
+        class="fas fa-clipboard mx-2"></i> Copy</a>
+                                <code id="lottie-sample" class="language-html">
+&#x3C;lottie-player src=&#x22;https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json&#x22;  background=&#x22;transparent&#x22;  speed=&#x22;1&#x22;  style=&#x22;width: 300px; height: 300px;&#x22;  loop controls autoplay&#x3E;&#x3C;/lottie-player&#x3E;
+                                </code>
+                            </pre>
+                        </li>
                     </ol>
                 </div>
             </div>
-
+        </div>
     </main>
 </div>
 <script src="../js/jquery.min.js"></script>
