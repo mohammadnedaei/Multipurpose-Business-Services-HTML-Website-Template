@@ -338,7 +338,7 @@
     <!-- sidebar-wrapper  -->
     <main class="page-content">
         <div class="container">
-            <li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
+            <ul><li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
                                      id="darkbutton">
                                     <i class="fas fa-moon"></i>
                               </span>
@@ -347,7 +347,7 @@
                                       id="lightbutton">
                                     <i class="fas fa-sun"></i>
                               </span>
-            </li>
+            </li></ul>
             <div class="row mb-130">
                 <h1>
                     Portfolio
@@ -362,7 +362,7 @@
                     <ul>
                         <li class="lg-font">
                             Wide
-                        </li class="lg-font">
+                        </li>
                         <li class="lg-font">
                             Overlay on g=hover
                         </li>
@@ -381,24 +381,24 @@
                             below code example. </p>
                         <pre><span class="text-danger">BEFORE</span>
                                                             <code class="language-html">
-                                        &#x3C;section class=&#x22;page-section pb-20 isotope-sys&#x22; id=&#x22;portfolio&#x22;&#x3E;
-                                         &#x3C;div class=&#x22;container&#x22;&#x3E;
-                                          &#x3C;h2 class=&#x22;section-title font-alt mb-70 mb-sm-40 wow flipInY&#x22;&#x3E;
-                                          ...   
-                                          &#x3C;/h2&#x3E;
-                                          ...
-                                          &#x3C;/div&#x3E;
-                                        &#x3C;section&#x3E;
+&#x3C;section class=&#x22;page-section pb-20 isotope-sys&#x22; id=&#x22;portfolio&#x22;&#x3E;
+ &#x3C;div class=&#x22;container&#x22;&#x3E;
+  &#x3C;h2 class=&#x22;section-title font-alt mb-70 mb-sm-40 wow flipInY&#x22;&#x3E;
+  ...
+  &#x3C;/h2&#x3E;
+  ...
+  &#x3C;/div&#x3E;
+&#x3C;section&#x3E;
                                                             </code>
                                                           </pre>
                         <pre><span class="text-success">AFTER</span>
                                                             <code class="language-html">
-                                        &#x3C;section class=&#x22;page-section pb-20 isotope-sys&#x22; id=&#x22;portfolio&#x22;&#x3E;
-                                          &#x3C;h2 class=&#x22;section-title font-alt mb-70 mb-sm-40 wow flipInY&#x22;&#x3E;
-                                          ...   
-                                          &#x3C;/h2&#x3E;
-                                          ...
-                                        &#x3C;section&#x3E; 
+&#x3C;section class=&#x22;page-section pb-20 isotope-sys&#x22; id=&#x22;portfolio&#x22;&#x3E;
+  &#x3C;h2 class=&#x22;section-title font-alt mb-70 mb-sm-40 wow flipInY&#x22;&#x3E;
+  ...
+  &#x3C;/h2&#x3E;
+  ...
+&#x3C;section&#x3E;
                                                             </code>
                                                           </pre>
                         <p><i class="fa fa-info-circle mx-2"></i>To use
@@ -408,30 +408,30 @@
                         </p>
                         <pre><span class="text-danger">BEFORE</span>
                                                           <code class="language-html">
-                                        &#x3C;li class=&#x22;grid-item mix photography&#x22;&#x3E;
-                                         &#x3C;a href=&#x22;images/portfolio/lightbox/38.webp&#x22;
-                                               class=&#x22;bit-lightbox-link mfp-image&#x22; aria-label=&#x22;portfolio-item&#x22;&#x3E;
-                                          -->     &#x3C;div class=&#x22; no-radius&#x22;&#x3E;
-                                                     &#x3C;img width=&#x22;650&#x22; height=&#x22;418&#x22; src=&#x22;images/portfolio/38.webp&#x22;
-                                                           alt=&#x22;item-1&#x22;&#x3E;
-                                               &#x3C;/div&#x3E;
-                                               ...
-                                         &#x3C;/a&#x3E;
-                                        &#x3C;/li&#x3E;
+&#x3C;li class=&#x22;grid-item mix photography&#x22;&#x3E;
+ &#x3C;a href=&#x22;images/portfolio/lightbox/38.webp&#x22;
+       class=&#x22;bit-lightbox-link mfp-image&#x22; aria-label=&#x22;portfolio-item&#x22;&#x3E;
+  -->     &#x3C;div class=&#x22; no-radius&#x22;&#x3E;
+             &#x3C;img width=&#x22;650&#x22; height=&#x22;418&#x22; src=&#x22;images/portfolio/38.webp&#x22;
+                   alt=&#x22;item-1&#x22;&#x3E;
+       &#x3C;/div&#x3E;
+       ...
+ &#x3C;/a&#x3E;
+&#x3C;/li&#x3E;
                                                           </code>
                                                         </pre>
                         <pre><span class="text-success">AFTER</span>
                                                           <code class="language-html">
-                                        &#x3C;li class=&#x22;grid-item mix photography&#x22;&#x3E;
-                                         &#x3C;a href=&#x22;images/portfolio/lightbox/38.webp&#x22;
-                                               class=&#x22;bit-lightbox-link mfp-image&#x22; aria-label=&#x22;portfolio-item&#x22;&#x3E;
-                                          -->     &#x3C;div class=&#x22;item-img no-radius&#x22;&#x3E;
-                                                     &#x3C;img width=&#x22;650&#x22; height=&#x22;418&#x22; src=&#x22;images/portfolio/38.webp&#x22;
-                                                           alt=&#x22;item-1&#x22;&#x3E;
-                                               &#x3C;/div&#x3E;
-                                               ...
-                                         &#x3C;/a&#x3E;
-                                        &#x3C;/li&#x3E;
+&#x3C;li class=&#x22;grid-item mix photography&#x22;&#x3E;
+ &#x3C;a href=&#x22;images/portfolio/lightbox/38.webp&#x22;
+       class=&#x22;bit-lightbox-link mfp-image&#x22; aria-label=&#x22;portfolio-item&#x22;&#x3E;
+  -->     &#x3C;div class=&#x22;item-img no-radius&#x22;&#x3E;
+             &#x3C;img width=&#x22;650&#x22; height=&#x22;418&#x22; src=&#x22;images/portfolio/38.webp&#x22;
+                   alt=&#x22;item-1&#x22;&#x3E;
+       &#x3C;/div&#x3E;
+       ...
+ &#x3C;/a&#x3E;
+&#x3C;/li&#x3E;
                                                           </code>
                                                         </pre>
                         <p><i class="fa fa-info-circle mx-2"></i>To use
@@ -441,31 +441,31 @@
                             just like below code example. </p>
                         <pre><span class="text-primary">LIGHTBOX</span>
                                                            <code class="language-html">
-                                        &#x3C;!--* First Item (Lightbox) Start --&#x3E;
-                                        &#x3C;li class=&#x22;grid-item mix photography&#x22;&#x3E;
-                                              &#x3C;a href=&#x22;images/portfolio/lightbox/38.webp&#x22;
-                                                    class=&#x22;bit-lightbox-link mfp-image&#x22; aria-label=&#x22;portfolio-item&#x22;&#x3E;
-                                                    ...
-                                              &#x3C;/a&#x3E;
-                                              ...
-                                        &#x3C;/li&#x3E;
+&#x3C;!--* First Item (Lightbox) Start --&#x3E;
+&#x3C;li class=&#x22;grid-item mix photography&#x22;&#x3E;
+      &#x3C;a href=&#x22;images/portfolio/lightbox/38.webp&#x22;
+            class=&#x22;bit-lightbox-link mfp-image&#x22; aria-label=&#x22;portfolio-item&#x22;&#x3E;
+            ...
+      &#x3C;/a&#x3E;
+      ...
+&#x3C;/li&#x3E;
                                                            </code>
                                                          </pre>
                         <pre><span class="text-info">External Page</span>
                                                            <code class="language-html">
-                                        &#x3C;!--* Second Item (External Page) Start --&#x3E;
-                                        &#x3C;li class=&#x22;grid-item mix photography&#x22;&#x3E;
-                                              &#x3C;a href=&#x22;page.html&#x22; aria-label=&#x22;portfolio-item&#x22;&#x3E;
-                                                    ...
-                                              &#x3C;/a&#x3E;
-                                              ...
-                                        &#x3C;/li&#x3E;
+&#x3C;!--* Second Item (External Page) Start --&#x3E;
+&#x3C;li class=&#x22;grid-item mix photography&#x22;&#x3E;
+      &#x3C;a href=&#x22;page.html&#x22; aria-label=&#x22;portfolio-item&#x22;&#x3E;
+            ...
+      &#x3C;/a&#x3E;
+      ...
+&#x3C;/li&#x3E;
                                                            </code>
                                                          </pre>
                     </div>
                 </div>
             </div>
-
+        </div>
     </main>
 </div>
 <script src="../js/jquery.min.js"></script>

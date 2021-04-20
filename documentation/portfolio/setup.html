@@ -318,14 +318,14 @@
     <!-- sidebar-wrapper  -->
     <main class="page-content">
         <div class="container">
-            <li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()" id="darkbutton">
+            <ul><li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()" id="darkbutton">
                   <i class="fas fa-moon"></i>
                </span>
             </li>
             <li id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()" id="lightbutton">
                   <i class="fas fa-sun"></i>
                </span>
-            </li>
+            </li></ul>
             <div class="row mb-130">
                 <h1>
                     Portfolio
@@ -342,19 +342,19 @@
                             class="fas fa-clipboard mx-2"></i> Copy</a>
                     <pre>
                                                       <code id="portfolio-filter" class="language-html">
-                                          &#x3C;!--* Item Filters Start --&#x3E;
-                                          &#x3C;div class=&#x22;items-filter font-alt align-center&#x22;&#x3E;
-                                             &#x3C;a href=&#x22;#&#x22; class=&#x22;filter active&#x22; data-filter=&#x22;*&#x22; aria-label=&#x22;bit-btn&#x22;&#x3E;All Other
-                                                works&#x3C;/a&#x3E;
-                                             &#x3C;a href=&#x22;#&#x22; class=&#x22;filter mt-xs-10&#x22; data-filter=&#x22;.developing&#x22; aria-label=&#x22;work-btn&#x22;&#x3E;web
-                                                Developing&#x3C;/a&#x3E;
-                                             &#x3C;a href=&#x22;#&#x22; class=&#x22;filter mt-xs-10&#x22; data-filter=&#x22;.designing&#x22; aria-label=&#x22;work-btn&#x22;&#x3E;Art &#x26;amp;
-                                                Graphics&#x3C;/a&#x3E;
-                                             &#x3C;a href=&#x22;#&#x22; class=&#x22;filter mt-xs-10 mt-lg-20&#x22; data-filter=&#x22;.photography&#x22;
-                                                aria-label=&#x22;work-btn&#x22;&#x3E;Photo
-                                                works&#x3C;/a&#x3E;
-                                          &#x3C;/div&#x3E;
-                                          &#x3C;!--* Item Filters End --&#x3E;
+&#x3C;!--* Item Filters Start --&#x3E;
+&#x3C;div class=&#x22;items-filter font-alt align-center&#x22;&#x3E;
+   &#x3C;a href=&#x22;#&#x22; class=&#x22;filter active&#x22; data-filter=&#x22;*&#x22; aria-label=&#x22;bit-btn&#x22;&#x3E;All Other
+      works&#x3C;/a&#x3E;
+   &#x3C;a href=&#x22;#&#x22; class=&#x22;filter mt-xs-10&#x22; data-filter=&#x22;.developing&#x22; aria-label=&#x22;work-btn&#x22;&#x3E;web
+      Developing&#x3C;/a&#x3E;
+   &#x3C;a href=&#x22;#&#x22; class=&#x22;filter mt-xs-10&#x22; data-filter=&#x22;.designing&#x22; aria-label=&#x22;work-btn&#x22;&#x3E;Art &#x26;amp;
+      Graphics&#x3C;/a&#x3E;
+   &#x3C;a href=&#x22;#&#x22; class=&#x22;filter mt-xs-10 mt-lg-20&#x22; data-filter=&#x22;.photography&#x22;
+      aria-label=&#x22;work-btn&#x22;&#x3E;Photo
+      works&#x3C;/a&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!--* Item Filters End --&#x3E;
                                                        </code>
                                                   </pre>
                     <div class="alert alert-info" role="alert">
@@ -379,34 +379,35 @@
                                 class="fas fa-clipboard mx-2"></i> Copy</a>
                         <pre>
                                                   <code id="portfolio-grid" class="language-html">
-                                          &#x3C;!--* Item Grids Start --&#x3E;
-                                          &#x3C;ul class=&#x22;isotope-grid items-grid item-grid-4 clearfix font-alt hide-titles&#x22; id=&#x22;item-grid&#x22;&#x3E;
+&#x3C;!--* Item Grids Start --&#x3E;
+&#x3C;ul class=&#x22;isotope-grid items-grid item-grid-4 clearfix font-alt hide-titles&#x22; id=&#x22;item-grid&#x22;&#x3E;
                                                   </code>
+                        </pre>
                     </div>
                     <p class="lg-font">- Code Example for <strong>setting up portfolio items</strong>: </p>
                     <a class="btn btn-copy btn-sm btn-secondary" data-clipboard-target="#portfolio-items"> <i
                             class="fas fa-clipboard mx-2"></i> Copy</a>
                     <pre>
                                                   <code id="portfolio-items" class="language-html">
-                                          &#x3C;li class=&#x22;grid-item mix photography&#x22;&#x3E;
-                                          &#x3C;a href=&#x22;images/portfolio/lightbox/38.webp&#x22; class=&#x22;bit-lightbox-link mfp-image&#x22;
-                                                aria-label=&#x22;portfolio-item&#x22;&#x3E;
-                                                &#x3C;div class=&#x22;item-img no-radius&#x22;&#x3E;
-                                                   &#x3C;img width=&#x22;650&#x22; height=&#x22;418&#x22; src=&#x22;images/portfolio/38.webp&#x22; alt=&#x22;item-1&#x22;&#x3E;
-                                                &#x3C;/div&#x3E;
-                                                &#x3C;div class=&#x22;item-intro&#x22;&#x3E;
-                                                   &#x3C;h2 class=&#x22;item-title&#x22;&#x3E;Tidy&#x3C;/h2&#x3E;
-                                                   &#x3C;div class=&#x22;item-descr&#x22;&#x3E;
-                                                      a Multi-Purpose Website
-                                                   &#x3C;/div&#x3E;
-                                                &#x3C;/div&#x3E;
-                                             &#x3C;/a&#x3E;
-                                          &#x3C;/li&#x3E;
+&#x3C;li class=&#x22;grid-item mix photography&#x22;&#x3E;
+&#x3C;a href=&#x22;images/portfolio/lightbox/38.webp&#x22; class=&#x22;bit-lightbox-link mfp-image&#x22;
+      aria-label=&#x22;portfolio-item&#x22;&#x3E;
+      &#x3C;div class=&#x22;item-img no-radius&#x22;&#x3E;
+         &#x3C;img width=&#x22;650&#x22; height=&#x22;418&#x22; src=&#x22;images/portfolio/38.webp&#x22; alt=&#x22;item-1&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;item-intro&#x22;&#x3E;
+         &#x3C;h2 class=&#x22;item-title&#x22;&#x3E;Tidy&#x3C;/h2&#x3E;
+         &#x3C;div class=&#x22;item-descr&#x22;&#x3E;
+            a Multi-Purpose Website
+         &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+   &#x3C;/a&#x3E;
+&#x3C;/li&#x3E;
                                                    </code>
                                               </pre>
                 </div>
             </div>
-
+        </div>
     </main>
 </div>
 <script src="../js/jquery.min.js"></script>

@@ -318,14 +318,14 @@
     <!-- sidebar-wrapper  -->
     <main class="page-content">
         <div class="container">
-            <li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()" id="darkbutton">
+            <ul><li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()" id="darkbutton">
             <i class="fas fa-moon"></i>
           </span>
             </li>
             <li id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()" id="lightbutton">
             <i class="fas fa-sun"></i>
           </span>
-            </li>
+            </li></ul>
             <div class="row mb-130">
                 <h1>Getting Started</h1>
                 <hr>
@@ -358,9 +358,9 @@
                             class="fas fa-clipboard mx-2"></i> Copy</a>
                     <pre>
                                           <code id="favicon-html" class="language-html">
-                                          &#x3C;!-- Favicons --&#x3E;
-                                          &#x3C;link href=&#x22;images/logo/favicon-light.webp&#x22; rel=&#x22;shortcut icon&#x22;&#x3E;
-                                          &#x3C;link href=&#x22;images/logo/favicon-light.webp&#x22; rel=&#x22;apple-touch-icon&#x22;&#x3E;
+&#x3C;!-- Favicons --&#x3E;
+&#x3C;link href=&#x22;images/logo/favicon-light.webp&#x22; rel=&#x22;shortcut icon&#x22;&#x3E;
+&#x3C;link href=&#x22;images/logo/favicon-light.webp&#x22; rel=&#x22;apple-touch-icon&#x22;&#x3E;
                                           </code>              
                                                       </pre>
                     <hr>
@@ -371,11 +371,11 @@
                             class="fas fa-clipboard mx-2"></i> Copy</a>
                     <pre>
                                           <code id="logo-html" class="language-html">
-                                            &#x3C;!--* LOGO in loader --&#x3E;
-                                            &#x3C;div class=&#x22;page-loader&#x22;&#x3E;
-                                               &#x3C;div class=&#x22;loader&#x22; style=&#x22;background-image: url(&#x27;images/logo/logo-light.webp&#x27;)&#x22;&#x3E;&#x3C;/div&#x3E;
-                                                ...
-                                            &#x3C;/div&#x3E;
+&#x3C;!--* LOGO in loader --&#x3E;
+&#x3C;div class=&#x22;page-loader&#x22;&#x3E;
+   &#x3C;div class=&#x22;loader&#x22; style=&#x22;background-image: url(&#x27;images/logo/logo-light.webp&#x27;)&#x22;&#x3E;&#x3C;/div&#x3E;
+    ...
+&#x3C;/div&#x3E;
                                           </code>
                                           </pre>
                     <p class="lg-font">Code example for LOGO in header:</p>
@@ -383,13 +383,13 @@
                             class="fas fa-clipboard mx-2"></i> Copy</a>
                     <pre>
                                           <code id="logo-html-2" class="language-html">
-                                            &#x3C;!--* LOGO in header --&#x3E;
-                                            &#x3C;nav id=&#x22;main-nav&#x22; class=&#x22;navbar fixed-top navbar-expand-lg bg-scrolling-dark&#x22;&#x3E;
-                                              &#x3C;a class=&#x22;glow logo-text-1 navbar-brand&#x22; href=&#x22;#&#x22; aria-label=&#x22;nav-brand&#x22;&#x3E;
-                                                 &#x3C;img width=&#x22;64&#x22; height=&#x22;64&#x22; src=&#x22;images/logo/favicon-light.webp&#x22; alt=&#x22;header-logo&#x22;&#x3E;
-                                              &#x3C;/a&#x3E;  
-                                                ...
-                                            &#x3C;/nav&#x3E;
+&#x3C;!--* LOGO in header --&#x3E;
+&#x3C;nav id=&#x22;main-nav&#x22; class=&#x22;navbar fixed-top navbar-expand-lg bg-scrolling-dark&#x22;&#x3E;
+  &#x3C;a class=&#x22;glow logo-text-1 navbar-brand&#x22; href=&#x22;#&#x22; aria-label=&#x22;nav-brand&#x22;&#x3E;
+     &#x3C;img width=&#x22;64&#x22; height=&#x22;64&#x22; src=&#x22;images/logo/favicon-light.webp&#x22; alt=&#x22;header-logo&#x22;&#x3E;
+  &#x3C;/a&#x3E;
+    ...
+&#x3C;/nav&#x3E;
                                           </code>              
                                           </pre>
                     <p class="lg-font">Code example for LOGO in about section:</p>
@@ -397,10 +397,10 @@
                             class="fas fa-clipboard mx-2"></i> Copy</a>
                     <pre>
                                           <code id="logo-html-3" class="language-html">
-                                            &#x3C;!--* LOGO in about section --&#x3E;
-                                            &#x3C;div class=&#x22;col-lg-4 col-md-4&#x22;&#x3E;
-                                              &#x3C;img width=&#x22;512&#x22; height=&#x22;512&#x22; class=&#x22;about-logo&#x22; src=&#x22;images/logo/logo-light.webp&#x22; alt=&#x22;logo-light&#x22;&#x3E;
-                                            &#x3C;/div&#x3E;
+&#x3C;!--* LOGO in about section --&#x3E;
+&#x3C;div class=&#x22;col-lg-4 col-md-4&#x22;&#x3E;
+  &#x3C;img width=&#x22;512&#x22; height=&#x22;512&#x22; class=&#x22;about-logo&#x22; src=&#x22;images/logo/logo-light.webp&#x22; alt=&#x22;logo-light&#x22;&#x3E;
+&#x3C;/div&#x3E;
                                           </code>              
                                           </pre>
                     <div class="alert alert-secondary" role="alert">
@@ -414,17 +414,17 @@
                             class="fas fa-clipboard mx-2"></i> Copy</a>
                     <pre>
                                           <code id="logo-html-4" class="language-html">
-                                            &#x3C;!--* LOGO in footer --&#x3E;
-                                          &#x3C;div class=&#x22;footer-logo-part&#x22;&#x3E;
-                                            &#x3C;img width=&#x22;512&#x22; height=&#x22;512&#x22; id=&#x22;footer-logo&#x22; src=&#x22;images/logo/logo-light.webp&#x22;
-                                               alt=&#x22;footer-logo&#x22; class=&#x22; logo-footer wow rubberBand&#x22;&#x3E;
-                                               ...
-                                          &#x3C;/div&#x3E;
+&#x3C;!--* LOGO in footer --&#x3E;
+&#x3C;div class=&#x22;footer-logo-part&#x22;&#x3E;
+  &#x3C;img width=&#x22;512&#x22; height=&#x22;512&#x22; id=&#x22;footer-logo&#x22; src=&#x22;images/logo/logo-light.webp&#x22;
+     alt=&#x22;footer-logo&#x22; class=&#x22; logo-footer wow rubberBand&#x22;&#x3E;
+     ...
+&#x3C;/div&#x3E;
                                           </code>              
                                           </pre>
                 </div>
             </div>
-
+        </div>
     </main>
 </div>
 <script src="../js/jquery.min.js"></script>

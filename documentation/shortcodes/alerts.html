@@ -325,14 +325,14 @@
       <!-- sidebar-wrapper  -->
       <main class="page-content">
          <div class="container">
-            <li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()" id="darkbutton">
+            <ul><li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()" id="darkbutton">
                   <i class="fas fa-moon"></i>
                </span>
             </li>
             <li id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()" id="lightbutton">
                   <i class="fas fa-sun"></i>
                </span>
-            </li>
+            </li></ul>
             <div class="row mb-130">
                <h1>
                   Elements & Shortcodes
@@ -354,13 +354,13 @@
                         class="fas fa-clipboard mx-2"></i> Copy</a>
                   <pre>
                                                                <code class="language-html" id="alert">
-                                                                        &#x3C;div class=&#x22;alert fade alert-success text-left rendered show&#x22; role=&#x22;alert&#x22;&#x3E;
-                                                                        &#x3C;div class=&#x22;close&#x22; data-dismiss=&#x22;alert&#x22;&#x3E;
-                                                                           &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Close&#x3C;/span&#x3E;
-                                                                           &#x3C;i id=&#x22;close-success&#x22; class=&#x22;fa fa-times greencross right&#x22;&#x3E;&#x3C;/i&#x3E;
-                                                                        &#x3C;/div&#x3E;
-                                                                        &#x3C;strong&#x3E;Success&#x3C;/strong&#x3E; A simple successs alert&#x2014;check it out!
-                                                                     &#x3C;/div&#x3E;                                                               </code>
+&#x3C;div class=&#x22;alert fade alert-success text-left rendered show&#x22; role=&#x22;alert&#x22;&#x3E;
+ &#x3C;div class=&#x22;close&#x22; data-dismiss=&#x22;alert&#x22;&#x3E;
+    &#x3C;span class=&#x22;sr-only&#x22;&#x3E;Close&#x3C;/span&#x3E;
+    &#x3C;i id=&#x22;close-success&#x22; class=&#x22;fa fa-times greencross right&#x22;&#x3E;&#x3C;/i&#x3E;
+ &#x3C;/div&#x3E;
+ &#x3C;strong&#x3E;Success&#x3C;/strong&#x3E; A simple success alert&#x2014;check it out!
+&#x3C;/div&#x3E;                                                               </code>
                                                       </pre>
                   <div class="alert alert-warning">
                      <p><i class="fas fa-exclamation-triangle"></i> Make sure
@@ -373,21 +373,21 @@
                   </p>
                   <ul>
                      <li class="lg-font">
-                        <span class="badge rounded-pill bg-danger">Necessary</span> <code>alert</code><span> ==>
+                        <span class="badge rounded-pill bg-danger">Necessary</span> <code>alert-container</code><span> ==>
                            Activated default alert container for elements</span>
                      </li>
                      <li class="lg-font">
-                        <code>alert-success</code><span> ==>
+                        <code>success-alert</code><span> ==>
                            Success alert color</span>
                      </li>
                      <li class="lg-font">
-                        <code>alert-warning</code><span> ==> Warning alert color</span>
+                        <code>warning-alert</code><span> ==> Warning alert color</span>
                      </li>
                      <li class="lg-font">
-                        <code>alert-info</code><span> ==> Info alert color</span>
+                        <code>info-alert</code><span> ==> Info alert color</span>
                      </li>
                      <li class="lg-font">
-                        <code>alert-danger</code><span> ==> Danger alert color</span>
+                        <code>danger-alert</code><span> ==> Danger alert color</span>
                      </li>
 
                      <h6 class="text-muted mt-20 mb-20">Bootstrap 5 Alerts :
@@ -400,7 +400,7 @@
                   </ul>
                </div>
             </div>
-
+         </div>
       </main>
    </div>
    <script src="../js/jquery.min.js"></script>

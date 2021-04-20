@@ -318,14 +318,14 @@
     <!-- sidebar-wrapper  -->
     <main class="page-content">
         <div class="container">
-            <li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()" id="darkbutton">
+            <ul><li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()" id="darkbutton">
             <i class="fas fa-moon"></i>
           </span>
             </li>
             <li id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()" id="lightbutton">
             <i class="fas fa-sun"></i>
           </span>
-            </li>
+            </li></ul>
             <div class="row mb-130">
                 <h1>Getting Started</h1>
                 <hr>
@@ -357,81 +357,64 @@
                             class="fas fa-clipboard mx-2"></i> Copy</a>
                     <pre>
                                           <code id="html-strcuture" class="language-html">
-                                          &#x3C;!DOCTYPE html&#x3E;
-                                          &#x3C;html dir=&#x22;ltr&#x22; lang=&#x22;en&#x22;&#x3E;
-                                          &#x3C;head&#x3E;
-                                          
-                                              &#x3C;!--  Page Title --&#x3E;
-                                              &#x3C;!--  Meta tags --&#x3E;
-                                              &#x3C;!--  Plugins, Page Theme, Favicon --&#x3E;
-                                              &#x3C;!--  Fonts --&#x3E;
-                                              &#x3C;!--  StyleSheets --&#x3E;
-                                                  ...
-                                          &#x3C;/head&#x3E;
-                                          &#x3C;body&#x3E; 
-                                          
-                                            &#x3C;!-- Page Loader --&#x3E; 
-                                          
-                                            &#x3C;div class=&#x22;page-loader&#x22;&#x3E;
-                                                ...
-                                            &#x3C;/div&#x3E;
-                                            &#x3C;!-- Page Wrap Start --&#x3E;
-                                          
-                                              &#x3C;div class=&#x22;page&#x22; id=&#x22;top&#x22;&#x3E;
-                                          
-                                              &#x3C;!-- Header Start --&#x3E;
-                                                  &#x3C;nav id=&#x22;main-nav&#x22; class=&#x22;navbar fixed-top navbar-expand-lg bg-scrolling-dark&#x22;&#x3E;
-                                                      ...
-                                                  &#x3C;/nav&#x3E;
-                                              &#x3C;!-- Header End --&#x3E;
-                                          
-                                              &#x3C;!--* Home Section Start (content) --&#x3E;
-                                              &#x3C;section class=&#x22;jarallax home-section bg-scroll bg-dark-alfa-10 full-height&#x22; id=&#x22;home&#x22;&#x3E;
-                                                  ...
-                                              &#x3C;/section&#x3E;
-                                              &#x3C;!--* Home Section End (content) --&#x3E;
-                                              
-                                                &#x3C;!-- Footer Start --&#x3E;
-                                                    &#x3C;section id=&#x22;footer&#x22; class=&#x22;footer-container&#x22;&#x3E;
-                                                      &#x3C;footer class=&#x22;container-fluid py-5&#x22;&#x3E;
-                                                          ...
-                                                      &#x3C;/footer&#x3E;
-                                                    &#x3C;/section&#x3E;
-                                                &#x3C;!--* Footer End --&#x3E;
-                                          
-                                              &#x3C;/div&#x3E;
-                                              &#x3C;!-- Page Wrap End --&#x3E;
-                                          
-                                            &#x3C;!-- JavaScript Links Start --&#x3E;
-                                                        ...
-                                          
-                                                        &#x3C;!--* Home Section Start (content) --&#x3E;
-                                                        &#x3C;section class=&#x22;jarallax home-section bg-scroll bg-dark-alfa-10 full-height&#x22; id=&#x22;home&#x22;&#x3E;
-                                                            ...
-                                                        &#x3C;/section&#x3E;
-                                                        &#x3C;!--* Home Section End (content) --&#x3E;
-                                                        
-                                                          &#x3C;!-- Footer Start --&#x3E;
-                                                              &#x3C;section id=&#x22;footer&#x22; class=&#x22;footer-container&#x22;&#x3E;
-                                                                &#x3C;footer class=&#x22;container-fluid py-5&#x22;&#x3E;
-                                                                    ...
-                                                                &#x3C;/footer&#x3E;
-                                                              &#x3C;/section&#x3E;
-                                                          &#x3C;!--* Footer End --&#x3E;
-                                                    
-                                                        &#x3C;/div&#x3E;
-                                                        &#x3C;!-- Page Wrap End --&#x3E;
-                                                    
-                                                      &#x3C;!-- JavaScript Links Start --&#x3E;
-                                                                  ...
-                                                    
-                                                     &#x3C;/body&#x3E; 
-                                                    &#x3C;/html&#x3E; 
+&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html dir=&#x22;ltr&#x22; lang=&#x22;en&#x22;&#x3E;
+&#x3C;head&#x3E;
+
+    &#x3C;!--  Page Title --&#x3E;
+    &#x3C;!--  Meta tags --&#x3E;
+    &#x3C;!--  Plugins, Page Theme, Favicon --&#x3E;
+    &#x3C;!--  Fonts --&#x3E;
+    &#x3C;!--  StyleSheets --&#x3E;
+        ...
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+
+  &#x3C;!-- Page Loader --&#x3E;
+  &#x3C;div class=&#x22;page-loader&#x22;&#x3E;
+      ...
+  &#x3C;/div&#x3E;
+
+  &#x3C;!-- Page Wrap Start --&#x3E;
+    &#x3C;div class=&#x22;page&#x22; id=&#x22;top&#x22;&#x3E;
+
+    &#x3C;!-- Header Start --&#x3E;
+        &#x3C;nav id=&#x22;main-nav&#x22; class=&#x22;navbar fixed-top navbar-expand-lg bg-scrolling-dark&#x22;&#x3E;
+            ...
+        &#x3C;/nav&#x3E;
+    &#x3C;!-- Header End --&#x3E;
+
+    &#x3C;!--* Home Section Start (content) --&#x3E;
+    &#x3C;section class=&#x22;jarallax home-section bg-scroll bg-dark-alfa-10 full-height&#x22; id=&#x22;home&#x22;&#x3E;
+        ...
+    &#x3C;/section&#x3E;
+    &#x3C;!--* Home Section End (content) --&#x3E;
+
+      &#x3C;!-- Footer Start --&#x3E;
+          &#x3C;section id=&#x22;footer&#x22; class=&#x22;footer-container&#x22;&#x3E;
+            &#x3C;footer class=&#x22;container-fluid py-5&#x22;&#x3E;
+                ...
+            &#x3C;/footer&#x3E;
+          &#x3C;/section&#x3E;
+      &#x3C;!--* Footer End --&#x3E;
+
+    &#x3C;/div&#x3E;
+    &#x3C;!-- Page Wrap End --&#x3E;
+
+  &#x3C;!-- JavaScript Links Start --&#x3E;
+              ...
+
+
+  &#x3C;!-- JavaScript Links End --&#x3E;
+               ...
+
+      &#x3C;/body&#x3E;
+   &#x3C;/html&#x3E;
                                           </code>
                                                     </pre>
                 </div>
             </div>
-
+        </div>
     </main>
 </div>
 <script src="../js/jquery.min.js"></script>

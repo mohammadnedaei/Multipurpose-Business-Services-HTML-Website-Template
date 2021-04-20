@@ -318,14 +318,14 @@
     <!-- sidebar-wrapper  -->
     <main class="page-content">
         <div class="container">
-            <li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()" id="darkbutton">
+            <ul><li id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()" id="darkbutton">
             <i class="fas fa-moon"></i>
           </span>
             </li>
             <li id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()" id="lightbutton">
             <i class="fas fa-sun"></i>
           </span>
-            </li>
+            </li></ul>
             <div class="row mb-130">
                 <h1>Getting Started</h1>
                 <hr>
@@ -360,13 +360,13 @@
                             Copy</a>
                         <pre>
                                                             <code id="font-face" class="language-css">
-                                          @font-face {
-                                           font-family: 'YourFontName';
-                                            src: url('webfont.woff2') format('woff2'),
-                                             url('webfont.woff') format('woff'),
-                                             url('webfont.ttf')  format('truetype'),
-                                             url('webfont.svg#svgFontName') format('svg');
-                                          }
+@font-face {
+ font-family: 'YourFontName';
+  src: url('webfont.woff2') format('woff2'),
+   url('webfont.woff') format('woff'),
+   url('webfont.ttf')  format('truetype'),
+   url('webfont.svg#svgFontName') format('svg');
+}
                                                             </code>              
                                                             </pre>
                         <p>For better browser &amp; device compatibility, its
@@ -385,10 +385,10 @@
                             Copy</a>
                         <pre>
                                                           <code id="font-use" class="language-css">
-                                          a {
-                                            font-size: 1rem;
-                                            font-family: "Montserrat", sans-serif;
-                                          }
+a {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
                                                           </code>
                                                         </pre>
                     </ol>
@@ -402,7 +402,7 @@
                             class="fas fa-clipboard mx-2"></i> Copy</a>
                     <pre>
                                                               <code id="font-potta" class="language-html">
-                                          &#x3C;h2 class=&#x22;hs-line-7 font-pottaone mb-30 mb-xs-20&#x22;&#x3E; Text Here &#x3C;/h2&#x3E;
+&#x3C;h2 class=&#x22;hs-line-7 font-pottaone mb-30 mb-xs-20&#x22;&#x3E; Text Here &#x3C;/h2&#x3E;
                                                               </code>
                                                             </pre>
                     <div class="alert alert-primary" role="alert">
@@ -418,15 +418,15 @@
                         <p>Your HTML Embed Link looks like this :</p>
                         <pre>
                                                           <code class="language-html">
-                                          &#x3C;link
-                                                href=&#x22;https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&#x26;family=Poppins:wght@600;700&#x26;family=Potta+One&#x26;display=swap&#x22;
-                                                rel=&#x22;stylesheet&#x22;&#x3E;
+&#x3C;link
+href=&#x22;https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&#x26;family=Poppins:wght@600;700&#x26;family=Potta+One&#x26;display=swap&#x22;
+rel=&#x22;stylesheet&#x22;&#x3E;
                                                           </code>
                                                         </pre>
                     </div>
                 </div>
             </div>
-
+        </div>
     </main>
 </div>
 <script src="../js/jquery.min.js"></script>
