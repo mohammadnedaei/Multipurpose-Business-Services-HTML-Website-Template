@@ -87,7 +87,7 @@ var sections = $("section");
 var divs = $("div");
 var anchors = $("a");
 var popups = $(".lightbox-link, .lightbox-gallery-1, .lightbox-gallery-2, .lightbox-gallery-3, .lightbox");
-
+var typeWriter =$(".txt-type");
 /*
 * =======================================
 !           2. Calling Functions
@@ -1175,11 +1175,13 @@ class TypeWriter {
     setTimeout(() => this.type(), typeSpeed);
   }
 }
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener("DOMContentLoaded", initTypeWriter);
 
-function init() {
-  const txtElement = document.querySelector(".txt-type");
-  const words = JSON.parse(txtElement.getAttribute("data-words"));
-  const wait = txtElement.getAttribute("data-wait");
-  new TypeWriter(txtElement, words, wait);
+function initTypeWriter() {
+  if (typeWriter.length != 0) {
+    const txtElement = document.querySelector(".txt-type");
+    const words = JSON.parse(txtElement.getAttribute("data-words"));
+    const wait = txtElement.getAttribute("data-wait");
+    new TypeWriter(txtElement, words, wait);
+  }
 }
