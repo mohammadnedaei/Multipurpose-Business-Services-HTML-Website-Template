@@ -832,7 +832,7 @@ function darkmode() {
   $(".pricing-wrapper > li , .our-offer-items .item, .shop-item-wrapper .container .bottom .left, .shopping-cart, .card, .shop-single-card .description, .shop-single-card").css("background", "#212121");
   $(".google-map-icons, .pricing-table-section").css("color", "#3f72af");
   $("#bootstrap-icon").css("color", "#9d42e7");
-  $("#footer-logo").attr("src", "./images/logo/logo-light.webp");
+  $("#footer-logo").attr("src", "./images/logo/logo-light.png");
   $("#curve-dark").css("opacity", "1");
   $("#curve-light").css("opacity", "0");
   $(".deco-layer").attr("fill", "#212121");
@@ -851,7 +851,7 @@ function lightmode() {
   $(".pricing-table-section, .google-map-icons").css("color", "#000");
   $(".filter").css("color", "#ff2e63");
   $("#bootstrap-icon").css("color", "#6211a5");
-  $("#footer-logo").attr("src", "./images/logo/logo-dark.webp");
+  $("#footer-logo").attr("src", "./images/logo/logo-dark.png");
   $("#curve-dark").css("opacity", "0");
   $("#curve-light").css("opacity", "1");
   $(".deco-layer").attr("fill", "#fff");
