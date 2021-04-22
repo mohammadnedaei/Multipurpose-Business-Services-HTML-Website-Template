@@ -2,1667 +2,1715 @@
 <html dir="ltr" lang="en">
 
 <head>
-   <!--! Page Title -->
-   <title>Bit &dash; Responsive Multi-Purpose HTML5 Template</title>
-   <!--! Meta Tags -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6 shrink-to-fit=no">
-   <!--! Author -->
-   <meta name="author" content="CreativeThemes">
-   <!--! Description -->
-   <meta name="description"
-      content="Bit is a new responsive Multi-Purpose HTML5 template by CreativeThemes. Bit is modern, powered by Bootstrap 5 & ready to use. Buy Bit on Themeforest and explore your business easily.">
-   <!--! Keywords -->
-   <meta name="keywords"
-      content="html5, css3, jquery, sass, bootstrap5, creative, start-up, modern startup, parallax, portfolio, pricing, team, progressbar, branding, photography, designer, multi-page, multi-purpose, one-page, shop, blog, grid, isotope">
-   <!--! Page Theme -->
-   <meta name="theme-color" content="#159957">
-   <!--! Favicons -->
-   <link href="images/logo/favicon-light.png" rel="shortcut icon">
-   <link href="images/logo/favicon-light.png" rel="apple-touch-icon">
-   <!--* Plugins (CSS) -->
-   <link href="css/fontawesome.min.css" rel="stylesheet">
-   <link href="css/bootstrap.min.css" rel="stylesheet">
-   <link href="css/animate.compat.css" rel="stylesheet">
-   <link href="css/owl.carousel.css" rel="stylesheet">
-   <link href="css/magnific-popup.css" rel="stylesheet">
-   <!--* Google Fonts -->
-   <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&family=Poppins:wght@600;700&family=Potta+One&display=swap"
-      rel="stylesheet">
-   <link href="css/fonts.css" rel="stylesheet">
-   <link href="css/style.css" rel="stylesheet">
-   <link href="css/style-responsive.css" rel="stylesheet">
-   <link href="css/custom.css" rel="stylesheet">
-   <style>
-      .slider-container {
-         position: relative;
-         height: 100%;
-         user-select: none;
-         cursor: all-scroll;
-         overflow: hidden;
-      }
+    <!--! Page Title -->
+    <title>Bit &dash; Responsive Multi-Purpose HTML5 Template</title>
+    <!--! Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6 shrink-to-fit=no">
+    <!--! Author -->
+    <meta name="author" content="CreativeThemes">
+    <!--! Description -->
+    <meta name="description"
+          content="Bit is a new responsive Multi-Purpose HTML5 template by CreativeThemes. Bit is modern, powered by Bootstrap 5 & ready to use. Buy Bit on Themeforest and explore your business easily.">
+    <!--! Keywords -->
+    <meta name="keywords"
+          content="html5, css3, jquery, sass, bootstrap5, creative, start-up, modern startup, parallax, portfolio, pricing, team, progressbar, branding, photography, designer, multi-page, multi-purpose, one-page, shop, blog, grid, isotope">
+    <!--! Page Theme -->
+    <meta name="theme-color" content="#159957">
+    <!--! Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16x16.png">
+    <link rel="manifest" href="images/logo/site.webmanifest">
+    <!--* Plugins (CSS) -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.compat.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!--* Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&family=Poppins:wght@600;700&family=Potta+One&display=swap"
+            rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+        .slider-container {
+            position: relative;
+            height: 100%;
+            user-select: none;
+            cursor: all-scroll;
+            overflow: hidden;
+        }
 
-      .slider-control {
-         z-index: 2;
-         position: absolute;
-         top: 0;
-         width: 12%;
-         height: 100%;
-         transition: opacity 0.3s;
-         will-change: opacity;
-         opacity: 0;
-      }
+        .slider-control {
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            width: 12%;
+            height: 100%;
+            transition: opacity 0.3s;
+            will-change: opacity;
+            opacity: 0;
+        }
 
-      .slider-control.inactive:hover {
-         cursor: auto;
-      }
+        .slider-control.inactive:hover {
+            cursor: auto;
+        }
 
-      .slider-control:not(.inactive):hover {
-         opacity: 1;
-         cursor: pointer;
-      }
+        .slider-control:not(.inactive):hover {
+            opacity: 1;
+            cursor: pointer;
+        }
 
-      .slider-control.left {
-         left: 0;
-         background: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, transparent 100%);
-      }
-
-      .slider-control.right {
-         right: 0;
-         background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.18) 100%);
-      }
-
-      .slider-pagi {
-         position: absolute;
-         z-index: 3;
-         left: 50%;
-         bottom: 2rem;
-         transform: translateX(-50%);
-         font-size: 0;
-         list-style-type: none;
-         padding-left: 0;
-      }
-
-      .slider-pagi__elem {
-         position: relative;
-         display: inline-block;
-         vertical-align: top;
-         width: 1.5rem;
-         height: 1.5rem;
-         margin: 0 0.5rem;
-         border-radius: 50%;
-         border: 2px solid #fff;
-         cursor: pointer;
-      }
-
-      @media only screen and (max-width: 300px) {
-         .slider-pagi__elem {
-            width: 1rem;
-            height: 1rem;
-         }
-      }
-
-      .slider-pagi__elem:before {
-         content: "";
-         position: absolute;
-         left: 50%;
-         top: 50%;
-         width: 1.2rem;
-         height: 1.2rem;
-         background: #fff;
-         border-radius: 50%;
-         transition: transform 0.3s;
-         transform: translate(-50%, -50%) scale(0);
-      }
-
-      .slider-pagi__elem.active:before,
-      .slider-pagi__elem:hover:before {
-         transform: translate(-50%, -50%) scale(1);
-      }
-
-      .slider {
-         z-index: 1;
-         position: relative;
-         height: 100%;
-      }
-
-      .slider.animating {
-         transition: transform 0.5s;
-         will-change: transform;
-      }
-
-      .slider.animating .slide__bg {
-         transition: transform 0.5s;
-         will-change: transform;
-      }
-
-      .slide {
-         position: absolute;
-         top: 0;
-         width: 100%;
-         height: 100%;
-         overflow: hidden;
-      }
-
-      .slide.active .slide__overlay,
-      .slide.active .slide__text {
-         opacity: 1;
-         transform: translateX(0);
-      }
-
-      .slide__bg {
-         position: absolute;
-         top: 0;
-         left: -50%;
-         width: 100%;
-         height: 100%;
-         background-size: cover;
-         will-change: transform;
-      }
-
-      .slide:nth-child(1) {
-         left: 0;
-      }
-
-      .slide:nth-child(1) .slide__bg {
-         left: 0;
-      }
-
-      .slide:nth-child(1) .slide__overlay-path {
-         fill: #f08a5d;
-      }
-
-      @media (max-width: 991px) {
-         .slide:nth-child(1) .slide__text {
-            background-color: rgba(240, 138, 93, 0.5);
-         }
-      }
-
-      .slide:nth-child(2) {
-         left: 100%;
-      }
-
-      .slide:nth-child(2) .slide__bg {
-         left: -50%;
-      }
-
-      .slide:nth-child(2) .slide__overlay-path {
-         fill: #112d4e;
-      }
-
-      @media (max-width: 991px) {
-         .slide:nth-child(2) .slide__text {
-            background-color: rgba(17, 45, 78, 0.5);
-         }
-      }
-
-      .slide:nth-child(3) {
-         left: 200%;
-      }
-
-      .slide:nth-child(3) .slide__bg {
-         left: -100%;
-      }
-
-      .slide:nth-child(3) .slide__overlay-path {
-         fill: #323232;
-      }
-
-      @media (max-width: 991px) {
-         .slide:nth-child(3) .slide__text {
-            background-color: rgba(50, 50, 50, 0.5);
-         }
-      }
-
-      .slide:nth-child(4) {
-         left: 300%;
-      }
-
-      .slide:nth-child(4) .slide__bg {
-         left: -150%;
-      }
-
-      .slide:nth-child(4) .slide__overlay-path {
-         fill: #212121;
-      }
-
-      @media (max-width: 991px) {
-         .slide:nth-child(4) .slide__text {
-            background-color: rgba(33, 33, 33, 0.5);
-         }
-      }
-
-      .slide__content {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-      }
-
-      .slide__overlay {
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         height: 100%;
-         min-height: 810px;
-         transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
-         will-change: transform, opacity;
-         transform: translate3d(-20%, 0, 0);
-         opacity: 0;
-         display: block;
-         overflow: visible;
-      }
-
-      @media (max-width: 991px) {
-         .slide__overlay {
-            display: none;
-         }
-      }
-
-      .slide__overlay path {
-         opacity: 0.8;
-      }
-
-      .slide__text {
-         position: absolute;
-         width: 25%;
-         bottom: 35%;
-         left: 10%;
-         color: #fff;
-         transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
-         will-change: transform, opacity;
-         transform: translateY(-50%);
-         opacity: 0;
-      }
-
-      @media (max-width: 991px) {
-         .slide__text {
+        .slider-control.left {
             left: 0;
-            bottom: 0;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, transparent 100%);
+        }
+
+        .slider-control.right {
+            right: 0;
+            background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.18) 100%);
+        }
+
+        .slider-pagi {
+            position: absolute;
+            z-index: 3;
+            left: 50%;
+            bottom: 2rem;
+            transform: translateX(-50%);
+            font-size: 0;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .slider-pagi__elem {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 0 0.5rem;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 300px) {
+            .slider-pagi__elem {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+
+        .slider-pagi__elem:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 1.2rem;
+            height: 1.2rem;
+            background: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s;
+            transform: translate(-50%, -50%) scale(0);
+        }
+
+        .slider-pagi__elem.active:before,
+        .slider-pagi__elem:hover:before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .slider {
+            z-index: 1;
+            position: relative;
+            height: 100%;
+        }
+
+        .slider.animating {
+            transition: transform 0.5s;
+            will-change: transform;
+        }
+
+        .slider.animating .slide__bg {
+            transition: transform 0.5s;
+            will-change: transform;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
             width: 100%;
-            height: 20rem;
-            text-align: center;
-            transform: translateY(50%);
-            transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
-            padding: 0 1rem;
-         }
-      }
+            height: 100%;
+            overflow: hidden;
+        }
 
-      @media (max-width: 991px) {
-         .slide__text-desc {
-            display: none;
-         }
-      }
+        .slide.active .slide__overlay,
+        .slide.active .slide__text {
+            opacity: 1;
+            transform: translateX(0);
+        }
 
-      @media (max-width: 991px) {
-         .mmd-btn {
-            display: none;
-         }
-      }
-   </style>
+        .slide__bg {
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            will-change: transform;
+        }
+
+        .slide:nth-child(1) {
+            left: 0;
+        }
+
+        .slide:nth-child(1) .slide__bg {
+            left: 0;
+        }
+
+        .slide:nth-child(1) .slide__overlay-path {
+            fill: #f08a5d;
+        }
+
+        @media (max-width: 991px) {
+            .slide:nth-child(1) .slide__text {
+                background-color: rgba(240, 138, 93, 0.5);
+            }
+        }
+
+        .slide:nth-child(2) {
+            left: 100%;
+        }
+
+        .slide:nth-child(2) .slide__bg {
+            left: -50%;
+        }
+
+        .slide:nth-child(2) .slide__overlay-path {
+            fill: #112d4e;
+        }
+
+        @media (max-width: 991px) {
+            .slide:nth-child(2) .slide__text {
+                background-color: rgba(17, 45, 78, 0.5);
+            }
+        }
+
+        .slide:nth-child(3) {
+            left: 200%;
+        }
+
+        .slide:nth-child(3) .slide__bg {
+            left: -100%;
+        }
+
+        .slide:nth-child(3) .slide__overlay-path {
+            fill: #323232;
+        }
+
+        @media (max-width: 991px) {
+            .slide:nth-child(3) .slide__text {
+                background-color: rgba(50, 50, 50, 0.5);
+            }
+        }
+
+        .slide:nth-child(4) {
+            left: 300%;
+        }
+
+        .slide:nth-child(4) .slide__bg {
+            left: -150%;
+        }
+
+        .slide:nth-child(4) .slide__overlay-path {
+            fill: #212121;
+        }
+
+        @media (max-width: 991px) {
+            .slide:nth-child(4) .slide__text {
+                background-color: rgba(33, 33, 33, 0.5);
+            }
+        }
+
+        .slide__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            min-height: 810px;
+            transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
+            will-change: transform, opacity;
+            transform: translate3d(-20%, 0, 0);
+            opacity: 0;
+            display: block;
+            overflow: visible;
+        }
+
+        @media (max-width: 991px) {
+            .slide__overlay {
+                display: none;
+            }
+        }
+
+        .slide__overlay path {
+            opacity: 0.8;
+        }
+
+        .slide__text {
+            position: absolute;
+            width: 25%;
+            bottom: 35%;
+            left: 10%;
+            color: #fff;
+            transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
+            will-change: transform, opacity;
+            transform: translateY(-50%);
+            opacity: 0;
+        }
+
+        @media (max-width: 991px) {
+            .slide__text {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 20rem;
+                text-align: center;
+                transform: translateY(50%);
+                transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .slide__text-desc {
+                display: none;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .mmd-btn {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body class="appear-animate" id="body">
-   <!--* Page Loader Start -->
-   <div class="page-loader">
-      <div class="loader" style="background-image: url('images/logo/logo-light.png')">
-         <div class="face">
+<!--* Page Loader Start -->
+<div class="page-loader">
+    <div class="loader" style="background-image: url('images/logo/logo-light.png')">
+        <div class="face">
             <div class="circle first-circle"></div>
-         </div>
-         <div class="face">
+        </div>
+        <div class="face">
             <div class="circle second-circle"></div>
-         </div>
-      </div>
-   </div>
-   <!--* Page Loader End -->
-   <!--* Page Wrap Start -->
-   <div class="page" id="top">
-      <!--* Header Start -->
-      <nav id="main-nav" class="navbar fixed-top navbar-expand-lg glass-scrolling glassy-header-dark hide-on-scroll">
-         <a class="logo-text-1 navbar-brand" href="javascript:void(0)" aria-label="nav-brand">
+        </div>
+    </div>
+</div>
+<!--* Page Loader End -->
+<!--* Page Wrap Start -->
+<div class="page" id="top">
+    <!--* Header Start -->
+    <nav id="main-nav" class="navbar fixed-top navbar-expand-lg glass-scrolling glassy-header-dark hide-on-scroll">
+        <a class="logo-text-1 navbar-brand" href="javascript:void(0)" aria-label="nav-brand">
             B I T
-         </a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-            aria-expanded="false" aria-label="Toggle navigation" onclick='activescroll()'>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation" onclick='activescroll()'>
             <i class="fa fa-bars"></i>
-         </button>
-         <div class="collapse navbar-collapse" id="main_nav">
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
             <ul class="navbar-nav mx-auto">
-               <!--! Make Sure To Update Section 21. in 'js/main.js' IF You Want to Change any of These Class Names.  -->
-               <li class="nav-item single-nav-item home-nav-item">
-                  <a class="nav-link" href="#home"> HOME </a>
-               </li>
-               <li class="nav-item single-nav-item about-nav-item">
-                  <a class="nav-link" href="#about"> ABOUT US </a>
-               </li>
-               <li class="nav-item single-nav-item services-nav-item">
-                  <a class="nav-link" href="#tab-services"> SERVICES </a>
-               </li>
-               <li class="nav-item single-nav-item portfolio-nav-item">
-                  <a class="nav-link" href="#portfolio"> PORTFOLIO </a>
-               </li>
-               <li class="nav-item single-nav-item blog-nav-item">
-                  <a class="nav-link" href="#news"> BLOG </a>
-               </li>
-               <li class="nav-item single-nav-item contact-nav-item">
-                  <a class="nav-link" href="#contact"> CONTACT US </a>
-               </li>
+                <!--! Make Sure To Update Section 21. in 'js/main.js' IF You Want to Change any of These Class Names.  -->
+                <li class="nav-item single-nav-item home-nav-item">
+                    <a class="nav-link" href="#home"> HOME </a>
+                </li>
+                <li class="nav-item single-nav-item about-nav-item">
+                    <a class="nav-link" href="#about"> ABOUT US </a>
+                </li>
+                <li class="nav-item single-nav-item services-nav-item">
+                    <a class="nav-link" href="#tab-services"> SERVICES </a>
+                </li>
+                <li class="nav-item single-nav-item portfolio-nav-item">
+                    <a class="nav-link" href="#portfolio"> PORTFOLIO </a>
+                </li>
+                <li class="nav-item single-nav-item blog-nav-item">
+                    <a class="nav-link" href="#news"> BLOG </a>
+                </li>
+                <li class="nav-item single-nav-item contact-nav-item">
+                    <a class="nav-link" href="#contact"> CONTACT US </a>
+                </li>
             </ul>
             <!--* Dark / Light Start -->
             <ul class="right-nav">
-               <li class="nav-item" id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
-                     id="darkbutton">
+                <li class="nav-item" id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
+                                                          id="darkbutton">
                      <i class="fas fa-moon"></i>
                   </span>
-               </li>
+                </li>
             </ul>
             <ul class="right-nav">
-               <li class="nav-item" id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()"
-                     id="lightbutton">
+                <li class="nav-item" id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()"
+                                                           id="lightbutton">
                      <i class="fas fa-sun"></i>
                   </span>
-               </li>
+                </li>
             </ul>
             <!--* Dark / Light End -->
             <!--* Search Button Start -->
             <ul class="right-nav">
-               <li class="nav-item search-icon">
-                  <a class="search-button" aria-label="Search Button">
-                     <i class="fas fa-search"></i></a>
-               </li>
+                <li class="nav-item search-icon">
+                    <a class="search-button" aria-label="Search Button">
+                        <i class="fas fa-search"></i></a>
+                </li>
             </ul>
             <!--* Search Button End -->
             <!--* Search Wrapper Start -->
             <div id="search">
-               <i class="fas fa-times-circle close"></i>
-               <form class="searchform">
-                  <input id="search-keyword" type="search" placeholder="SEARCH KEYWORD(s)"><label
-                     for="search-keyword">Search</label>
-                  <a id="search-full-screen-btn" href="javascript:void(0)" class="material-btn secondary-btn medium-btn"
-                     aria-label="search-button"><i class="fas fa-search"></i>SEARCH</a>
-               </form>
+                <i class="fas fa-times-circle close"></i>
+                <form class="searchform">
+                    <input id="search-keyword" type="search" placeholder="SEARCH KEYWORD(s)"><label
+                        for="search-keyword">Search</label>
+                    <a id="search-full-screen-btn" href="javascript:void(0)"
+                       class="material-btn secondary-btn medium-btn"
+                       aria-label="search-button"><i class="fas fa-search"></i>SEARCH</a>
+                </form>
             </div>
             <!--* Search Wrapper End -->
-         </div>
-      </nav>
-      <!--* Header End -->
-      <!-- Home Section Start Is Here -->
-      <section class="home-section full-height bg-dark" id="home">
-         <!-- Hero Content Start Is Here -->
-         <div class="slider-container">
+        </div>
+    </nav>
+    <!--* Header End -->
+    <!-- Home Section Start Is Here -->
+    <section class="home-section full-height bg-dark" id="home">
+        <!-- Hero Content Start Is Here -->
+        <div class="slider-container">
             <div class="slider-control left inactive"></div>
             <div class="slider-control right"></div>
             <ul class="slider-pagi"></ul>
             <div class="slider">
-               <div class="slide slide-0 active">
-                  <div class="slide__bg" style="background-image: url('images/full-width-image/18.webp');"></div>
-                  <div class="slide__content">
-                     <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                     </svg>
-                     <div class="slide__text flicker">
-                        <h2 class="font-alt hs-line-15 font-pottaone mt-60">Bit Studio</h2>
-                        <p class="slide__text-desc hs-line-4">Suitable for <span class="first">branding &
+                <div class="slide slide-0 active">
+                    <div class="slide__bg" style="background-image: url('images/full-width-image/18.webp');"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405"/>
+                        </svg>
+                        <div class="slide__text flicker">
+                            <h2 class="font-alt hs-line-15 font-pottaone mt-60">Bit Studio</h2>
+                            <p class="slide__text-desc hs-line-4">Suitable for <span class="first">branding &
                               designing</span></p>
-                        <a href="#about" class="material-btn info-anim-grad-btn">
-                           <i class="fas fa-plus"></i>SEE MORE</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="slide slide-1">
-                  <div class="slide__bg" style="background-image: url('images/full-width-image/2.webp');"></div>
-                  <div class="slide__content">
-                     <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                     </svg>
-                     <div class="slide__text flicker">
-                        <h2 class="font-alt hs-line-15 font-pottaone mt-60">Bit Studio</h2>
-                        <p class="slide__text-desc hs-line-4">Suitable for <span class="first">personal use</span></p>
-                        <a href="#about" class="material-btn info-anim-grad-btn">
-                           <i class="fas fa-plus"></i>SEE MORE</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="slide slide-2">
-                  <div class="slide__bg" style="background-image: url('images/full-width-image/3.webp');"></div>
-                  <div class="slide__content">
-                     <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                     </svg>
-                     <div class="slide__text flicker">
-                        <h2 class="font-alt hs-line-15 font-pottaone mt-60">Bit Studio</h2>
-                        <p class="slide__text-desc hs-line-4">makes <span class="first">your business</span> easy</p>
-                        <a href="#about" class="material-btn info-anim-grad-btn">
-                           <i class="fas fa-plus"></i>SEE MORE</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="slide slide-3">
-                  <div class="slide__bg" style="background-image: url('images/full-width-image/4.webp');"></div>
-                  <div class="slide__content">
-                     <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                     </svg>
-                     <div class="slide__text flicker">
-                        <h2 class="font-alt hs-line-15 font-pottaone mt-60">Bit Studio</h2>
-                        <p class="slide__text-desc hs-line-4">ready to work for <span class="first">you</span></p>
-                        <a href="#about" class="material-btn info-anim-grad-btn">
-                           <i class="fas fa-plus"></i>SEE MORE</a>
-                     </div>
-                  </div>
-               </div>
+                            <a href="#about" class="material-btn info-anim-grad-btn">
+                                <i class="fas fa-plus"></i>SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-1">
+                    <div class="slide__bg" style="background-image: url('images/full-width-image/2.webp');"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405"/>
+                        </svg>
+                        <div class="slide__text flicker">
+                            <h2 class="font-alt hs-line-15 font-pottaone mt-60">Bit Studio</h2>
+                            <p class="slide__text-desc hs-line-4">Suitable for <span class="first">personal use</span>
+                            </p>
+                            <a href="#about" class="material-btn info-anim-grad-btn">
+                                <i class="fas fa-plus"></i>SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide__bg" style="background-image: url('images/full-width-image/3.webp');"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405"/>
+                        </svg>
+                        <div class="slide__text flicker">
+                            <h2 class="font-alt hs-line-15 font-pottaone mt-60">Bit Studio</h2>
+                            <p class="slide__text-desc hs-line-4">makes <span class="first">your business</span> easy
+                            </p>
+                            <a href="#about" class="material-btn info-anim-grad-btn">
+                                <i class="fas fa-plus"></i>SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="slide__bg" style="background-image: url('images/full-width-image/4.webp');"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405"/>
+                        </svg>
+                        <div class="slide__text flicker">
+                            <h2 class="font-alt hs-line-15 font-pottaone mt-60">Bit Studio</h2>
+                            <p class="slide__text-desc hs-line-4">ready to work for <span class="first">you</span></p>
+                            <a href="#about" class="material-btn info-anim-grad-btn">
+                                <i class="fas fa-plus"></i>SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <!-- Hero Content End Is Here -->
-      </section>
-      <!-- Home Section End Is Here -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator End -->
-      <!--* About Us Start -->
-      <section class="page-section" id="about">
-         <div class="container relative m-auto align-center">
+        </div>
+        <!-- Hero Content End Is Here -->
+    </section>
+    <!-- Home Section End Is Here -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator End -->
+    <!--* About Us Start -->
+    <section class="page-section" id="about">
+        <div class="container relative m-auto align-center">
             <div class="row">
-                              <div class="col-lg-12">
-                  <img width="512" height="512" class="about-logo" src="images/logo/logo-light.png" alt="logo-light">
-               </div>
+                <div class="col-lg-12">
+                    <img width="256" height="256" class="about-logo" src="images/logo/logo-light.png" alt="logo-light">
+                </div>
             </div>
             <h2 class="section-title font-alt align-center mb-70 mb-sm-40 wow bounce" id="section-title">
-               What is <strong>Bit</strong>?
+                What is <strong>Bit</strong>?
             </h2>
             <div id="section-text" class="section-text mb-sm-20">
-               <div class="row">
-                  <div class="col-md-4">
-                     <blockquote>
+                <div class="row">
+                    <div class="col-md-4">
+                        <blockquote>
+                            <p>
+                                &quot;Bit is a fully Responsive Multi-Purpose Template created and designed for personal
+                                &amp;
+                                business
+                                purposes.&quot;
+                            </p>
+                            <footer>
+                                -Bit Company Manager
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
                         <p>
-                           &quot;Bit is a fully Responsive Multi-Purpose Template created and designed for personal &amp;
-                           business
-                           purposes.&quot;
+                            You can design and customize the Bit landing page easily even if you are not familiar with
+                            web
+                            development.
                         </p>
-                        <footer>
-                           -Bit Company Manager
-                        </footer>
-                     </blockquote>
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                     <p>
-                        You can design and customize the Bit landing page easily even if you are not familiar with web
-                        development.
-                     </p>
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                     <p>
-                        Bit's special documentation helps you figure out about any part of demo websites.
-                     </p>
-                  </div>
-               </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                        <p>
+                            Bit's special documentation helps you figure out about any part of demo websites.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <!--* Three Features Section Start -->
             <section class="page-section">
-               <div class="row m-auto features-div">
-                  <div class="col-lg-4 text-ali">
-                     <i class=" responsive-icon fas fa-reply-all fa-6x wow rubberBand"></i>
-                     <h3>Responsive</h3>
-                     <p> Bit is fully responsive. It's completely tested and ready to work.</p>
-                  </div>
-                  <div class="col-lg-4 text-ali">
-                     <i class="luxury-icon fas fa-heartbeat fa-6x wow rubberBand"></i>
-                     <h3>Luxury</h3>
-                     <p> Unreal Theme is applied on Bit. so be sure you check it out fully.</p>
-                  </div>
-                  <div class="col-lg-4 text-ali">
-                     <i class="special-icon fas fa-user-tag fa-6x wow rubberBand"></i>
-                     <h3>Special</h3>
-                     <p> Our Programmers have passed the Guaranteed to work test.</p>
-                  </div>
-               </div>
+                <div class="row m-auto features-div">
+                    <div class="col-lg-4 text-ali">
+                        <i class=" responsive-icon fas fa-reply-all fa-6x wow rubberBand"></i>
+                        <h3>Responsive</h3>
+                        <p> Bit is fully responsive. It's completely tested and ready to work.</p>
+                    </div>
+                    <div class="col-lg-4 text-ali">
+                        <i class="luxury-icon fas fa-heartbeat fa-6x wow rubberBand"></i>
+                        <h3>Luxury</h3>
+                        <p> Unreal Theme is applied on Bit. so be sure you check it out fully.</p>
+                    </div>
+                    <div class="col-lg-4 text-ali">
+                        <i class="special-icon fas fa-user-tag fa-6x wow rubberBand"></i>
+                        <h3>Special</h3>
+                        <p> Our Programmers have passed the Guaranteed to work test.</p>
+                    </div>
+                </div>
             </section>
             <!--* Three Features Section End -->
             <!--* Team Items Start -->
             <div class="row" id="team">
-               <!--* First Team Item Start -->
-               <div class="col-sm-12 col-md-4 mb-xs-30 wow fadeIn">
-                  <div class="team-item">
-                     <div class="team-item-image">
-                        <img src="images/team/team-1.webp" width="370" height="450" alt="team-1">
-                        <div class="team-item-detail">
-                           <h4 class="font-alt normal mt-30">CO-LEADER</h4>
-                           <p class="white">
-                              Hey, I'm Angela. I love the power of Art. I used my full power to design Bit.
-                           </p>
-                           <div class="team-social-links">
-                              <a href="javascript:void(0)" aria-label="facebook"><i class="fab fa-facebook fa-2x"></i></a>
-                              <a href="javascript:void(0)" aria-label="twitter"><i class="fab fa-twitter fa-2x"></i></a>
-                              <a href="javascript:void(0)" aria-label="youtube"><i class="fab fa-youtube fa-2x"></i></a>
-                           </div>
-                           <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20" aria-label="team-btn"
-                              role="button">
-                              <i class="fas fa-briefcase hire-icon"></i>HIRE ME</a>
+                <!--* First Team Item Start -->
+                <div class="col-sm-12 col-md-4 mb-xs-30 wow fadeIn">
+                    <div class="team-item">
+                        <div class="team-item-image">
+                            <img src="images/team/team-1.webp" width="370" height="450" alt="team-1">
+                            <div class="team-item-detail">
+                                <h4 class="font-alt normal mt-30">CO-LEADER</h4>
+                                <p class="white">
+                                    Hey, I'm Angela. I love the power of Art. I used my full power to design Bit.
+                                </p>
+                                <div class="team-social-links">
+                                    <a href="javascript:void(0)" aria-label="facebook"><i
+                                            class="fab fa-facebook fa-2x"></i></a>
+                                    <a href="javascript:void(0)" aria-label="twitter"><i
+                                            class="fab fa-twitter fa-2x"></i></a>
+                                    <a href="javascript:void(0)" aria-label="youtube"><i
+                                            class="fab fa-youtube fa-2x"></i></a>
+                                </div>
+                                <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20"
+                                   aria-label="team-btn"
+                                   role="button">
+                                    <i class="fas fa-briefcase hire-icon"></i>HIRE ME</a>
+                            </div>
                         </div>
-                     </div>
-                     <div class="font-alt">
-                        <div class="team-name">
-                           Bit COMPANY DESIGNER
+                        <div class="font-alt">
+                            <div class="team-name">
+                                Bit COMPANY DESIGNER
+                            </div>
+                            <div class="team-item-role">
+                                Art Designer
+                            </div>
                         </div>
-                        <div class="team-item-role">
-                           Art Designer
+                    </div>
+                </div>
+                <!--* First Team Item End -->
+                <!--* Second Team Item Start -->
+                <div class="col-sm-12 col-md-4 mb-xs-30 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-item-image">
+                            <img src="images/team/team-2.webp" width="370" height="450" alt="team-2">
+                            <div class="team-item-detail">
+                                <h4 class="font-alt normal mt-30">Leader</h4>
+                                <p class="white">
+                                    Happy you are here. We have created Bit with love for people. for further projects,
+                                    be in
+                                    touch with me.
+                                </p>
+                                <div class="team-social-links">
+                                    <a href="javascript:void(0)" aria-label="facebook"><i
+                                            class="fab fa-facebook fa-2x"></i></a>
+                                    <a href="javascript:void(0)" aria-label="twitter"><i
+                                            class="fab fa-twitter fa-2x"></i></a>
+                                    <a href="javascript:void(0)" aria-label="youtube"><i
+                                            class="fab fa-youtube fa-2x"></i></a>
+                                </div>
+                                <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20"
+                                   aria-label="team-btn"
+                                   role="button">
+                                    <i class="fas fa-briefcase hire-icon"></i>HIRE ME</a>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <!--* First Team Item End -->
-               <!--* Second Team Item Start -->
-               <div class="col-sm-12 col-md-4 mb-xs-30 wow fadeIn" data-wow-delay="0.5s">
-                  <div class="team-item">
-                     <div class="team-item-image">
-                        <img src="images/team/team-2.webp" width="370" height="450" alt="team-2">
-                        <div class="team-item-detail">
-                           <h4 class="font-alt normal mt-30">Leader</h4>
-                           <p class="white">
-                              Happy you are here. We have created Bit with love for people. for further projects, be in
-                              touch with me.
-                           </p>
-                           <div class="team-social-links">
-                              <a href="javascript:void(0)" aria-label="facebook"><i class="fab fa-facebook fa-2x"></i></a>
-                              <a href="javascript:void(0)" aria-label="twitter"><i class="fab fa-twitter fa-2x"></i></a>
-                              <a href="javascript:void(0)" aria-label="youtube"><i class="fab fa-youtube fa-2x"></i></a>
-                           </div>
-                           <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20" aria-label="team-btn"
-                              role="button">
-                              <i class="fas fa-briefcase hire-icon"></i>HIRE ME</a>
+                        <div class="font-alt">
+                            <div class="team-name">
+                                Bit Company Manager
+                            </div>
+                            <div class="team-item-role">
+                                Senior Web developer
+                            </div>
                         </div>
-                     </div>
-                     <div class="font-alt">
-                        <div class="team-name">
-                           Bit Company Manager
+                    </div>
+                </div>
+                <!--* Second Team Item End -->
+                <!--* Third Team Item Start -->
+                <div class="col-sm-12 col-md-4 mb-xs-30 wow fadeIn" data-wow-delay="0.75">
+                    <div class="team-item">
+                        <div class="team-item-image">
+                            <img src="images/team/team-3.webp" width="370" height="450" alt="team-3">
+                            <div class="team-item-detail">
+                                <h4 class="font-alt normal mt-30">CO-LEADER</h4>
+                                <p class="white">
+                                    Hello guys, It's Jack Fincher from Bit Company. Welcome to Bit !!!. Hope You'd
+                                    enjoy it.
+                                </p>
+                                <div class="team-social-links">
+                                    <a href="javascript:void(0)" aria-label="facebook"><i
+                                            class="fab fa-facebook fa-2x"></i></a>
+                                    <a href="javascript:void(0)" aria-label="twitter"><i
+                                            class="fab fa-twitter fa-2x"></i></a>
+                                    <a href="javascript:void(0)" aria-label="youtube"><i
+                                            class="fab fa-youtube fa-2x"></i></a>
+                                </div>
+                                <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20"
+                                   aria-label="team-btn"
+                                   role="button">
+                                    <i class="fas fa-briefcase hire-icon"></i>HIRE ME</a>
+                            </div>
                         </div>
-                        <div class="team-item-role">
-                           Senior Web developer
+                        <div class="font-alt">
+                            <div class="team-name">
+                                Bit COMPANY SUPPORT
+                            </div>
+                            <div class="team-item-role">
+                                Full Stack Developer
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <!--* Second Team Item End -->
-               <!--* Thrid Team Item Start -->
-               <div class="col-sm-12 col-md-4 mb-xs-30 wow fadeIn" data-wow-delay="0.75">
-                  <div class="team-item">
-                     <div class="team-item-image">
-                        <img src="images/team/team-3.webp" width="370" height="450" alt="team-3">
-                        <div class="team-item-detail">
-                           <h4 class="font-alt normal mt-30">CO-LEADER</h4>
-                           <p class="white">
-                              Hello guys, It's Jack Fincher from Bit Company. Welcome to Bit !!!. Hope You'd
-                              enjoy it.
-                           </p>
-                           <div class="team-social-links">
-                              <a href="javascript:void(0)" aria-label="facebook"><i class="fab fa-facebook fa-2x"></i></a>
-                              <a href="javascript:void(0)" aria-label="twitter"><i class="fab fa-twitter fa-2x"></i></a>
-                              <a href="javascript:void(0)" aria-label="youtube"><i class="fab fa-youtube fa-2x"></i></a>
-                           </div>
-                           <a href="javascript:void(0)" class="material-btn primary-btn tada-btn rounded-btn mt-20" aria-label="team-btn"
-                              role="button">
-                              <i class="fas fa-briefcase hire-icon"></i>HIRE ME</a>
-                        </div>
-                     </div>
-                     <div class="font-alt">
-                        <div class="team-name">
-                           Bit COMPANY SUPPORT
-                        </div>
-                        <div class="team-item-role">
-                           Full Stack Developer
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--* Thrid Team Item End -->
+                    </div>
+                </div>
+                <!--* Third Team Item End -->
             </div>
             <!--* Team Items End -->
-         </div>
-      </section>
-      <!--* About Us End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator End -->
-      <!--* Tab Services Section Start -->
-      <section class="page-section" id="tab-services">
-         <div class="container relative">
+        </div>
+    </section>
+    <!--* About Us End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator End -->
+    <!--* Tab Services Section Start -->
+    <section class="page-section" id="tab-services">
+        <div class="container relative">
             <h2 class="section-title mb-70 mb-sm-40 wow flipInY">
-               <strong>SUITABLE</strong> FOR
+                <strong>SUITABLE</strong> FOR
             </h2>
             <!--* Nav tabs Start -->
             <ul class="nav tpl-alt-tabs font-alt pt-30 pt-sm-0 pb-30 pb-sm-0 ">
-               <li class="m-auto">
-                  <a href="#first-tab" data-bs-toggle="tab" aria-label="tab-item">
-                     <div class="alt-tabs-icon mb-0">
+                <li class="m-auto">
+                    <a href="#first-tab" data-bs-toggle="tab" aria-label="tab-item">
+                        <div class="alt-tabs-icon mb-0">
                         <span class="fas fa-copyright fa-3x wow flipInX tab-icon active mb-0"
-                           data-wow-duration="2s"></span>
-                     </div>
-                     <h4 class="tab-icon-des">BRANDING</h4>
-                  </a>
-               </li>
-               <li class="m-auto">
-                  <a href="#second-tab" data-bs-toggle="tab" aria-label="tab-item">
-                     <div class="alt-tabs-icon">
-                        <span class="fas fa-camera fa-3x lightblue  wow flipInY tab-icon" data-wow-duration="2s"></span>
-                     </div>
-                     <h4 class="tab-icon-des">PHOTOGRAPHY</h4>
-                  </a>
-               </li>
-               <li class="m-auto ">
-                  <a href="#third-tab" data-bs-toggle="tab" aria-label="tab-item">
-                     <div class="alt-tabs-icon">
-                        <span class="fas fa-code fa-3x lightgreen wow flipInX tab-icon" data-wow-duration="2s"></span>
-                     </div>
-                     <h4 class="tab-icon-des">DEVELOPING</h4>
-                  </a>
-               </li>
-               <li class="m-auto">
-                  <a href="#fourth-tab" data-bs-toggle="tab" aria-label="tab-item">
-                     <div class="alt-tabs-icon">
+                              data-wow-duration="2s"></span>
+                        </div>
+                        <h4 class="tab-icon-des">BRANDING</h4>
+                    </a>
+                </li>
+                <li class="m-auto">
+                    <a href="#second-tab" data-bs-toggle="tab" aria-label="tab-item">
+                        <div class="alt-tabs-icon">
+                            <span class="fas fa-camera fa-3x lightblue  wow flipInY tab-icon"
+                                  data-wow-duration="2s"></span>
+                        </div>
+                        <h4 class="tab-icon-des">PHOTOGRAPHY</h4>
+                    </a>
+                </li>
+                <li class="m-auto ">
+                    <a href="#third-tab" data-bs-toggle="tab" aria-label="tab-item">
+                        <div class="alt-tabs-icon">
+                            <span class="fas fa-code fa-3x lightgreen wow flipInX tab-icon"
+                                  data-wow-duration="2s"></span>
+                        </div>
+                        <h4 class="tab-icon-des">DEVELOPING</h4>
+                    </a>
+                </li>
+                <li class="m-auto">
+                    <a href="#fourth-tab" data-bs-toggle="tab" aria-label="tab-item">
+                        <div class="alt-tabs-icon">
                         <span class="fas fa-pencil-ruler fa-3x wow lightorange flipInY tab-icon"
-                           data-wow-duration="2s"></span>
-                     </div>
-                     <h4 class="tab-icon-des">GRAPHIC DESIGN</h4>
-                  </a>
-               </li>
-               <li class="m-auto">
-                  <a href="#fifth-tab" data-bs-toggle="tab" aria-label="tab-item">
-                     <div class="alt-tabs-icon">
+                              data-wow-duration="2s"></span>
+                        </div>
+                        <h4 class="tab-icon-des">GRAPHIC DESIGN</h4>
+                    </a>
+                </li>
+                <li class="m-auto">
+                    <a href="#fifth-tab" data-bs-toggle="tab" aria-label="tab-item">
+                        <div class="alt-tabs-icon">
                         <span class="fas fa-desktop fa-3x lightpurple wow flipInX tab-icon"
-                           data-wow-duration="2s"></span>
-                     </div>
-                     <h4 class="tab-icon-des">WEB DESIGN</h4>
-                  </a>
-               </li>
+                              data-wow-duration="2s"></span>
+                        </div>
+                        <h4 class="tab-icon-des">WEB DESIGN</h4>
+                    </a>
+                </li>
             </ul>
             <!--* Nav tabs End -->
             <!--* Tab panes Start -->
             <div class="tab-content tpl-tabs-cont">
-               <!--* First Tab Item Start -->
-               <div class="tab-pane fade in show active" id="first-tab" role="tabpanel">
-                  <div class="section-text">
-                     <div class="row">
-                        <div class="col-md-4 mb-md-40 mb-xs-30">
-                           <blockquote class="mb-0">
-                              <p>
-                                 &quot;Your branding matters more than anything. If you want to win in companies league, You
-                                 have to
-                                 pick your brand up. Your website can be a start.&quot;
-                              </p>
-                              <footer>
-                                 -Bit Company Manager
-                              </footer>
-                           </blockquote>
+                <!--* First Tab Item Start -->
+                <div class="tab-pane fade in show active" id="first-tab" role="tabpanel">
+                    <div class="section-text">
+                        <div class="row">
+                            <div class="col-md-4 mb-md-40 mb-xs-30">
+                                <blockquote class="mb-0">
+                                    <p>
+                                        &quot;Your branding matters more than anything. If you want to win in companies
+                                        league, You
+                                        have to
+                                        pick your brand up. Your website can be a start.&quot;
+                                    </p>
+                                    <footer>
+                                        -Bit Company Manager
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                <p>
+                                    Your branding matters more than anything. If you want to win in companies league,
+                                    You have
+                                    to
+                                    pick
+                                    your brand up. Your website can be a start.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                <p>
+                                    Your branding matters more than anything. If you want to win in companies league,
+                                    You have
+                                    to
+                                    pick
+                                    your brand up. Your website can be a start.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                           <p>
-                              Your branding matters more than anything. If you want to win in companies league, You have
-                              to
-                              pick
-                              your brand up. Your website can be a start.
-                           </p>
+                    </div>
+                </div>
+                <!--* First Tab Item End -->
+                <!--* Second Tab Item Start -->
+                <div class="tab-pane fade " id="second-tab">
+                    <div class="section-text">
+                        <div class="row">
+                            <div class="col-md-4 mb-md-40 mb-xs-30">
+                                <blockquote class="mb-0">
+                                    <p class="tab-pane-description">
+                                        Bit Company has started its journey in 2021. We hire our crew using
+                                        knowledge. We
+                                        respect our
+                                        customers and we love our websites.
+                                    </p>
+                                    <footer>
+                                        -Bit Company Support
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                <p>
+                                    Bit Company has started its journey in 2021. We hire our crew using knowledge.
+                                    We
+                                    respect
+                                    our
+                                    customers and we love our websites.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                <p>
+                                    Bit Company has started its journey in 2021. We hire our crew using knowledge.
+                                    We
+                                    respect
+                                    our
+                                    customers and we love our websites.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                           <p>
-                              Your branding matters more than anything. If you want to win in companies league, You have
-                              to
-                              pick
-                              your brand up. Your website can be a start.
-                           </p>
+                    </div>
+                </div>
+                <!--* Second Tab Item End -->
+                <!--* Third Tab Item Start -->
+                <div class="tab-pane fade" id="third-tab">
+                    <div class="section-text">
+                        <div class="row">
+                            <div class="col-md-4 mb-md-40 mb-xs-30">
+                                <blockquote class="mb-0">
+                                    <p class="tab-pane-description">
+                                        If you want to win in companies league, You have to pick your brand up. Your
+                                        website
+                                        can be a
+                                        start.
+                                    </p>
+                                    <footer>
+                                        -Bit COMPANY SUPPORT
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                <p>
+                                    If you want to win in companies league, You have to pick your brand up. Your website
+                                    can
+                                    be a
+                                    start.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                <p>
+                                    If you want to win in companies league, You have to pick your brand up. Your website
+                                    can
+                                    be a
+                                    start.
+                                </p>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <!--* First Tab Item End -->
-               <!--* Second Tab Item Start -->
-               <div class="tab-pane fade " id="second-tab">
-                  <div class="section-text">
-                     <div class="row">
-                        <div class="col-md-4 mb-md-40 mb-xs-30">
-                           <blockquote class="mb-0">
-                              <p class="tab-pane-description">
-                                 Bit Company has started its journey in 2021. We hire our crew using
-                                 knowledge. We
-                                 respect our
-                                 customers and we love our websites.
-                              </p>
-                              <footer>
-                                 -Bit Company Support
-                              </footer>
-                           </blockquote>
+                    </div>
+                </div>
+                <!--* Third Tab Item End -->
+                <!--* Fourth Tab Item Start -->
+                <div class="tab-pane fade" id="fourth-tab">
+                    <div class="section-text">
+                        <div class="row">
+                            <div class="col-md-4 mb-md-40 mb-xs-30">
+                                <blockquote class="mb-0">
+                                    <p class="tab-pane-description">
+                                        If you want to win in companies league, You have to pick your brand up. Your
+                                        website
+                                        can be a
+                                        start.
+                                    </p>
+                                    <footer>
+                                        -Bit COMPANY MANAGER
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                <p>
+                                    If you want to win in companies league, You have to pick your brand up. Your website
+                                    can
+                                    be a
+                                    start.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                <p>
+                                    If you want to win in companies league, You have to pick your brand up. Your website
+                                    can
+                                    be a
+                                    start.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                           <p>
-                              Bit Company has started its journey in 2021. We hire our crew using knowledge.
-                              We
-                              respect
-                              our
-                              customers and we love our websites.
-                           </p>
+                    </div>
+                </div>
+                <!--* Fourth Tab Item End -->
+                <!--* Fifth Tab Item Start -->
+                <div class="tab-pane fade" id="fifth-tab">
+                    <div class="section-text">
+                        <div class="row">
+                            <div class="col-md-4 mb-md-40 mb-xs-30">
+                                <blockquote class="mb-0">
+                                    <p class="tab-pane-description">
+                                        If you want to win in companies league, You have to pick your brand up. Your
+                                        website
+                                        can be a
+                                        start.
+                                    </p>
+                                    <footer>
+                                        -Bit COMPANY SUPPORT
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                <p>
+                                    If you want to win in companies league, You have to pick your brand up. Your website
+                                    can
+                                    be a
+                                    start.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                <p>
+                                    If you want to win in companies league, You have to pick your brand up. Your website
+                                    can
+                                    be a
+                                    start.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                           <p>
-                              Bit Company has started its journey in 2021. We hire our crew using knowledge.
-                              We
-                              respect
-                              our
-                              customers and we love our websites.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--* Second Tab Item End -->
-               <!--* Thrid Tab Item Start -->
-               <div class="tab-pane fade" id="third-tab">
-                  <div class="section-text">
-                     <div class="row">
-                        <div class="col-md-4 mb-md-40 mb-xs-30">
-                           <blockquote class="mb-0">
-                              <p class="tab-pane-description">
-                                 If you want to win in companies league, You have to pick your brand up. Your website
-                                 can be a
-                                 start.
-                              </p>
-                              <footer>
-                                 -Bit COMPANY SUPPORT
-                              </footer>
-                           </blockquote>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                           <p>
-                              If you want to win in companies league, You have to pick your brand up. Your website can
-                              be a
-                              start.
-                           </p>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                           <p>
-                              If you want to win in companies league, You have to pick your brand up. Your website can
-                              be a
-                              start.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--* Thrid Tab Item End -->
-               <!--* Fourth Tab Item Start -->
-               <div class="tab-pane fade" id="fourth-tab">
-                  <div class="section-text">
-                     <div class="row">
-                        <div class="col-md-4 mb-md-40 mb-xs-30">
-                           <blockquote class="mb-0">
-                              <p class="tab-pane-description">
-                                 If you want to win in companies league, You have to pick your brand up. Your website
-                                 can be a
-                                 start.
-                              </p>
-                              <footer>
-                                 -Bit COMPANY MANAGER
-                              </footer>
-                           </blockquote>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                           <p>
-                              If you want to win in companies league, You have to pick your brand up. Your website can
-                              be a
-                              start.
-                           </p>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                           <p>
-                              If you want to win in companies league, You have to pick your brand up. Your website can
-                              be a
-                              start.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--* Fourth Tab Item End -->
-               <!--* Fifth Tab Item Start -->
-               <div class="tab-pane fade" id="fifth-tab">
-                  <div class="section-text">
-                     <div class="row">
-                        <div class="col-md-4 mb-md-40 mb-xs-30">
-                           <blockquote class="mb-0">
-                              <p class="tab-pane-description">
-                                 If you want to win in companies league, You have to pick your brand up. Your website
-                                 can be a
-                                 start.
-                              </p>
-                              <footer>
-                                 -Bit COMPANY SUPPORT
-                              </footer>
-                           </blockquote>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                           <p>
-                              If you want to win in companies league, You have to pick your brand up. Your website can
-                              be a
-                              start.
-                           </p>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                           <p>
-                              If you want to win in companies league, You have to pick your brand up. Your website can
-                              be a
-                              start.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--* Fifth Tab Item End -->
+                    </div>
+                </div>
+                <!--* Fifth Tab Item End -->
             </div>
             <!--* Tab panes End -->
-         </div>
-      </section>
-      <!--* Tab Services Section End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator End -->
-      <!--! Call Action Section Start -->
-      <section class="jarallax page-section bg-dark-alfa-40 pt-20 pb-20 banner-section"
-         style="background-image: url('images/full-width-image/callaction.webp');">
-         <div class="container relative">
+        </div>
+    </section>
+    <!--* Tab Services Section End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator End -->
+    <!--! Call Action Section Start -->
+    <section class="jarallax page-section bg-dark-alfa-40 pt-20 pb-20 banner-section"
+             style="background-image: url('images/full-width-image/callaction.webp');">
+        <div class="container relative">
             <div class="row">
-               <div class="col-md-12 col-lg-6">
-                  <div class="mt-140 mt-lg-80 mb-140 mb-lg-80">
-                     <div class="banner-content">
-                        <h2 class="banner-heading font-alt mb-40">Artistic  &amp; Modern <strong>Brand</strong></h2>
-                        <div class="banner-decription mb-40">
-                           Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the
-                           industry&rsquo;s
-                           standard dummy. Lorem Ipsum has been the industry&rsquo;s standard dummy.
+                <div class="col-md-12 col-lg-6">
+                    <div class="mt-140 mt-lg-80 mb-140 mb-lg-80">
+                        <div class="banner-content">
+                            <h2 class="banner-heading font-alt mb-40">Artistic &amp; Modern <strong>Brand</strong></h2>
+                            <div class="banner-decription mb-40">
+                                Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been
+                                the
+                                industry&rsquo;s
+                                standard dummy. Lorem Ipsum has been the industry&rsquo;s standard dummy.
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="material-btn pulse-btn primary-btn"
+                                   aria-label="banner-btn"
+                                   role="button"><i class="fas fa-info banner-btn-icon"></i>LEARN MORE</a>
+                            </div>
                         </div>
-                        <div>
-                           <a href="javascript:void(0)" class="material-btn pulse-btn primary-btn" aria-label="banner-btn"
-                              role="button"><i class="fas fa-info banner-btn-icon"></i>LEARN MORE</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--! Mockup -->
-               <div class="col-md-12 col-lg-6 banner-image wow zoomIn">
-                  <img data-depth="0.3" width="1086" height="776" src="images/mockup/mockup.webp" alt="mockup">
-               </div>
+                    </div>
+                </div>
+                <!--! Mockup -->
+                <div class="col-md-12 col-lg-6 banner-image wow zoomIn">
+                    <img data-depth="0.3" width="1086" height="776" src="images/mockup/mockup.webp" alt="mockup">
+                </div>
             </div>
-         </div>
-      </section>
-      <!--*  Section End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator End -->
-      <!--* Portfolio Section Start -->
-      <section class="page-section pb-20 isotope-sys" id="portfolio">
-         <h2 class="section-title font-alt mb-70 mb-sm-40 wow flipInY">
+        </div>
+    </section>
+    <!--*  Section End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator End -->
+    <!--* Portfolio Section Start -->
+    <section class="page-section pb-20 isotope-sys" id="portfolio">
+        <h2 class="section-title font-alt mb-70 mb-sm-40 wow flipInY">
             BIT's<strong> Portfolio</strong>
-         </h2>
-         <div class="relative">
+        </h2>
+        <div class="relative">
 
-            
-               <div class="row">
-                  <div class="col-md-8 col-md-offset-2 m-auto">
-                     <div class="section-text align-center mb-70 mb-xs-40 ">
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 m-auto">
+                    <div class="section-text align-center mb-70 mb-xs-40 ">
                         <p>
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                           eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
                         </p>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
+            </div>
             <!--* Item Filters Start -->
             <div class="items-filter font-alt align-center">
-               <a href="javascript:void(0)" class="filter active" data-filter="*" aria-label="bit-btn">All Other works</a>
-               <a href="javascript:void(0)" class="filter mt-xs-10" data-filter=".developing" aria-label="work-btn">web
-                  Developing</a>
-               <a href="javascript:void(0)" class="filter mt-xs-10" data-filter=".designing" aria-label="work-btn">Art &amp;
-                  Graphics</a>
-               <a href="javascript:void(0)" class="filter mt-xs-10 mt-lg-20" data-filter=".photography"
-                  aria-label="work-btn">Photo
-                  works</a>
+                <a href="javascript:void(0)" class="filter active" data-filter="*" aria-label="bit-btn">All Other
+                    works</a>
+                <a href="javascript:void(0)" class="filter mt-xs-10" data-filter=".developing" aria-label="work-btn">web
+                    Developing</a>
+                <a href="javascript:void(0)" class="filter mt-xs-10" data-filter=".designing" aria-label="work-btn">Art
+                    &amp;
+                    Graphics</a>
+                <a href="javascript:void(0)" class="filter mt-xs-10 mt-lg-20" data-filter=".photography"
+                   aria-label="work-btn">Photo
+                    works</a>
             </div>
             <!--* Item Filters End -->
             <!--* Item Grids Start -->
             <ul class="isotope-grid items-grid item-grid-2 item-grid-gut clearfix font-alt" id="item-grid">
-               <!--* First Item (Lightbox) Start -->
-               <li class="grid-item mix photography">
-                  <a href="images/portfolio/lightbox/38.webp" class="lightbox-link mfp-image"
-                     aria-label="portfolio-item">
-                     <div class="item-img">
-                        <img width="650" height="418" src="images/portfolio/38.webp" alt="item-1">
-                     </div>
-                     <div class="item-intro">
-                        <h2 class="item-title">Tidy</h2>
-                        <div class="item-descr">
-                           a Multi-Purpose Website
+                <!--* First Item (Lightbox) Start -->
+                <li class="grid-item mix photography">
+                    <a href="images/portfolio/lightbox/38.webp" class="lightbox-link mfp-image"
+                       aria-label="portfolio-item">
+                        <div class="item-img">
+                            <img width="650" height="418" src="images/portfolio/38.webp" alt="item-1">
                         </div>
-                     </div>
-                  </a>
-               </li>
-               <!--* First Item End -->
-               <!--* Second Item (External Page) Start -->
-               <li class="grid-item mix developing designing">
-                  <a href="javascript:void(0)" aria-label="portfolio-item">
-                     <div class="item-img">
-                        <img width="650" height="418" src="images/portfolio/34.webp" alt="item-2">
-                     </div>
-                     <div class="item-intro">
-                        <h2 class="item-title">Beautify</h2>
-                        <div class="item-descr">
-                           Additional Page
+                        <div class="item-intro">
+                            <h2 class="item-title">Tidy</h2>
+                            <div class="item-descr">
+                                a Multi-Purpose Website
+                            </div>
                         </div>
-                     </div>
-                  </a>
-               </li>
-               <!--* Second Item End -->
-               <!--* Thrid Item (External Page) Start -->
-               <li class="grid-item mix developing">
-                  <a href="javascript:void(0)" aria-label="portfolio-item">
-                     <div class="item-img">
-                        <img width="650" height="418" src="images/portfolio/45.webp" alt="item-3">
-                     </div>
-                     <div class="item-intro">
-                        <h2 class="item-title">Sweet</h2>
-                        <div class="item-descr">
-                           Additional Page
+                    </a>
+                </li>
+                <!--* First Item End -->
+                <!--* Second Item (External Page) Start -->
+                <li class="grid-item mix developing designing">
+                    <a href="javascript:void(0)" aria-label="portfolio-item">
+                        <div class="item-img">
+                            <img width="650" height="418" src="images/portfolio/34.webp" alt="item-2">
                         </div>
-                     </div>
-                  </a>
-               </li>
-               <!--* Thrid Item End -->
-               <!--* Fourth Item (External Page) Start -->
-               <li class="grid-item mix designing photography">
-                  <a href="javascript:void(0)" aria-label="portfolio-item">
-                     <div class="item-img">
-                        <img width="650" height="418" src="images/portfolio/13.webp" alt="item-4">
-                     </div>
-                     <div class="item-intro">
-                        <h2 class="item-title">Dragon</h2>
-                        <div class="item-descr">
-                           an Admin Template
+                        <div class="item-intro">
+                            <h2 class="item-title">Beautify</h2>
+                            <div class="item-descr">
+                                Additional Page
+                            </div>
                         </div>
-                     </div>
-                  </a>
-               </li>
-               <!--* Fourth Item End -->
-               <!--* Fifth Item (External Page) Start -->
-               <li class="grid-item mix designing">
-                  <a href="javascript:void(0)" aria-label="portfolio-item">
-                     <div class="item-img">
-                        <img width="650" height="418" src="images/portfolio/44.webp" alt="item-5">
-                     </div>
-                     <div class="item-intro">
-                        <h2 class="item-title">Dolly</h2>
-                        <div class="item-descr">
-                           a Personal Portfolio Template
+                    </a>
+                </li>
+                <!--* Second Item End -->
+                <!--* Third Item (External Page) Start -->
+                <li class="grid-item mix developing">
+                    <a href="javascript:void(0)" aria-label="portfolio-item">
+                        <div class="item-img">
+                            <img width="650" height="418" src="images/portfolio/45.webp" alt="item-3">
                         </div>
-                     </div>
-                  </a>
-               </li>
-               <!--* Fifth Item End -->
-               <!--* Sixth Item (Lightbox) Start -->
-               <li class="grid-item mix designing developing">
-                  <a href="images/portfolio/lightbox/22.webp" class="lightbox-link mfp-image"
-                     aria-label="portfolio-item">
-                     <div class="item-img">
-                        <img width="650" height="418" src="images/portfolio/22.webp" alt="item-6">
-                     </div>
-                     <div class="item-intro">
-                        <h2 class="item-title">HopLab</h2>
-                        <div class="item-descr">
-                           Additional Page
+                        <div class="item-intro">
+                            <h2 class="item-title">Sweet</h2>
+                            <div class="item-descr">
+                                Additional Page
+                            </div>
                         </div>
-                     </div>
-                  </a>
-               </li>
-               <!--* Sixth Item End -->
+                    </a>
+                </li>
+                <!--* Third Item End -->
+                <!--* Fourth Item (External Page) Start -->
+                <li class="grid-item mix designing photography">
+                    <a href="javascript:void(0)" aria-label="portfolio-item">
+                        <div class="item-img">
+                            <img width="650" height="418" src="images/portfolio/13.webp" alt="item-4">
+                        </div>
+                        <div class="item-intro">
+                            <h2 class="item-title">Dragon</h2>
+                            <div class="item-descr">
+                                an Admin Template
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!--* Fourth Item End -->
+                <!--* Fifth Item (External Page) Start -->
+                <li class="grid-item mix designing">
+                    <a href="javascript:void(0)" aria-label="portfolio-item">
+                        <div class="item-img">
+                            <img width="650" height="418" src="images/portfolio/44.webp" alt="item-5">
+                        </div>
+                        <div class="item-intro">
+                            <h2 class="item-title">Dolly</h2>
+                            <div class="item-descr">
+                                a Personal Portfolio Template
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!--* Fifth Item End -->
+                <!--* Sixth Item (Lightbox) Start -->
+                <li class="grid-item mix designing developing">
+                    <a href="images/portfolio/lightbox/22.webp" class="lightbox-link mfp-image"
+                       aria-label="portfolio-item">
+                        <div class="item-img">
+                            <img width="650" height="418" src="images/portfolio/22.webp" alt="item-6">
+                        </div>
+                        <div class="item-intro">
+                            <h2 class="item-title">HopLab</h2>
+                            <div class="item-descr">
+                                Additional Page
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!--* Sixth Item End -->
             </ul>
             <!--* Item Grids End -->
-         </div>
-      </section>
-      <!--* Portfolio Section End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator Ends -->
-      <!--* Testimonial Section start -->
-      <section class="page-section bg-dark-alfa-80 fullwidth-slider-fade"
-         style="background-image: url('images/testimonial/testimonial.webp');">
-         <!--* Slide Item  -->
-         <div>
+        </div>
+    </section>
+    <!--* Portfolio Section End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator Ends -->
+    <!--* Testimonial Section start -->
+    <section class="page-section bg-dark-alfa-80 fullwidth-slider-fade"
+             style="background-image: url('images/testimonial/testimonial.webp');">
+        <!--* Slide Item  -->
+        <div>
             <div class="container relative">
-               <div class="row">
-                  <div class="col-md-offset-2 align-center">
-                     <!--* Section Icon -->
-                     <div class="section-icon">
-                        <i class="fas fa-quote-right"></i>
-                     </div>
-                     <!--* Section Title -->
-                     <h3 class="small-title font-alt">What people say?</h3>
-                     <blockquote class="testimonial">
-                        <p class="white font-weight-normal">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                           incididunt ut
-                           labore
-                           et dolore magna aliqua.
-                        </p>
-                        <footer class="testimonial-author white">
-                           Client 1
-                        </footer>
-                     </blockquote>
-                  </div>
-               </div>
+                <div class="row">
+                    <div class="col-md-offset-2 align-center">
+                        <!--* Section Icon -->
+                        <div class="section-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <!--* Section Title -->
+                        <h3 class="small-title font-alt">What people say?</h3>
+                        <blockquote class="testimonial">
+                            <p class="white font-weight-normal">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                            <footer class="testimonial-author white">
+                                Client 1
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
-         </div>
-         <!--* Slide Item End -->
-         <!--* Slide Item Start -->
-         <div>
+        </div>
+        <!--* Slide Item End -->
+        <!--* Slide Item Start -->
+        <div>
             <div class="container relative carousel-center">
-               <div class="row">
-                  <div class=" col-md-offset-2 align-center">
-                     <!--* Section Icon -->
-                     <div class="section-icon">
-                        <i class="fas fa-quote-right"></i>
-                     </div>
-                     <!--* Section Title -->
-                     <h3 class="small-title font-alt">What people say?</h3>
-                     <blockquote class="testimonial">
-                        <p class="font-weight-normal white">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                           incididunt ut
-                           labore
-                           et dolore magna aliqua.
-                        </p>
-                        <footer class="testimonial-author white">
-                           Client 2
-                        </footer>
-                     </blockquote>
-                  </div>
-               </div>
+                <div class="row">
+                    <div class=" col-md-offset-2 align-center">
+                        <!--* Section Icon -->
+                        <div class="section-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <!--* Section Title -->
+                        <h3 class="small-title font-alt">What people say?</h3>
+                        <blockquote class="testimonial">
+                            <p class="font-weight-normal white">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                            <footer class="testimonial-author white">
+                                Client 2
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
-         </div>
-         <!--* Slide Item End -->
-         <!--* Slide Item Start  -->
-         <div>
+        </div>
+        <!--* Slide Item End -->
+        <!--* Slide Item Start  -->
+        <div>
             <div class="container relative carousel-center">
-               <div class="row">
-                  <div class=" col-md-offset-2 align-center">
-                     <!--* Section Icon -->
-                     <div class="section-icon">
-                        <i class="fas fa-quote-right"></i>
-                     </div>
-                     <!--* Section Title -->
-                     <h3 class="small-title font-alt">What people say?</h3>
-                     <blockquote class="testimonial">
-                        <p class="font-weight-normal white">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                           incididunt ut
-                           labore
-                           et dolore magna aliqua.
-                           <footer class="testimonial-author white">
-                              Client 3
-                           </footer>
-                     </blockquote>
-                  </div>
-               </div>
+                <div class="row">
+                    <div class=" col-md-offset-2 align-center">
+                        <!--* Section Icon -->
+                        <div class="section-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <!--* Section Title -->
+                        <h3 class="small-title font-alt">What people say?</h3>
+                        <blockquote class="testimonial">
+                            <p class="font-weight-normal white">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore
+                                et dolore magna aliqua.
+                            <footer class="testimonial-author white">
+                                Client 3
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
-         </div>
-         <!--* Slide Item Ends -->
-      </section>
-      <!--* Testimonial Section End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator End -->
-      <!--* Features Section Start -->
-      <section class="page-section" id="features">
-         <div class="container relative">
+        </div>
+        <!--* Slide Item Ends -->
+    </section>
+    <!--* Testimonial Section End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator End -->
+    <!--* Features Section Start -->
+    <section class="page-section" id="features">
+        <div class="container relative">
             <h2 id="features-title" class="section-title font-alt mb-70 mb-sm-40 wow bounce">
-               Features
+                Features
             </h2>
             <!--* Features Grid Start -->
             <div class="row multi-columns-row alt-features-grid">
-               <!--* First Features Item Start -->
-               <div class="col-sm-6 col-md-6 col-lg-4">
-                  <div class="alt-features-item align-center">
-                     <div id="compatible-icon" class="alt-features-icon">
-                        <lottie-player id="gears-lottie" speed="0.5" class="m-auto" autoplay play loop mode="normal">
-                        </lottie-player>
-                     </div>
-                     <h3 class="alt-features-title font-alt">Bit is <strong>Compatible</strong></h3>
-                     <div class="alt-features-descr align-left">
-                        Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
-                        suspendisse at velit leo vitae et.
-                     </div>
-                  </div>
-               </div>
-               <!--* First Features Item End -->
-               <!--* Fifth Features Item Start -->
-               <div class="col-sm-6 col-md-6 col-lg-4">
-                  <div class="alt-features-item align-center">
-                     <div id="unique-icon" class="alt-features-icon">
-                        <lottie-player speed="0.5" id="trophy-lottie" class="m-auto" autoplay play loop mode="normal">
-                        </lottie-player>
-                     </div>
-                     <h3 class="alt-features-title font-alt">Bit is <strong>Unique</strong></h3>
-                     <div class="alt-features-descr align-left">
-                        Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
-                        suspendisse at velit leo vitae et.
-                     </div>
-                  </div>
-               </div>
-               <!--* Fifth Features Item End -->
-               <!--* Thrid Features Item Start -->
-               <div class="col-sm-6 col-md-6 col-lg-4">
-                  <div class="alt-features-item align-center">
-                     <div id="love-icon" class="alt-features-icon">
-                        <lottie-player id="love-lottie" speed="0.8" class="m-auto" autoplay play loop mode="normal">
-                        </lottie-player>
-                     </div>
-                     <h3 class="alt-features-title font-alt">Bit works with <strong>Love</strong></h3>
-                     <div class="alt-features-descr align-left">
-                        Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
-                        suspendisse at velit leo vitae et.
-                     </div>
-                  </div>
-               </div>
-               <!--* Thrid Features Item End -->
-               <!--* Fourth Features Item Start -->
-               <div class="col-sm-6 col-md-6 col-lg-4">
-                  <div class="alt-features-item align-center">
-                     <div id="creative-icon" class="alt-features-icon">
-                        <lottie-player speed="0.5" id="new-idea-lottie" class="m-auto" autoplay play loop mode="normal">
-                        </lottie-player>
-                     </div>
-                     <h3 class="alt-features-title font-alt">Bit is <strong>creative</strong></h3>
-                     <div class="alt-features-descr align-left">
-                        Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
-                        suspendisse at velit leo vitae et.
-                     </div>
-                  </div>
-               </div>
-               <!--* Fourth Features Item End -->
-               <!--* Second Features Item Start -->
-               <div class="col-sm-6 col-md-6 col-lg-4">
-                  <div class="alt-features-item align-center">
-                     <div id="response-icon" class="alt-features-icon">
-                        <lottie-player speed="0.8" id="responsive-lottie" class="m-auto" autoplay play loop
-                           mode="normal"></lottie-player>
-                     </div>
-                     <h3 class="alt-features-title font-alt">Bit is <strong>Responsive</strong></h3>
-                     <div class="alt-features-descr align-left">
-                        Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
-                        suspendisse at velit leo vitae et.
-                     </div>
-                  </div>
-               </div>
-               <!--* Second Features Item End -->
-               <!--* Sixth Features Item Start -->
-               <div class="col-sm-6 col-md-6 col-lg-4">
-                  <div class="alt-features-item align-center">
-                     <div id="valid-icon" class="alt-features-icon">
-                        <lottie-player id="check-lottie" class="m-auto" autoplay play loop mode="normal">
-                        </lottie-player>
-                     </div>
-                     <h3 class="alt-features-title font-alt">Bit is <strong>Valid</strong></h3>
-                     <div class="alt-features-descr align-left">
-                        Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
-                        suspendisse at velit leo vitae et.
-                     </div>
-                  </div>
-               </div>
-               <!--* Sixth Features Item End -->
+                <!--* First Features Item Start -->
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="alt-features-item align-center">
+                        <div id="compatible-icon" class="alt-features-icon">
+                            <lottie-player id="gears-lottie" speed="0.5" class="m-auto" autoplay play loop
+                                           mode="normal">
+                            </lottie-player>
+                        </div>
+                        <h3 class="alt-features-title font-alt">Bit is <strong>Compatible</strong></h3>
+                        <div class="alt-features-descr align-left">
+                            Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
+                            suspendisse at velit leo vitae et.
+                        </div>
+                    </div>
+                </div>
+                <!--* First Features Item End -->
+                <!--* Fifth Features Item Start -->
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="alt-features-item align-center">
+                        <div id="unique-icon" class="alt-features-icon">
+                            <lottie-player speed="0.5" id="trophy-lottie" class="m-auto" autoplay play loop
+                                           mode="normal">
+                            </lottie-player>
+                        </div>
+                        <h3 class="alt-features-title font-alt">Bit is <strong>Unique</strong></h3>
+                        <div class="alt-features-descr align-left">
+                            Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
+                            suspendisse at velit leo vitae et.
+                        </div>
+                    </div>
+                </div>
+                <!--* Fifth Features Item End -->
+                <!--* Third Features Item Start -->
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="alt-features-item align-center">
+                        <div id="love-icon" class="alt-features-icon">
+                            <lottie-player id="love-lottie" speed="0.8" class="m-auto" autoplay play loop mode="normal">
+                            </lottie-player>
+                        </div>
+                        <h3 class="alt-features-title font-alt">Bit works with <strong>Love</strong></h3>
+                        <div class="alt-features-descr align-left">
+                            Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
+                            suspendisse at velit leo vitae et.
+                        </div>
+                    </div>
+                </div>
+                <!--* Third Features Item End -->
+                <!--* Fourth Features Item Start -->
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="alt-features-item align-center">
+                        <div id="creative-icon" class="alt-features-icon">
+                            <lottie-player speed="0.5" id="new-idea-lottie" class="m-auto" autoplay play loop
+                                           mode="normal">
+                            </lottie-player>
+                        </div>
+                        <h3 class="alt-features-title font-alt">Bit is <strong>creative</strong></h3>
+                        <div class="alt-features-descr align-left">
+                            Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
+                            suspendisse at velit leo vitae et.
+                        </div>
+                    </div>
+                </div>
+                <!--* Fourth Features Item End -->
+                <!--* Second Features Item Start -->
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="alt-features-item align-center">
+                        <div id="response-icon" class="alt-features-icon">
+                            <lottie-player speed="0.8" id="responsive-lottie" class="m-auto" autoplay play loop
+                                           mode="normal"></lottie-player>
+                        </div>
+                        <h3 class="alt-features-title font-alt">Bit is <strong>Responsive</strong></h3>
+                        <div class="alt-features-descr align-left">
+                            Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
+                            suspendisse at velit leo vitae et.
+                        </div>
+                    </div>
+                </div>
+                <!--* Second Features Item End -->
+                <!--* Sixth Features Item Start -->
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="alt-features-item align-center">
+                        <div id="valid-icon" class="alt-features-icon">
+                            <lottie-player id="check-lottie" class="m-auto" autoplay play loop mode="normal">
+                            </lottie-player>
+                        </div>
+                        <h3 class="alt-features-title font-alt">Bit is <strong>Valid</strong></h3>
+                        <div class="alt-features-descr align-left">
+                            Lorem Ultricies ultricies, suspendisse at velit leo vitae et. Lorem Ultricies ultricies,
+                            suspendisse at velit leo vitae et.
+                        </div>
+                    </div>
+                </div>
+                <!--* Sixth Features Item End -->
             </div>
             <!--* Features Grid End -->
-         </div>
-      </section>
-      <!--* Features Section End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator End -->
-      <!--* Blog Section Start -->
-      <section class="page-section" id="news">
-         <div class="container relative">
+        </div>
+    </section>
+    <!--* Features Section End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator End -->
+    <!--* Blog Section Start -->
+    <section class="page-section" id="news">
+        <div class="container relative">
             <div class="row mb-30">
-               <div class="col-6">
-                  <h2 class="post-title section-title align-left">Posts</h2>
-               </div>
-               <div class="col-6 right">
-                  <a href="javascript:void(0)" class="section-more right" aria-label="blog-btn">See More<i
-                        class="fa fa-angle-right"></i></a>
-               </div>
+                <div class="col-6">
+                    <h2 class="post-title section-title align-left">Posts</h2>
+                </div>
+                <div class="col-6 right">
+                    <a href="javascript:void(0)" class="section-more right" aria-label="blog-btn">See More<i
+                            class="fa fa-angle-right"></i></a>
+                </div>
             </div>
             <div class="row">
-               <!--* First Post Item Start -->
-               <div class="col-sm-12 col-md-6 col-lg-3 mb-md-50 wow swing post-item" data-wow-delay="0.1s"
-                  data-wow-duration="2s">
-                  <div class=" post-prev-img">
-                     <a href="javascript:void(0)" aria-label="blog-1"><img class="post-img" width="370" height="200"
-                           src="images/blog/1.webp" alt="blog-1"></a>
-                  </div>
-                  <div class="post-prev-title font-alt">
-                     <a href="javascript:void(0)" aria-label="blog-btn">Top 10 Travel Tips</a>
-                  </div>
-                  <div class="post-prev-info font-alt">
-                     <a href="javascript:void(0)" aria-label="blog-btn">Maaria Rudd</a> , 26 January
-                  </div>
-                  <div class="post-prev-text">
-                     vivamus bibendum vulputate, suspendisse tincidunt velit nec, sed vel,
-                     pharetra duis amet orci. Nibh dictum.
-                  </div>
-                  <div class="post-prev-more">
-                     <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn" role="button"><i
-                           class="fas fa-book-reader"></i>FULL VIEW
-                     </a>
-                  </div>
-               </div>
-               <!--* First Post Item End -->
-               <!--* Second Post Item Start -->
-               <div class="col-sm-12 col-md-6 col-lg-3 mb-md-50 wow swing post-item" data-wow-delay="0.2s"
-                  data-wow-duration="2s">
-                  <div class="post-prev-img">
-                     <a href="javascript:void(0)" aria-label="blog-2"><img width="370" height="200" class="post-img"
-                           src="images/blog/4.webp" alt="blog-2"></a>
-                  </div>
-                  <div class="post-prev-title font-alt">
-                     <a href="javascript:void(0)" aria-label="blog-btn">Top Trending Diets in 2021</a>
-                  </div>
-                  <div class="post-prev-info font-alt">
-                     <a href="javascript:void(0)" aria-label="blog-btn">Saffa Cortes</a> , 22 January
-                  </div>
-                  <div class="post-prev-text">
-                     vivamus bibendum vulputate, suspendisse tincidunt velit nec, sed vel,
-                     pharetra duis amet orci. Nibh dictum.
-                  </div>
-                  <div class="post-prev-more">
-                     <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn" role="button"><i
-                           class="fas fa-book-reader"></i>FULL VIEW
-                     </a>
-                  </div>
-               </div>
-               <!--* Second Post Item End -->
-               <!--* Thrid Post Item Start -->
-               <div class="col-sm-12 col-md-6 col-lg-3 mb-md-50 wow swing post-item" data-wow-delay="0.3s"
-                  data-wow-duration="2s">
-                  <div class="post-prev-img">
-                     <a href="javascript:void(0)" aria-label="blog-3"><img width="370" height="200" class="post-img"
-                           src="images/blog/3.webp" alt="blog-3"></a>
-                  </div>
-                  <div class="post-prev-title font-alt">
-                     <a href="javascript:void(0)" aria-label="blog-btn">Popular Arts in 2021</a>
-                  </div>
-                  <div class="post-prev-info font-alt">
-                     <a href="javascript:void(0)" aria-label="blog-btn">Natan Stevenson</a> , 20 January
-                  </div>
-                  <div class="post-prev-text">
-                     vivamus bibendum vulputate, suspendisse tincidunt velit nec, sed vel,
-                     pharetra duis amet orci. Nibh dictum.
-                  </div>
-                  <div class="post-prev-more">
-                     <a href="javascript:void(0)" class="material-btn dark-btn below rounded-btn" aria-label="blog-btn" role="button"><i
-                           class="fas fa-book-reader"></i>FULL VIEW
-                     </a>
-                  </div>
-                  <figure class="swing-badge swing-panel primary-swing-badge lg-swing-panel"><span>Added New March 2021
+                <!--* First Post Item Start -->
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-md-50 wow swing post-item" data-wow-delay="0.1s"
+                     data-wow-duration="2s">
+                    <div class=" post-prev-img">
+                        <a href="javascript:void(0)" aria-label="blog-1"><img class="post-img" width="370" height="200"
+                                                                              src="images/blog/1.webp" alt="blog-1"></a>
+                    </div>
+                    <div class="post-prev-title font-alt">
+                        <a href="javascript:void(0)" aria-label="blog-btn">Top 10 Travel Tips</a>
+                    </div>
+                    <div class="post-prev-info font-alt">
+                        <a href="javascript:void(0)" aria-label="blog-btn">Maaria Rudd</a> , 26 January
+                    </div>
+                    <div class="post-prev-text">
+                        vivamus bibendum vulputate, suspendisse tincidunt velit nec, sed vel,
+                        pharetra duis amet orci. Nibh dictum.
+                    </div>
+                    <div class="post-prev-more">
+                        <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn"
+                           role="button"><i
+                                class="fas fa-book-reader"></i>FULL VIEW
+                        </a>
+                    </div>
+                </div>
+                <!--* First Post Item End -->
+                <!--* Second Post Item Start -->
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-md-50 wow swing post-item" data-wow-delay="0.2s"
+                     data-wow-duration="2s">
+                    <div class="post-prev-img">
+                        <a href="javascript:void(0)" aria-label="blog-2"><img width="370" height="200" class="post-img"
+                                                                              src="images/blog/4.webp" alt="blog-2"></a>
+                    </div>
+                    <div class="post-prev-title font-alt">
+                        <a href="javascript:void(0)" aria-label="blog-btn">Top Trending Diets in 2021</a>
+                    </div>
+                    <div class="post-prev-info font-alt">
+                        <a href="javascript:void(0)" aria-label="blog-btn">Saffa Cortes</a> , 22 January
+                    </div>
+                    <div class="post-prev-text">
+                        vivamus bibendum vulputate, suspendisse tincidunt velit nec, sed vel,
+                        pharetra duis amet orci. Nibh dictum.
+                    </div>
+                    <div class="post-prev-more">
+                        <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn"
+                           role="button"><i
+                                class="fas fa-book-reader"></i>FULL VIEW
+                        </a>
+                    </div>
+                </div>
+                <!--* Second Post Item End -->
+                <!--* Third Post Item Start -->
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-md-50 wow swing post-item" data-wow-delay="0.3s"
+                     data-wow-duration="2s">
+                    <div class="post-prev-img">
+                        <a href="javascript:void(0)" aria-label="blog-3"><img width="370" height="200" class="post-img"
+                                                                              src="images/blog/3.webp" alt="blog-3"></a>
+                    </div>
+                    <div class="post-prev-title font-alt">
+                        <a href="javascript:void(0)" aria-label="blog-btn">Popular Arts in 2021</a>
+                    </div>
+                    <div class="post-prev-info font-alt">
+                        <a href="javascript:void(0)" aria-label="blog-btn">Natan Stevenson</a> , 20 January
+                    </div>
+                    <div class="post-prev-text">
+                        vivamus bibendum vulputate, suspendisse tincidunt velit nec, sed vel,
+                        pharetra duis amet orci. Nibh dictum.
+                    </div>
+                    <div class="post-prev-more">
+                        <a href="javascript:void(0)" class="material-btn dark-btn below rounded-btn"
+                           aria-label="blog-btn" role="button"><i
+                                class="fas fa-book-reader"></i>FULL VIEW
+                        </a>
+                    </div>
+                    <figure class="swing-badge swing-panel primary-swing-badge lg-swing-panel"><span>Added New March 2021
                         Items </span></figure>
-               </div>
-               <!--* Thrid Post Item End -->
-               <!--*  Fourth Post Item Start -->
-               <div class="col-sm-12 col-md-6 col-lg-3 mb-md-50 wow swing post-item" data-wow-delay="0.3s"
-                  data-wow-duration="2s">
-                  <div class="post-prev-img">
-                     <a href="javascript:void(0)" aria-label="blog-4"><img width="370" height="200" class="post-img"
-                           src="images/blog/2.webp" alt="blog-4"></a>
-                  </div>
-                  <div class="post-prev-title font-alt">
-                     <a href="javascript:void(0)" aria-label="blog-btn">New Fashion Brands in 2021</a>
-                  </div>
-                  <div class="post-prev-info font-alt">
-                     <a href="javascript:void(0)" aria-label="blog-btn">Natan Stevenson</a> , 20 January
-                  </div>
-                  <div class="post-prev-text">
-                     vivamus bibendum vulputate, suspendisse tincidunt velit nec, sed vel,
-                     pharetra duis amet orci. Nibh dictum.
-                  </div>
-                  <div class="post-prev-more">
-                     <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn" role="button"><i
-                           class="fas fa-book-reader"></i>FULL VIEW
-                     </a>
-                  </div>
-               </div>
-               <!--* Fourth Post Item End -->
+                </div>
+                <!--* Third Post Item End -->
+                <!--*  Fourth Post Item Start -->
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-md-50 wow swing post-item" data-wow-delay="0.3s"
+                     data-wow-duration="2s">
+                    <div class="post-prev-img">
+                        <a href="javascript:void(0)" aria-label="blog-4"><img width="370" height="200" class="post-img"
+                                                                              src="images/blog/2.webp" alt="blog-4"></a>
+                    </div>
+                    <div class="post-prev-title font-alt">
+                        <a href="javascript:void(0)" aria-label="blog-btn">New Fashion Brands in 2021</a>
+                    </div>
+                    <div class="post-prev-info font-alt">
+                        <a href="javascript:void(0)" aria-label="blog-btn">Natan Stevenson</a> , 20 January
+                    </div>
+                    <div class="post-prev-text">
+                        vivamus bibendum vulputate, suspendisse tincidunt velit nec, sed vel,
+                        pharetra duis amet orci. Nibh dictum.
+                    </div>
+                    <div class="post-prev-more">
+                        <a href="javascript:void(0)" class="material-btn dark-btn rounded-btn" aria-label="blog-btn"
+                           role="button"><i
+                                class="fas fa-book-reader"></i>FULL VIEW
+                        </a>
+                    </div>
+                </div>
+                <!--* Fourth Post Item End -->
             </div>
-         </div>
-      </section>
-      <!--*  Blog Section End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator End -->
-      <!--* NewsLetter Start -->
-      <div class="newsletter-container relative bg-primary-alfa-50" id="newsletter"
+        </div>
+    </section>
+    <!--*  Blog Section End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator End -->
+    <!--* NewsLetter Start -->
+    <div class="newsletter-container relative bg-primary-alfa-50" id="newsletter"
          style="background-image: url('images/full-width-image/newsletter.webp');">
-         <div class="subscribe-container">
+        <div class="subscribe-container">
             <!--*  MailChimp Signup Form Start -->
             <div class="newsletter-signup relative">
-               <h2>Get Our Best Stuff Straight To Your <span class="yellow">Inbox</span></h2>
-               <!--! MailChimp Key Start -->
-               <form action="#" method="post" id="subscribe-form" name="subscribe-form" class="validate" novalidate>
-                  <!--! MailChimp Key End -->
-                  <div>
-                     <div class="newsletter-field">
-                        <label for="newsletter-name">First Name</label>
-                        <input id="newsletter-name" type="text" value="" placeholder="First Name" name="FNAME"
-                           class="required form-control dd5">
-                     </div>
-                     <div class="newsletter-field">
-                        <label for="newsletter-email">Email Address</label>
-                        <input id="newsletter-email" type="email" value="" placeholder="Email Address" name="EMAIL"
-                           class="required email form-control dd5">
-                     </div>
-                     <p class="error-message">Please fill out the fields above.</p>
-                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                           name="newsletter" tabindex="-1" value=""></div>
-                     <div class="clear"><input class="material-btn secondary-btn news-btn" type="submit"
-                           value="SUBSCRIBE NOW" name="subscribe" data-style="fill">
-                     </div>
-                  </div>
-               </form>
+                <h2>Get Our Best Stuff Straight To Your <span class="yellow">Inbox</span></h2>
+                <!--! MailChimp Key Start -->
+                <form action="#" method="post" id="subscribe-form" name="subscribe-form" class="validate" novalidate>
+                    <!--! MailChimp Key End -->
+                    <div>
+                        <div class="newsletter-field">
+                            <label for="newsletter-name">First Name</label>
+                            <input id="newsletter-name" type="text" value="" placeholder="First Name" name="FNAME"
+                                   class="required form-control dd5">
+                        </div>
+                        <div class="newsletter-field">
+                            <label for="newsletter-email">Email Address</label>
+                            <input id="newsletter-email" type="email" value="" placeholder="Email Address" name="EMAIL"
+                                   class="required email form-control dd5">
+                        </div>
+                        <p class="error-message">Please fill out the fields above.</p>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                                  name="newsletter"
+                                                                                                  tabindex="-1"
+                                                                                                  value=""></div>
+                        <div class="clear"><input class="material-btn secondary-btn news-btn" type="submit"
+                                                  value="SUBSCRIBE NOW" name="subscribe" data-style="fill">
+                        </div>
+                    </div>
+                </form>
             </div>
             <!--* MailChimp Signup Form End -->
             <!--* Success Message When Everything Checked Start -->
             <div class="success-message">
-               <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="70">
-                  <circle class="checkmark-circle" cx="26" cy="26" r="23" fill="none" />
-                  <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-               </svg>
-               <div>
-                  <h4>Success!</h4>
-                  <p>Click the verify link in the email We just sent you to complete your subscription.</p>
-               </div>
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="70">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="23" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+                <div>
+                    <h4>Success!</h4>
+                    <p>Click the verify link in the email We just sent you to complete your subscription.</p>
+                </div>
             </div>
             <!--* Success Message When Everything Checked End -->
-         </div>
-      </div>
-      <!--*  NewsLetter End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator End -->
-      <!--* Contact-Us Start -->
-      <div class="contact-us relative bg-compound-alfa-50" id="contact"
+        </div>
+    </div>
+    <!--*  NewsLetter End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator End -->
+    <!--* Contact-Us Start -->
+    <div class="contact-us relative bg-compound-alfa-50" id="contact"
          style="background-image: url('images/full-width-image/contactus.webp');">
-         <div class="container py-5 relative">
+        <div class="container py-5 relative">
             <div class="row py-5">
-               <div class="col-md-4 col-12">
-                  <p class="m-0 small dd2 text-uppercase">For our honorable <strong>clients</strong></p>
-                  <h1 class="text-light">Contact <span class="yellow">Us</span></h1>
-                  <p class="dd2">Call us 24/7 at +199999999 or fill out the form.</p>
-                  <p class="mb-4 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at
-                     vulputate ex, non fermentum elit.
-                  </p>
-               </div>
-               <div class="col-md-8 col-12">
-                  <form id="contact_form">
-                     <div class="row">
-                        <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-full-name">Full Name</label>
-                           <input id="cu-full-name" class="form-control dd5" placeholder="Full Name" type="text"
-                              name="name" required>
+                <div class="col-md-4 col-12">
+                    <p class="m-0 small dd2 text-uppercase">For our honorable <strong>clients</strong></p>
+                    <h1 class="text-light">Contact <span class="yellow">Us</span></h1>
+                    <p class="dd2">Call us 24/7 at +199999999 or fill out the form.</p>
+                    <p class="mb-4 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at
+                        vulputate ex, non fermentum elit.
+                    </p>
+                </div>
+                <div class="col-md-8 col-12">
+                    <form id="contact_form">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-full-name">Full Name</label>
+                                <input id="cu-full-name" class="form-control dd5" placeholder="Full Name" type="text"
+                                       name="name" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-phone">Phone Number</label>
+                                <input id="cu-phone" class="form-control dd5" placeholder="Phone Number" type="text"
+                                       name="phone">
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-email">Email Address</label>
+                                <input id="cu-email" class="form-control dd5" placeholder="Email Address" type="email"
+                                       name="email" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-title">Title</label>
+                                <input id="cu-title" class="form-control dd5" placeholder="Title" name="title">
+                            </div>
+                            <div class="col-lg-12  mb-4 col-sm-12"><label for="cu-message">Message</label>
+                                <textarea id="cu-message" class="form-control dd5" name="message" cols="80" rows="3"
+                                          placeholder="Message" required></textarea>
+                            </div>
+                            <div class="col-lg-12">
+                                <input class="material-btn primary-btn rounded-btn contact-btn right" type="submit"
+                                       id="submit_btn" value="SEND MESSAGE">
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-phone">Phone Number</label>
-                           <input id="cu-phone" class="form-control dd5" placeholder="Phone Number" type="text"
-                              name="phone">
-                        </div>
-                        <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-email">Email Address</label>
-                           <input id="cu-email" class="form-control dd5" placeholder="Email Address" type="email"
-                              name="email" required>
-                        </div>
-                        <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-title">Title</label>
-                           <input id="cu-title" class="form-control dd5" placeholder="Title" name="title">
-                        </div>
-                        <div class="col-lg-12  mb-4 col-sm-12"><label for="cu-message">Message</label>
-                           <textarea id="cu-message" class="form-control dd5" name="message" cols="80" rows="3"
-                              placeholder="Message" required></textarea>
-                        </div>
-                        <div class="col-lg-12">
-                           <input class="material-btn primary-btn rounded-btn contact-btn right" type="submit"
-                              id="submit_btn" value="SEND MESSAGE">
-                        </div>
-                     </div>
-                  </form>
-               </div>
+                    </form>
+                </div>
             </div>
-         </div>
-      </div>
-      <!--* Contact-Us End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator End -->
-      <!--*  Google Map Start -->
-      <div class="container-fluid" id="google-map">
-         <!--! Google Map API Key Start-->
-         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83327.54691366685!2d-123.19394374837405!3d49.25771428138822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1606402452590!5m2!1sen!2sca"
-            title="Google Map" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-         <!--! Google Map API Key Start-->
-         <div class="row text-center">
+        </div>
+    </div>
+    <!--* Contact-Us End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator End -->
+    <!--*  Google Map Start -->
+    <div class="container-fluid" id="google-map">
+        <!--! Google Map API Key Start-->
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83327.54691366685!2d-123.19394374837405!3d49.25771428138822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1606402452590!5m2!1sen!2sca"
+                title="Google Map" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        <!--! Google Map API Key Start-->
+        <div class="row text-center">
             <div class="col-4 box1 pt-4 pb-10 googlemap-icons">
-               <a href="tel:+123456789" aria-label="info"><i
-                     class="blue fas fa-phone fa-4x googlemap-links google-map-icons"></i>
-                  <h3 class="d-none d-lg-block d-xl-block mb-0 googlemap-links googlemap-headers">Phone</h3>
-                  <p class="d-none d-lg-block d-xl-block googlemap-links">+199999999</p>
-               </a>
+                <a href="tel:+123456789" aria-label="info"><i
+                        class="blue fas fa-phone fa-4x googlemap-links google-map-icons"></i>
+                    <h3 class="d-none d-lg-block d-xl-block mb-0 googlemap-links googlemap-headers">Phone</h3>
+                    <p class="d-none d-lg-block d-xl-block googlemap-links">+199999999</p>
+                </a>
             </div>
             <div class="col-4 box2 pt-4 googlemap-icons">
-               <a href="https://en.wikipedia.org/wiki/Vancouver" rel="noreferrer" aria-label="info"><i
-                     class="red fas fa-map-marker-alt fa-4x googlemap-links google-map-icons"></i>
-                  <h3 class="d-none d-lg-block d-xl-block mb-0 googlemap-links googlemap-headers">Location</h3>
-                  <p class="d-none d-lg-block d-xl-block googlemap-links">Vancouver, BC, Canada </p>
-               </a>
+                <a href="https://en.wikipedia.org/wiki/Vancouver" rel="noreferrer" aria-label="info"><i
+                        class="red fas fa-map-marker-alt fa-4x googlemap-links google-map-icons"></i>
+                    <h3 class="d-none d-lg-block d-xl-block mb-0 googlemap-links googlemap-headers">Location</h3>
+                    <p class="d-none d-lg-block d-xl-block googlemap-links">Vancouver, BC, Canada </p>
+                </a>
             </div>
             <div class="col-4 box3 pt-4 googlemap-icons">
-               <a href="mailto:bit@support.com" aria-label="info"><i
-                     class="green fas fa-envelope fa-4x googlemap-links google-map-icons"></i>
-                  <h3 class="d-none d-lg-block d-xl-block mb-0 googlemap-links googlemap-headers">E-mail</h3>
-                  <p class="d-none d-lg-block d-xl-block googlemap-links">mail@support.com</p>
-               </a>
+                <a href="mailto:bit@support.com" aria-label="info"><i
+                        class="green fas fa-envelope fa-4x googlemap-links google-map-icons"></i>
+                    <h3 class="d-none d-lg-block d-xl-block mb-0 googlemap-links googlemap-headers">E-mail</h3>
+                    <p class="d-none d-lg-block d-xl-block googlemap-links">mail@support.com</p>
+                </a>
             </div>
-         </div>
-      </div>
-      <!--* Google Map End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator End -->
-      <!--* Footer Start -->
-      <section id="footer" class="footer-container">
-         <footer class="container-fluid py-5">
+        </div>
+    </div>
+    <!--* Google Map End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator End -->
+    <!--* Footer Start -->
+    <section id="footer" class="footer-container">
+        <footer class="container-fluid py-5">
             <div class="container">
-               <div class="row">
-                  <div class="col-lg-3 col-md-6">
-                     <!--! Footer Logo Start -->
-                     <div class="footer-logo-part">
-                        <img width="512" height="512" id="footer-logo" src="images/logo/logo-light.png"
-                           alt="footer-logo" class=" logo-footer wow rubberBand">
-                        <p>&copy; 2021 BIT. Made With &#x2764; By <strong>CreativeThemes</strong>. </p>
-                     </div>
-                     <!--! Footer Logo End -->
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-4 footer-header">
-                     <h2> About Company</h2>
-                     <a href="#about" class="material-btn primary-btn rounded-btn footer-btn" aria-label="footer-btn">
-                        <i class="fas fa-info"></i>MORE INFO</a>
-                     <a class="material-btn secondary-btn rounded-btn footer-btn" href="#contact"
-                        aria-label="foote-btn"><i class="fas fa-address-book"></i>CONTACT US</a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-4 footer-header">
-                     <h2> Website Services</h2>
-                     <div class="row">
-                        <div class="col-md-6">
-                           <ul>
-                              <li> <a href="#home" aria-label="footer-link"> Home</a> </li>
-                              <li> <a href="#about" aria-label="footer-link"> About</a> </li>
-                              <li> <a href="#tab-services" aria-label="footer-link"> Service</a> </li>
-                           </ul>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <!--! Footer Logo Start -->
+                        <div class="footer-logo-part">
+                            <img width="256" height="256" id="footer-logo" src="images/logo/logo-light.png"
+                                 alt="footer-logo" class=" logo-footer wow rubberBand">
+                            <p>&copy; 2021 BIT. Made With &#x2764; By <strong>CreativeThemes</strong>. </p>
                         </div>
-                        <div class="col-md-6 px-4">
-                           <ul>
-                              <li> <a href="#team" aria-label="footer-link"> Team</a> </li>
-                              <li> <a href="#news" aria-label="footer-link"> Blog</a> </li>
-                              <li> <a href="#contact" aria-label="footer-link"> Contact</a> </li>
-                           </ul>
+                        <!--! Footer Logo End -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 px-4 footer-header">
+                        <h2> About Company</h2>
+                        <a href="#about" class="material-btn primary-btn rounded-btn footer-btn"
+                           aria-label="footer-btn">
+                            <i class="fas fa-info"></i>MORE INFO</a>
+                        <a class="material-btn secondary-btn rounded-btn footer-btn" href="#contact"
+                           aria-label="footer-btn"><i class="fas fa-address-book"></i>CONTACT US</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 px-4 footer-header">
+                        <h2> Website Services</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href="#home" aria-label="footer-link"> Home</a></li>
+                                    <li><a href="#about" aria-label="footer-link"> About</a></li>
+                                    <li><a href="#tab-services" aria-label="footer-link"> Service</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 px-4">
+                                <ul>
+                                    <li><a href="#team" aria-label="footer-link"> Team</a></li>
+                                    <li><a href="#news" aria-label="footer-link"> Blog</a></li>
+                                    <li><a href="#contact" aria-label="footer-link"> Contact</a></li>
+                                </ul>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 footer-header">
-                     <h2> Social Networks</h2>
-                     <div class="social">
-                        <a href="https://www.facebook.com/" rel="noreferrer" aria-label="facebook"><i
-                              class="fab fa-facebook fa-4x wow flipInX facebook" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/" rel="noreferrer" aria-label="instagram"><i
-                              class="fab fa-instagram fa-4x wow flipInY instagram" aria-hidden="true"></i></a>
-                        <a href="https://www.twitter.com/" rel="noreferrer" aria-label="twitter"><i
-                              class="fab fa-twitter fa-4x wow flipInX twitter" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/" rel="noreferrer" aria-label="linkedin"><i
-                              class="fab fa-linkedin fa-4x wow flipInY linkedin" aria-hidden="true"></i></a>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-header">
+                        <h2> Social Networks</h2>
+                        <div class="social">
+                            <a href="https://www.facebook.com/" rel="noreferrer" aria-label="facebook"><i
+                                    class="fab fa-facebook fa-4x wow flipInX facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/" rel="noreferrer" aria-label="instagram"><i
+                                    class="fab fa-instagram fa-4x wow flipInY instagram" aria-hidden="true"></i></a>
+                            <a href="https://www.twitter.com/" rel="noreferrer" aria-label="twitter"><i
+                                    class="fab fa-twitter fa-4x wow flipInX twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/" rel="noreferrer" aria-label="linkedin"><i
+                                    class="fab fa-linkedin fa-4x wow flipInY linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </footer>
-      </section>
-      <!--* Footer End -->
-      <!--! separator Start -->
-      <div class="separator-wrapper">
-         <div class="separator separator-gradient"></div>
-      </div>
-      <!--! separator Wrapper Ends -->
-      <!--* Alerts Start -->
-      <!--* First Time Alerts Start -->
-      <div id="cookie-alert">
-         <!--* Welcome Alert Start -->
-         <div class="alert-container stick-alert alert-welcome fade icon-success-alert text-left rendered show"
-            role="alert">
+        </footer>
+    </section>
+    <!--* Footer End -->
+    <!--! separator Start -->
+    <div class="separator-wrapper">
+        <div class="separator separator-gradient"></div>
+    </div>
+    <!--! separator Wrapper Ends -->
+    <!--* Alerts Start -->
+    <!--* First Time Alerts Start -->
+    <div id="cookie-alert">
+        <!--* Welcome Alert Start -->
+        <div class="alert-container stick-alert alert-welcome fade icon-success-alert text-left rendered show"
+             role="alert">
             <div class="close" data-dismiss="alert">
-               <span class="sr-only">Close</span>
+                <span class="sr-only">Close</span>
             </div>
             <i id="close-icon-success" class="fa fa-times greencross right"></i>
             <i class="start-icon far fa-check-circle fa-2x"></i>
             <strong>You are awesome</strong> We love you so much for being here with us.
-         </div>
-         <!--* Welcome Alert End -->
-         <!--* Cookie Alert Start -->
-         <div class="alert-container stick-alert alert-cookie fade icon-info-alert text-left rendered show"
-            role="alert">
+        </div>
+        <!--* Welcome Alert End -->
+        <!--* Cookie Alert Start -->
+        <div class="alert-container stick-alert alert-cookie fade icon-info-alert text-left rendered show"
+             role="alert">
             <div class="close" data-dismiss="alert">
-               <span class="sr-only">Close</span>
+                <span class="sr-only">Close</span>
             </div>
             <i id="close-icon-info" class="fa fa-times blue-cross right"></i>
             <i class="start-icon fa fa-question-circle fa-2x"></i>
             <b>Hey there!</b> This website is using cookies.
-         </div>
-         <!--* Cookie Alert End -->
-      </div>
-      <!--* First Time Alerts End -->
-      <!--* Browser Alert Start -->
-      <div id="browser-alert" class="alert-container alert-browser fade icon-warning-alert text-left rendered show"
+        </div>
+        <!--* Cookie Alert End -->
+    </div>
+    <!--* First Time Alerts End -->
+    <!--* Browser Alert Start -->
+    <div id="browser-alert" class="alert-container alert-browser fade icon-warning-alert text-left rendered show"
          role="alert">
-         <div class="close" data-dismiss="alert">
+        <div class="close" data-dismiss="alert">
             <span class="sr-only">Close</span>
             <i id="close-icon-warning" class="fa fa-times warning right"></i>
-         </div>
-         <i class="start-icon fas fa-exclamation-triangle fa-2x"></i>
-         <strong>Warning!</strong> You are using an outdated browser. We recommend you to
-         change your browser.
-      </div>
-      <!--* Browser Alert End -->
+        </div>
+        <i class="start-icon fas fa-exclamation-triangle fa-2x"></i>
+        <strong>Warning!</strong> You are using an outdated browser. We recommend you to
+        change your browser.
+    </div>
+    <!--* Browser Alert End -->
 
-      <!--* Alerts End -->
-      <!--! social-links-wrapper Start -->
-      <div class="social-links-wrapper">
-         <div class="social-links-icon">
+    <!--* Alerts End -->
+    <!--! social-links-wrapper Start -->
+    <div class="social-links-wrapper">
+        <div class="social-links-icon">
             <i class="fa fa-link"></i>
-         </div>
-         <a href="https://github.com" rel="noreferrer" aria-label="github">
+        </div>
+        <a href="https://github.com" rel="noreferrer" aria-label="github">
             <div class="hidden-children sc-1">
-               <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i>
             </div>
-         </a>
-         <a href="https://twitter.com" rel="noreferrer" aria-label="twitter">
+        </a>
+        <a href="https://twitter.com" rel="noreferrer" aria-label="twitter">
             <div class="hidden-children sc-2">
-               <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
             </div>
-         </a>
-         <a href="https://codepen.io" rel="noreferrer" aria-label="codepen">
+        </a>
+        <a href="https://codepen.io" rel="noreferrer" aria-label="codepen">
             <div class="hidden-children sc-3">
-               <i class="fab fa-codepen"></i>
+                <i class="fab fa-codepen"></i>
             </div>
-         </a>
-         <a href="https://www.linkedin.com" rel="noreferrer" aria-label="linkedin">
+        </a>
+        <a href="https://www.linkedin.com" rel="noreferrer" aria-label="linkedin">
             <div class="hidden-children sc-4">
-               <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin"></i>
             </div>
-         </a>
-         <a href="https://www.facebook.com/" rel="noreferrer" aria-label="facebook">
+        </a>
+        <a href="https://www.facebook.com/" rel="noreferrer" aria-label="facebook">
             <div class="hidden-children sc-5">
-               <i class="fab fa-facebook"></i>
+                <i class="fab fa-facebook"></i>
             </div>
-         </a>
-      </div>
-      <!--! social-links-wrapper End -->
-      <!--* Back to top Start -->
-      <div>
-         <a id="back-to-top" href="#home" aria-label="back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
-      </div>
-      <!--* Back to top End -->
-   </div>
-   <!--* Page Wrap End -->
-   <!--* JavaScript Links Start -->
-   <script src="js/jquery.min.js"></script>
-   <!--* Main Website JavaScript Link -->
-   <script src="js/main.js"></script>
-   <script src="js/custom.js"></script>
-   <!--*  jQuery & Other Plugins -->
-   <script src="js/wow.min.js"></script>
-   <script src="js/SmoothScroll.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/carousel.js"></script>
-   <script src="js/owl.carousel.min.js"></script>
-   <script src="js/jarallax.min.js"></script>
-   <script src="js/isotope.pkgd.min.js"></script>
-   <script src="js/imagesloaded.pkgd.min.js"></script>
-   <script src="js/jquery.magnific-popup.min.js"></script>
-   <script src="js/lottie-player.min.js"></script>
-   <script src="js/lottie.min.js"></script>
-   <!--* JavaScript Links End -->
-   <script>
-      $(document).ready(function () {
-         var $slider = $(".slider"),
+        </a>
+    </div>
+    <!--! social-links-wrapper End -->
+    <!--* Back to top Start -->
+    <div>
+        <a id="back-to-top" href="#home" aria-label="back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+    </div>
+    <!--* Back to top End -->
+</div>
+<!--* Page Wrap End -->
+<!--* JavaScript Links Start -->
+<script src="js/jquery.min.js"></script>
+<!--* Main Website JavaScript Link -->
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+<!--*  jQuery & Other Plugins -->
+<script src="js/wow.min.js"></script>
+<script src="js/SmoothScroll.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jarallax.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/lottie-player.min.js"></script>
+<script src="js/lottie.min.js"></script>
+<!--* JavaScript Links End -->
+<script>
+    $(document).ready(function () {
+        var $slider = $(".slider"),
             $slideBGs = $(".slide__bg"),
             diff = 0,
             curSlide = 0,
@@ -1673,43 +1721,43 @@
             autoSlideDelay = 99999,
             $pagination = $(".slider-pagi");
 
-         function createBullets() {
+        function createBullets() {
             for (var i = 0; i < numOfSlides + 1; i++) {
-               var $li = $("<li class='slider-pagi__elem'></li>");
-               $li.addClass("slider-pagi__elem-" + i).data("page", i);
-               if (!i) $li.addClass("active");
-               $pagination.append($li);
+                var $li = $("<li class='slider-pagi__elem'></li>");
+                $li.addClass("slider-pagi__elem-" + i).data("page", i);
+                if (!i) $li.addClass("active");
+                $pagination.append($li);
             }
-         };
-         createBullets();
+        };
+        createBullets();
 
-         function manageControls() {
+        function manageControls() {
             $(".slider-control").removeClass("inactive");
             if (!curSlide) $(".slider-control.left").addClass("inactive");
             if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
-         };
+        };
 
-         function autoSlide() {
+        function autoSlide() {
             autoSlideTimeout = setTimeout(function () {
-               curSlide++;
-               if (curSlide > numOfSlides) curSlide = 0;
-               changeSlides();
+                curSlide++;
+                if (curSlide > numOfSlides) curSlide = 0;
+                changeSlides();
             }, autoSlideDelay);
-         };
-         autoSlide();
+        };
+        autoSlide();
 
-         function changeSlides(instant) {
+        function changeSlides(instant) {
             if (!instant) {
-               animating = true;
-               manageControls();
-               $slider.addClass("animating");
-               $slider.css("top");
-               $(".slide").removeClass("active");
-               $(".slide-" + curSlide).addClass("active");
-               setTimeout(function () {
-                  $slider.removeClass("animating");
-                  animating = false;
-               }, animTime);
+                animating = true;
+                manageControls();
+                $slider.addClass("animating");
+                $slider.css("top");
+                $(".slide").removeClass("active");
+                $(".slide-" + curSlide).addClass("active");
+                setTimeout(function () {
+                    $slider.removeClass("animating");
+                    animating = false;
+                }, animTime);
             }
             window.clearTimeout(autoSlideTimeout);
             $(".slider-pagi__elem").removeClass("active");
@@ -1718,64 +1766,65 @@
             $slideBGs.css("transform", "translate3d(" + curSlide * 50 + "%,0,0)");
             diff = 0;
             autoSlide();
-         }
+        }
 
-         function navigateLeft() {
+        function navigateLeft() {
             if (animating) return;
             if (curSlide > 0) curSlide--;
             changeSlides();
-         }
+        }
 
-         function navigateRight() {
+        function navigateRight() {
             if (animating) return;
             if (curSlide < numOfSlides) curSlide++;
             changeSlides();
-         }
-         $(document).on("mousedown touchstart", ".slider", function (e) {
+        }
+
+        $(document).on("mousedown touchstart", ".slider", function (e) {
             if (animating) return;
             window.clearTimeout(autoSlideTimeout);
             var startX = e.pageX || e.originalEvent.touches[0].pageX,
-               winW = $(window).width();
+                winW = $(window).width();
             diff = 0;
             $(document).on("mousemove touchmove", function (e) {
-               var x = e.pageX || e.originalEvent.touches[0].pageX;
-               diff = (startX - x) / winW * 70;
-               if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
-               $slider.css("transform", "translate3d(" + (-curSlide * 100 - diff) + "%,0,0)");
-               $slideBGs.css("transform", "translate3d(" + (curSlide * 50 + diff / 2) + "%,0,0)");
+                var x = e.pageX || e.originalEvent.touches[0].pageX;
+                diff = (startX - x) / winW * 70;
+                if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
+                $slider.css("transform", "translate3d(" + (-curSlide * 100 - diff) + "%,0,0)");
+                $slideBGs.css("transform", "translate3d(" + (curSlide * 50 + diff / 2) + "%,0,0)");
             });
-         });
-         $(document).on("mouseup touchend", function (e) {
+        });
+        $(document).on("mouseup touchend", function (e) {
             $(document).off("mousemove touchmove");
             if (animating) return;
             if (!diff) {
-               changeSlides(true);
-               return;
+                changeSlides(true);
+                return;
             }
             if (diff > -8 && diff < 8) {
-               changeSlides();
-               return;
+                changeSlides();
+                return;
             }
             if (diff <= -8) {
-               navigateLeft();
+                navigateLeft();
             }
             if (diff >= 8) {
-               navigateRight();
+                navigateRight();
             }
-         });
-         $(document).on("click", ".slider-control", function () {
+        });
+        $(document).on("click", ".slider-control", function () {
             if ($(this).hasClass("left")) {
-               navigateLeft();
+                navigateLeft();
             } else {
-               navigateRight();
+                navigateRight();
             }
-         });
-         $(document).on("click", ".slider-pagi__elem", function () {
+        });
+        $(document).on("click", ".slider-pagi__elem", function () {
             curSlide = $(this).data("page");
             changeSlides();
-         });
-      });
-   </script>
+        });
+    });
+</script>
 </body>
 
 </html>
