@@ -3,12 +3,11 @@
 * ==================================================================
 !             [Main JavaScript File (main.js)]
 
-!     Project Name : Bit - Responsive Multi-Purpose HTML5 Template
+!     Template Name : Bit - Responsive Multi-Purpose HTML5 Template
 !     Version : 1.0
-?     Last Change : 20/12/2020
+?     Last Update : 2021-04-23
 !     Primary Use : One/Multi Page/Multi Purpose Usage
-?     Updates & Docs At : https://themeforest.net
-?     @author : CreativeThemes Company, https://Bit.CreativeThemes.com                                                   *
+?     @author : CreativeThemes, https://bit.CreativeThemes.me                                                   *
 
 * ===================================================================
 */
