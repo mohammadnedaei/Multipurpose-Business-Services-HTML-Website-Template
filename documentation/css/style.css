@@ -369,7 +369,7 @@ body {
   overflow: hidden;
 }
 
-.sidebar-wrapper .sidebar-header .user-pic {
+.sidebar-wrapper .sidebar-header .sidemenu-pic {
   float: left;
   width: 90px;
   padding: 2px;
@@ -378,30 +378,30 @@ body {
   overflow: hidden;
 }
 
-.sidebar-wrapper .sidebar-header .user-pic img {
+.sidebar-wrapper .sidebar-header .sidemenu-pic img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-.sidebar-wrapper .sidebar-header .user-info {
+.sidebar-wrapper .sidebar-header .sidemenu-info {
   float: left;
 }
 
-.sidebar-wrapper .sidebar-header .user-info>span {
+.sidebar-wrapper .sidebar-header .sidemenu-info>span {
   display: block;
 }
 
-.sidebar-wrapper .sidebar-header .user-info .user-role {
+.sidebar-wrapper .sidebar-header .sidemenu-info .sidemenu-role {
   font-size: 12px;
 }
 
-.sidebar-wrapper .sidebar-header .user-info .user-status {
+.sidebar-wrapper .sidebar-header .sidemenu-info .sidemenu-status {
   font-size: 11px;
   margin-top: 4px;
 }
 
-.sidebar-wrapper .sidebar-header .user-info .user-status i {
+.sidebar-wrapper .sidebar-header .sidemenu-info .sidemenu-status i {
   font-size: 8px;
   margin-right: 4px;
   color: #5cb85c;
@@ -639,8 +639,8 @@ body {
   box-shadow: none;
 }
 
-.chiller-theme .sidebar-wrapper .sidebar-header .user-info .user-role,
-.chiller-theme .sidebar-wrapper .sidebar-header .user-info .user-status,
+.chiller-theme .sidebar-wrapper .sidebar-header .sidemenu-info .sidemenu-role,
+.chiller-theme .sidebar-wrapper .sidebar-header .sidemenu-info .sidemenu-status,
 .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
 .chiller-theme .sidebar-wrapper .sidebar-search .input-group-text,
 .chiller-theme .sidebar-wrapper .sidebar-brand>a,
@@ -651,7 +651,7 @@ body {
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a,
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active>a,
-.chiller-theme .sidebar-wrapper .sidebar-header .user-info,
+.chiller-theme .sidebar-wrapper .sidebar-header .sidemenu-info,
 .chiller-theme .sidebar-wrapper .sidebar-brand>a:hover,
 .chiller-theme .sidebar-footer>a:hover i {
   color: #b8bfce;
