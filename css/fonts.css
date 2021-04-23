@@ -10,7 +10,6 @@ b,
 div,
 ul,
 li,
-span,
 .services-down,
 .comment-item-data,
 .pricing-table-section,
@@ -36,11 +35,7 @@ h6,
          font-family: "Poppins", sans-serif;
 }
 
-.first-heading {
-         font-family: "Potta one", cursive;
-}
-
-.font-pottaone,
+.first-heading, .font-pottaone,
 .logo-text-1 {
-         font-family: "Potta one", sans-serif !important;
+         font-family: "Potta one", cursive;
 }
