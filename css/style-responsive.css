@@ -168,6 +168,12 @@
         width: 50%;
         max-width: 350px;
     }
+    .topbar-light .first-topbar-col,
+    .topbar-dark .first-topbar-col,
+    .topbar-light .third-topbar-col,
+    .topbar-dark .third-topbar-col {
+        display: none;
+    }
 }
 
 @media all and (max-width: 992px) {
@@ -319,9 +325,6 @@
 
     .lang {
         padding: 6px 5px;
-    }
-    .topbar-light .fist-topbar-col, .topbar-dark .fist-topbar-col, .topbar-light .third-topbar-col, .topbar-dark .third-topbar-col {
-        display: none;
     }
 
 }
