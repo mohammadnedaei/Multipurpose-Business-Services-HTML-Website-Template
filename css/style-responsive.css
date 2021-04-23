@@ -468,26 +468,6 @@
 }
 
 @media all and (max-width: 767px) {
-    /*.particles-firsttext {*/
-    /*    font-size: 2.3em;*/
-    /*    width: 100%;*/
-    /*    margin-top: 4.5em;*/
-    /*}*/
-
-    /*.particles-secondtext {*/
-    /*    margin-top: 15.5em;*/
-    /*    font-size: 1.5em !important;*/
-    /*    width: 100%;*/
-    /*}*/
-
-    /*.particles-thridtext {*/
-    /*    margin-top: 28em;*/
-    /*    width: 100%;*/
-    /*}*/
-
-    #footer button {
-        right: 0;
-    }
 
     .hs-line-1 {
         font-size: 24px;
