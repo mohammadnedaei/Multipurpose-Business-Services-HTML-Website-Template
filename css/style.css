@@ -3534,7 +3534,6 @@ a.logo:hover {
 }
 
 .lang img {
-    width: 20px;
     margin-left: 0;
 }
 
@@ -4116,10 +4115,6 @@ a.logo:hover {
     font-size: 11px;
     letter-spacing: 1px;
     color: #aaa;
-}
-
-.separator {
-    margin: 0 5px;
 }
 
 .blog-item-data a {
