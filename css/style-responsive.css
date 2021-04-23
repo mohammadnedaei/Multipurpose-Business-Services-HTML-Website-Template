@@ -320,6 +320,9 @@
     .lang {
         padding: 6px 5px;
     }
+    .topbar-light .fist-topbar-col, .topbar-dark .fist-topbar-col, .topbar-light .third-topbar-col, .topbar-dark .third-topbar-col {
+        display: none;
+    }
 
 }
 
