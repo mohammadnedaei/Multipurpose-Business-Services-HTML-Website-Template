@@ -3288,8 +3288,8 @@ button:focus {
     color: #fff;
 }
 
-.topbar-dark, .topbar-light, .navbar {
-    z-index: 100;
+ .navbar {
+    z-index: 50;
 }
 
 .col-megamenu ul li a {
@@ -3559,7 +3559,7 @@ a.logo:hover {
     position: absolute;
     background: linear-gradient(to right, #16cf72, #16bed4);
     border-radius: 4px;
-    z-index: 100;
+    z-index: 21;
 }
 
 .translate-wrapper.active .more-lang {
@@ -3767,7 +3767,7 @@ a.logo:hover {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 10000000;
+    z-index: 50;
     top: 0;
     background-color: rgba(0,0,0, 1);
     overflow-x: hidden;
@@ -6709,7 +6709,6 @@ svg.top-left-square {
     z-index: 10;
     width: 100%;
 
-
 }
 
 .client-single.active .client-comment,
@@ -6766,7 +6765,7 @@ svg.top-left-square {
 }
 
 .client-comment p {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     line-height: 1.8;
     color: white;
 }

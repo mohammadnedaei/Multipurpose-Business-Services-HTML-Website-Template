@@ -221,6 +221,7 @@
 
 @media all and (max-width: 991px) {
     #main_nav {
+        margin-top: 10px;
         overflow-y: auto;
         overflow-x: hidden;
         height: 100%;
@@ -247,16 +248,17 @@
         background-color: #fff;
     }
 
-    /*.bg-scrolling-light .nav-link,*/
-    /*.bg-fixed-light .nav-link,*/
-    /*.bg-scrolling-light .search-button,*/
-    /*.bg-scrolling-light #cart,*/
-    /*.bg-scrolling-yellow .nav-link,*/
-    /*.bg-scrolling-yellow .search-button,*/
-    /*.bg-scrolling-yellow #cart,*/
-    /*.bg-scrolling-yellow .day-btn {*/
-    /*    color: #000 !important;*/
-    /*}*/
+    .bg-scrolling-light .nav-link,
+    .bg-fixed-light .nav-link,
+    .bg-scrolling-light .search-button,
+    .bg-scrolling-light .navbar-brand,
+    .bg-scrolling-light #cart,
+    .bg-scrolling-yellow .nav-link,
+    .bg-scrolling-yellow .search-button,
+    .bg-scrolling-yellow #cart,
+    .bg-scrolling-yellow .day-btn {
+        color: #000 !important;
+    }
 
     .bg-scrolling-red .navbar-collapse {
         background-color: #dc3545;
