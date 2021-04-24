@@ -335,7 +335,7 @@
                 <div id="logo-favicon" class="container mt-20">
                     <div class="alert alert-secondary" role="alert">
                         <h4 class="alert-heading">Changing Image Root</h4>
-                        <p>Choose one of below steps for changing image root in your website.</p>
+                        <p>Choose one of the below steps for changing image root in your website.</p>
                         <p>1- Replace your image with the current image in <code>images/</code>
                             folder.
                         </p>
@@ -353,16 +353,16 @@
                     <p>Both Logo &amp; Favicon images are located in <code>images/logo</code>. You can replace your own
                         Icon
                         with these files. </p>
-                    <p>There are two different favicon &amp; Logo. You may use Dark / Light images as your website
-                        Theme.</p>
                     <p class="lg-font">Code example for favicon</p>
                     <a class="btn btn-copy btn-sm btn-secondary" data-clipboard-target="#favicon-html"> <i
                             class="fas fa-clipboard mx-2"></i> Copy</a>
                     <pre>
                                           <code id="favicon-html" class="language-html">
-&#x3C;!-- Favicons --&#x3E;
-&#x3C;link href=&#x22;images/logo/favicon-light.png&#x22; rel=&#x22;shortcut icon&#x22;&#x3E;
-&#x3C;link href=&#x22;images/logo/favicon-light.png&#x22; rel=&#x22;apple-touch-icon&#x22;&#x3E;
+&#x3C;!--! Favicons --&#x3E;
+&#x3C;link rel=&#x22;apple-touch-icon&#x22; sizes=&#x22;180x180&#x22; href=&#x22;images/logo/apple-touch-icon.png&#x22;&#x3E;
+&#x3C;link rel=&#x22;icon&#x22; type=&#x22;image/png&#x22; sizes=&#x22;32x32&#x22; href=&#x22;images/logo/favicon-32x32.png&#x22;&#x3E;
+&#x3C;link rel=&#x22;icon&#x22; type=&#x22;image/png&#x22; sizes=&#x22;16x16&#x22; href=&#x22;images/logo/favicon-16x16.png&#x22;&#x3E;
+&#x3C;link rel=&#x22;manifest&#x22; href=&#x22;images/logo/site.webmanifest&#x22;&#x3E;
                                           </code>              
                                                       </pre>
                     <hr>
@@ -401,16 +401,10 @@
                                           <code id="logo-html-3" class="language-html">
 &#x3C;!--* LOGO in about section --&#x3E;
 &#x3C;div class=&#x22;col-lg-4 col-md-4&#x22;&#x3E;
-  &#x3C;img width=&#x22;512&#x22; height=&#x22;512&#x22; class=&#x22;about-logo&#x22; src=&#x22;images/logo/logo-light.png&#x22; alt=&#x22;logo-light&#x22;&#x3E;
+  &#x3C;img width=&#x22;256&#x22; height=&#x22;256&#x22; class=&#x22;about-logo&#x22; src=&#x22;images/logo/logo-light.png&#x22; alt=&#x22;logo-light&#x22;&#x3E;
 &#x3C;/div&#x3E;
                                           </code>              
                                           </pre>
-                    <div class="alert alert-secondary" role="alert">
-                        <h4 class="alert-heading">Butterflies in about section</h4>
-                        <p>Changing butterflies around about section is simple as changing logo &amp; favicon. </p>
-                        <p>Remember what we said about Changing Image Root? Changing <code>src</code> path in
-                            <code>&#x3C;img&#x3E;</code> will do the job. </p>
-                    </div>
                     <p class="lg-font">Code example for LOGO in header:</p>
                     <a class="btn btn-copy btn-sm btn-secondary" data-clipboard-target="#logo-html-4"> <i
                             class="fas fa-clipboard mx-2"></i> Copy</a>
@@ -418,7 +412,7 @@
                                           <code id="logo-html-4" class="language-html">
 &#x3C;!--* LOGO in footer --&#x3E;
 &#x3C;div class=&#x22;footer-logo-part&#x22;&#x3E;
-  &#x3C;img width=&#x22;512&#x22; height=&#x22;512&#x22; id=&#x22;footer-logo&#x22; src=&#x22;images/logo/logo-light.png&#x22;
+  &#x3C;img width=&#x22;256&#x22; height=&#x22;256&#x22; id=&#x22;footer-logo&#x22; src=&#x22;images/logo/logo-light.png&#x22;
      alt=&#x22;footer-logo&#x22; class=&#x22; logo-footer wow rubberBand&#x22;&#x3E;
      ...
 &#x3C;/div&#x3E;
