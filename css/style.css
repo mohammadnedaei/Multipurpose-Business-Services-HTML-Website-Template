@@ -2207,13 +2207,13 @@ h3,
     bottom: 60px;
 }
 
-.alert > .start-icon {
+.alert-container > .start-icon {
     margin-right: 0;
     min-width: 20px;
     text-align: center;
 }
 
-.alert > .start-icon {
+.alert-container > .start-icon {
     margin-right: 5px;
 }
 
@@ -2266,22 +2266,22 @@ h3,
 .warning-alert,
 .icon-warning-alert {
     border: 1px solid rgba(241, 142, 6, 0.81);
-    background-color: rgba(220, 128, 1, 0.16);
+    background-color: rgba(220, 128, 1, 0.6);
     box-shadow: 0 0 2px #ffb103;
-    color: #ffffff;
+    color: #000;
     transition: 0.5s;
     cursor: pointer;
 }
 
 .warning-alert:hover,
 .icon-warning-alert:hover {
-    background-color: rgba(220, 128, 1, 0.33);
+    background-color: rgba(220, 128, 1, 0.3);
     transition: 0.5s;
 }
 
 .warning {
     font-size: 18px;
-    color: #ffb40b;
+    color: #ff4a03;
     text-shadow: none;
 }
 
@@ -2291,7 +2291,7 @@ h3,
     border: 1px solid rgba(241, 6, 6, 0.76);
     background-color: rgba(223, 57, 51, 0.801);
     box-shadow: 0 0 2px #ff5303;
-    color: #000000;
+    color: #fff;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -2353,6 +2353,7 @@ h3,
         opacity: 0;
     }
 }
+
 
 /* 6.d Bit Material Button  */
 
