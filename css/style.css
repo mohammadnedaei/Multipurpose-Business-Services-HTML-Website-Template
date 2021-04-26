@@ -1273,7 +1273,7 @@ strong {
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 0.3em;
-    line-height: 1.2;
+    line-height: 1.8;
     opacity: .75;
 }
 
@@ -3180,7 +3180,7 @@ button:focus {
 
 #main-nav {
     width: auto;
-    padding: 20px;
+    padding: 0.9%;
 }
 
 .glass-scrolling {
