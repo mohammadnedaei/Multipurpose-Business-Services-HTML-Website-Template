@@ -108,12 +108,12 @@
             <!--* Multi language Section End -->
             <!--* Dark / Light Start -->
             <div class="nav-item topbar-icon" id="dark-btn"> <span class="nav-btns bubbly-button night-btn"
-                                                                   onclick="darkmode()" id="darkbutton">
+              onclick="darkmode()" id="darkbutton">
                   <i class="fas fa-moon"></i>
                </span>
             </div>
             <div class="nav-item topbar-icon" id="light-btn"> <span class="nav-btns bubbly-button day-btn"
-                                                                    onclick="lightmode()" id="lightbutton">
+             onclick="lightmode()" id="lightbutton">
                   <i class="fas fa-sun"></i>
                </span>
             </div>
@@ -124,6 +124,18 @@
                     <i class="fas fa-search black"></i></a>
             </div>
             <!--* Search Button End -->
+                <!--* Search Wrapper Start -->
+                <div id="search">
+                    <i class="fas fa-times-circle close"></i>
+                    <form class="searchform">
+                        <input id="search-keyword" type="search" placeholder="SEARCH KEYWORD(s)"><label
+                            for="search-keyword">Search</label>
+                        <a id="search-full-screen-btn" href="javascript:void(0)"
+                           class="material-btn secondary-btn medium-btn"
+                           aria-label="search-button"><i class="fas fa-search"></i>SEARCH</a>
+                    </form>
+                </div>
+                <!--* Search Wrapper End -->
         </div>
     </div>
     <!--* Topbar End -->
@@ -157,18 +169,22 @@
                     <a class="nav-link" href="#contact"> CONTACT US </a>
                 </li>
             </ul>
-            <!--* Search Wrapper Start -->
-            <div id="search">
-                <i class="fas fa-times-circle close"></i>
-                <form class="searchform">
-                    <input id="search-keyword" type="search" placeholder="SEARCH KEYWORD(s)"><label
-                        for="search-keyword">Search</label>
-                    <a id="search-full-screen-btn" href="javascript:void(0)"
-                       class="material-btn secondary-btn medium-btn"
-                       aria-label="search-button"><i class="fas fa-search"></i>SEARCH</a>
-                </form>
-            </div>
-            <!--* Search Wrapper End -->
+        <!--* Dark / Light Start -->
+        <ul class="right-nav d-lg-none">
+            <li class="nav-item" id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
+                                                      id="darkbutton">
+                     <i class="fas fa-moon"></i>
+                  </span>
+            </li>
+        </ul>
+        <ul class="right-nav d-lg-none">
+            <li class="nav-item" id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()"
+                                                       id="lightbutton">
+                     <i class="fas fa-sun"></i>
+                  </span>
+            </li>
+        </ul>
+        <!--* Dark / Light End -->
         </div>
     </nav>
     <!--* Header End -->
