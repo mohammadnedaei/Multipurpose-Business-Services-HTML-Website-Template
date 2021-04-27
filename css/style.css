@@ -3820,7 +3820,7 @@ a.logo:hover {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -3832,8 +3832,7 @@ a.logo:hover {
 
 .overlay .close-btn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    right: 5%;
     font-size: 60px;
 }
 
@@ -3845,7 +3844,7 @@ a.logo:hover {
     .overlay .close-btn {
         font-size: 40px;
         top: 15px;
-        right: 35px;
+        right: 4%;
     }
 }
 
