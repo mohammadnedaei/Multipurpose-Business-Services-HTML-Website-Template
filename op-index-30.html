@@ -308,62 +308,23 @@
             <a href="#news"> BLOG </a>
             <a href="#contact"> CONTACT US </a>
             <ul class="ps-0 mt-40">
-                <!--* Multi language Section Start -->
-                <li class="nav-item multilingual">
-                    <div class="translate-wrapper m-auto">
-                        <div class="current-lang">
-                            <div class="lang">
-                                <img width="20" height="20" src="images/language/us.png" alt="us-flag">
-                                <span class="lang-txt">EN</span>
-                                <span class="fa fa-chevron-down chevron"></span>
-                            </div>
-                        </div>
-                        <div class="more-lang">
-                            <div class="lang" data-value='cn'>
-                                <img width="20" height="20" src="images/language/china.png" alt="china-flag">
-                                <span class="lang-txt">简体中文</span>
-                            </div>
-                            <div class="lang selected" data-value='en'>
-                                <img width="20" height="20" src="images/language/us.png" alt="us-flag">
-                                <span class="lang-txt">English</span>
-                            </div>
-                            <div class="lang" data-value='de'>
-                                <img width="20" height="20" src="images/language/germany.png" alt="germany-flag">
-                                <span class="lang-txt">Deutsch</span>
-                            </div>
-                            <div class="lang" data-value='es'>
-                                <img width="20" height="20" src="images/language/spain.png" alt="spain-flag">
-                                <span class="lang-txt">Español</span>
-                            </div>
-                            <div class="lang" data-value='fr'>
-                                <img width="20" height="20" src="images/language/france.png" alt="france-flag">
-                                <span class="lang-txt">Français</span>
-                            </div>
-                            <div class="lang" data-value="jp">
-                                <img width="20" height="20" src="images/language/japan.png" alt="japan-flag">
-                                <span class="lang-txt">日本語<span></span></span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!--* Multi language Section End -->
-            </ul>
-        <!--* Dark / Light Start -->
-        <ul class="right-nav d-lg-none">
-            <li class="nav-item" id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
-                                                      id="darkbutton">
+                <!--* Dark / Light Start -->
+                <ul class="right-nav d-lg-none d-inline-block">
+                    <li class="nav-item" id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
+                                                              id="darkbutton">
                   <i class="fas fa-moon"></i>
                </span>
-            </li>
-        </ul>
-        <ul class="right-nav d-lg-none">
-            <li class="nav-item" id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()"
-                                                       id="lightbutton">
+                    </li>
+                </ul>
+                <ul class="right-nav d-lg-none d-inline-block">
+                    <li class="nav-item" id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()"
+                                                               id="lightbutton">
                   <i class="fas fa-sun"></i>
                </span>
-            </li>
-        </ul>
-        <!--* Dark / Light End -->
+                    </li>
+                </ul>
+                <!--* Dark / Light End -->
+            </ul>
         </div>
     </div>
     <div class="collapse navbar-collapse" id="main_nav">
@@ -387,21 +348,10 @@
             </li>
         </ul>
         <!--* Dark / Light End -->
-        <!--* Search Wrapper Start -->
-        <div id="search">
-            <i class="fas fa-times-circle close"></i>
-            <form class="searchform">
-                <input id="search-keyword" type="search" placeholder="SEARCH KEYWORD(s)"><label
-                    for="search-keyword">Search</label>
-                <a id="search-full-screen-btn" href="javascript:void(0)" class="material-btn secondary-btn medium-btn"
-                   aria-label="search-button"><i class="fas fa-search"></i>SEARCH</a>
-            </form>
-        </div>
-        <!--* Search Wrapper End -->
     </div>
     <!--* Search Button & Open Nav Button Start -->
     <ul class="right-nav">
-        <li class="nav-item d-none d-lg-inline-block" style="display: inline;">
+        <li class="nav-item" style="display: inline;">
             <a class="search-button" aria-label="Search Button">
                 <i class="fas fa-search"></i></a>
         </li>
@@ -411,6 +361,17 @@
         </li>
     </ul>
     <!--* Search Button & Open Nav Button End -->
+    <!--* Search Wrapper Start -->
+    <div id="search">
+        <i class="fas fa-times-circle close"></i>
+        <form class="searchform">
+            <input id="search-keyword" type="search" placeholder="SEARCH KEYWORD(s)"><label
+                for="search-keyword">Search</label>
+            <a id="search-full-screen-btn" href="javascript:void(0)" class="material-btn secondary-btn medium-btn"
+               aria-label="search-button"><i class="fas fa-search"></i>SEARCH</a>
+        </form>
+    </div>
+    <!--* Search Wrapper End -->
 </nav>
 <!--* Header End -->
 <div class="page" id="top">

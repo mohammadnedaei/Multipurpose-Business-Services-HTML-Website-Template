@@ -209,6 +209,24 @@
             <a href="#portfolio"> PORTFOLIO </a>
             <a href="#news"> BLOG </a>
             <a href="#contact"> CONTACT US </a>
+            <ul class="ps-0 mt-30">
+                <!--* Dark / Light Start -->
+                <ul class="right-nav d-lg-none d-inline-block">
+                    <li class="nav-item" id="dark-btn"> <span class="nav-btns bubbly-button night-btn" onclick="darkmode()"
+                                                              id="darkbutton">
+                  <i class="fas fa-moon"></i>
+               </span>
+                    </li>
+                </ul>
+                <ul class="right-nav d-lg-none d-inline-block">
+                    <li class="nav-item" id="light-btn"> <span class="nav-btns bubbly-button day-btn" onclick="lightmode()"
+                                                               id="lightbutton">
+                  <i class="fas fa-sun"></i>
+               </span>
+                    </li>
+                </ul>
+                <!--* Dark / Light End -->
+            </ul>
         </div>
     </div>
     <div class="collapse navbar-collapse" id="main_nav">
@@ -232,17 +250,6 @@
             </li>
         </ul>
         <!--* Dark / Light End -->
-        <!--* Search Wrapper Start -->
-        <div id="search">
-            <i class="fas fa-times-circle close"></i>
-            <form class="searchform">
-                <input id="search-keyword" type="search" placeholder="SEARCH KEYWORD(s)"><label
-                    for="search-keyword">Search</label>
-                <a id="search-full-screen-btn" href="javascript:void(0)" class="material-btn secondary-btn medium-btn"
-                   aria-label="search-button"><i class="fas fa-search"></i>SEARCH</a>
-            </form>
-        </div>
-        <!--* Search Wrapper End -->
     </div>
     <!--* Search Button & Open Nav Button Start -->
     <ul class="right-nav">
@@ -256,6 +263,17 @@
         </li>
     </ul>
     <!--* Search Button & Open Nav Button End -->
+    <!--* Search Wrapper Start -->
+    <div id="search">
+        <i class="fas fa-times-circle close"></i>
+        <form class="searchform">
+            <input id="search-keyword" type="search" placeholder="SEARCH KEYWORD(s)"><label
+                for="search-keyword">Search</label>
+            <a id="search-full-screen-btn" href="javascript:void(0)" class="material-btn secondary-btn medium-btn"
+               aria-label="search-button"><i class="fas fa-search"></i>SEARCH</a>
+        </form>
+    </div>
+    <!--* Search Wrapper End -->
 </nav>
 <!--* Header End -->
 <div class="page" id="top">
@@ -1644,6 +1662,7 @@
 <script src="js/carousel.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jarallax.min.js"></script>
+<script src="js/simpleParallax.min.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
