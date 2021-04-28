@@ -225,7 +225,7 @@ function activescroll() {
 /* Hamburger menu */
 function openNav() {
   $("#hamburger-menu-full").css("width", "100%");
-  $("#hamburger-menu-half").css("width", "65%");
+  $("#hamburger-menu-half").css("width", "50%");
 }
 
 function openNavWithBlur() {
