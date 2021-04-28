@@ -261,7 +261,12 @@
     .bg-scrolling-yellow .search-button,
     .bg-scrolling-yellow #cart,
     .bg-scrolling-yellow .day-btn {
-        color: #000 !important;
+        color: #000;
+    }
+
+    .hamburger-menu-light .nav-link,
+    .hamburger-menu-yellow .nav-link {
+        color: #fff;
     }
 
     .bg-scrolling-red .navbar-collapse {
