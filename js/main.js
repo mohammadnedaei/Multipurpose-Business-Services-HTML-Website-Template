@@ -1038,8 +1038,13 @@ function init_contact_form() {
         }
       }, 'json');
     }
+    $('input[name=name], input[name=email], textarea[name=message], input[name=phone], input[name=title]').val('');
+    
     return false;
   });
+  $("input[name=name], input[name=title], input[name=phone], input[name=email], textarea[name=message]").keyup(function(){
+    $("input[name=name], input[name=title], input[name=phone], input[name=email], textarea[name=message]").css('border-color', '#acaeff');
+});
 }
 
 /*
