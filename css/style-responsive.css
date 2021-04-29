@@ -993,11 +993,6 @@
     .exclusive + li .pricing-wrapper > li::before {
         display: none;
     }
-    /*.particles-firsttext,*/
-    /*.particles-secondtext,*/
-    /*.particles-thridtext {*/
-    /*    width: 100%;*/
-    /*}*/
     .pricing-wrapper > li::before {
         content: '';
         position: absolute;

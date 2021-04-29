@@ -5,7 +5,7 @@ if($_POST) {
 	$to_Email   	= "recipient@mail.com"; //Replace with recipient email address
 	$subject        = 'Message from website '.$_SERVER["SERVER_NAME"]; //Subject line for emails
 
-	//Sanitize input data using PHP filter_var().
+	
 	$user_Name        = $_POST["userName"];
 	$user_Email       = $_POST["userEmail"];
 	$user_Message     = $_POST["userMessage"];

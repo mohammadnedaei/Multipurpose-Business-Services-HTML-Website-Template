@@ -7,7 +7,7 @@
 !     Version : 1.0
 ?     Last Update : 2021-04-23
 !     Primary Use : One/Multi Page/Multi Purpose Usage
-?     @author : CreativeThemes, https://bit.CreativeThemes.me                                                   *
+?     @author : CreativeThemes, https://bit.CreativeThemes.me                                                
 
 * ===================================================================
 */
@@ -48,8 +48,8 @@
 ?                               --19.b Shop Cart Button
 ?                               --19.c Shop Single
 *                            20. Contact Form
-* 		                     21. Triggered CSS 3 Plugin
-* 			                 22. Jarallax
+* 		                       21. Triggered CSS 3 Plugin
+* 			                     22. Jarallax
 *                            23. TypeWriter
 * ==============================================================================================
 */
