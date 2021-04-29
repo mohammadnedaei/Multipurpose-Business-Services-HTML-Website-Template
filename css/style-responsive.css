@@ -7,7 +7,7 @@
 !     Version : 1.0
 ?     Last Update : 2021-04-23
 !     Primary Use : One/Multi Page/Multi Purpose Usage
-?     @author : CreativeThemes, https://bit.CreativeThemes.me                                                   *
+?     @author : CreativeThemes, https://bit.CreativeThemes.me                                                
 
 * ===================================================================
 */
@@ -221,6 +221,10 @@
 
     .blog-item-date {
         border: none;
+    }
+
+    .overlay a {
+        font-size: 32px;
     }
 }
 
@@ -591,6 +595,10 @@
     .pricing-features li {
         font-size: 1rem;
     }
+
+    .overlay a {
+        font-size: 24px;
+    }
 }
 
 @media all and (max-width: 620px) {
@@ -799,6 +807,9 @@
     }
     .team-social-links-md {
         display: none;
+    }
+    .overlay a {
+        font-size: 16px;
     }
 }
 
