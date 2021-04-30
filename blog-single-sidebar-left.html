@@ -959,53 +959,33 @@
                             </div>
                             <div class="row mt-5">
                                 <div class="col-lg-12">
-                                    <div>
-                                        <form action="php/contactform.php" method="post">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="form-group mt-2 dd5">
-                                                        <input name="name" id="name" type="text" class="form-control"
-                                                               placeholder="Your Name*" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="form-group mt-2 dd5">
-                                                        <input name="email" id="email" type="email" class="form-control"
-                                                               placeholder="Your Email*" required>
-                                                    </div>
-                                                </div>
+                                    <form id="contact_form">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-full-name">Full Name</label>
+                                                <input id="cu-full-name" class="form-control dd5" placeholder="Full Name" type="text"
+                                                       name="name" required>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="form-group mt-2 dd5">
-                                                        <input name="phone" id="number" type="number"
-                                                               class="form-control"
-                                                               placeholder="Your Phone">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="form-group mt-2 dd5">
-                                                        <input name="place" id="place" type="text" class="form-control"
-                                                               placeholder="Your Place">
-                                                    </div>
-                                                </div>
+                                            <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-phone">Phone Number</label>
+                                                <input id="cu-phone" class="form-control dd5" placeholder="Phone Number" type="text"
+                                                       name="phone">
                                             </div>
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="form-group mt-2 dd5">
-                                             <textarea name="comments" rows="4" class="form-control"
-                                                       placeholder="Your message..." required></textarea>
-                                                    </div>
-                                                </div>
+                                            <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-email">Email Address</label>
+                                                <input id="cu-email" class="form-control dd5" placeholder="Email Address" type="email"
+                                                       name="email" required>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-lg-12 align-center mb-50 mt-50">
-                                                    <input type="submit" class="material-btn secondary-btn"
-                                                           value="SEND MESSAGE">
-                                                </div>
+                                            <div class="col-lg-6 col-md-6 mb-4 col-sm-12"><label for="cu-title">Title</label>
+                                                <input id="cu-title" class="form-control dd5" placeholder="Title" name="title">
                                             </div>
-                                        </form>
-                                    </div>
+                                            <div class="col-lg-12  mb-4 col-sm-12"><label for="cu-message">Message</label>
+                                                <textarea id="cu-message" class="form-control dd5" name="message" cols="80" rows="3"
+                                                          placeholder="Message" required></textarea>
+                                            </div>
+                                            <div class="col-lg-12 align-center mb-50 mt-30">
+                                                <input class="material-btn primary-btn rounded-btn contact-btn" type="submit"
+                                                       id="submit_btn" value="SEND MESSAGE">
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
