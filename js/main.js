@@ -1032,9 +1032,9 @@ function init_contact_form() {
       };
       $.post('php/contact_me.php', post_data, function (response) {
         if (response.type == 'error') {
-          output = '<div class="alert-container fade danger-alert text-left rendered show mt-4" role="alert"><i class="start-icon far fa-check-circle fa-2x"></i>' + response.text + '</div>';
+          output = '<div class="alert-container fade danger-alert text-left rendered show mt-4" role="alert"><i class="start-icon fas fa-exclamation-triangle fa-2x"></i>' + response.text + '</div>';
         } else {
-          output = '<div class="alert-container fade icon-success-alert text-left rendered show mt-4" role="alert"><i class="start-icon fa fa-info-circle fa-2x"></i>' + response.text + '</div>';
+          output = '<div class="alert-container fade icon-success-alert text-left rendered show mt-4" role="alert"><i class="start-icon far fa-check-circle fa-2x"></i>' + response.text + '</div>';
           $('input[name=name], input[name=email], textarea[name=message], input[name=phone], input[name=title]').val('');
         }
         $("#result").hide().html(output).slideDown();
