@@ -1227,29 +1227,18 @@
             <!--*  MailChimp Signup Form Start -->
             <div class="newsletter-signup relative">
                 <h2>Get Our Best Stuff Straight To Your <span class="yellow">Inbox</span></h2>
-                <!--! MailChimp Key Start -->
-                <form action="#" method="post" id="subscribe-form" name="subscribe-form" class="validate" novalidate>
-                    <!--! MailChimp Key End -->
+                <form id="mailchimp">
                     <div>
-                        <div class="newsletter-field">
-                            <label for="newsletter-name">First Name</label>
-                            <input id="newsletter-name" type="text" value="" placeholder="First Name" name="FNAME"
-                                   class="required form-control dd5">
-                        </div>
-                        <div class="newsletter-field">
+                        <div class="mb-4">
                             <label for="newsletter-email">Email Address</label>
-                            <input id="newsletter-email" type="email" value="" placeholder="Email Address" name="EMAIL"
-                                   class="required email form-control dd5">
+                            <input id="newsletter-email" type="email" placeholder="Email Address"
+                                   class="form-control dd5" required>
                         </div>
-                        <p class="error-message">Please fill out the fields above.</p>
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                                                                                  name="newsletter"
-                                                                                                  tabindex="-1"
-                                                                                                  value=""></div>
-                        <div class="clear"><input class="material-btn secondary-btn news-btn" type="submit"
-                                                  value="SUBSCRIBE NOW" name="subscribe" data-style="fill">
+                        <div class="col-lg-12">
+                            <input class="material-btn secondary-btn" value="SUBSCRIBE NOW" type="submit" name="subscribe" data-style="fill">
                         </div>
                     </div>
+                    <div id="subscribe-result"></div>
                 </form>
             </div>
             <!--* MailChimp Signup Form End -->
@@ -1260,8 +1249,8 @@
                     <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
                 </svg>
                 <div>
-                    <h4>Success!</h4>
-                    <p>Click the verify link in the email We just sent you to complete your subscription.</p>
+                    <h2>Success!</h2>
+                    <p class="lead">Click the verify link in the email We just sent you to complete your subscription.</p>
                 </div>
             </div>
             <!--* Success Message When Everything Checked End -->
@@ -1522,6 +1511,7 @@
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
 <script src="js/lottie-player.min.js"></script>
 <script src="js/lottie.min.js"></script>
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
