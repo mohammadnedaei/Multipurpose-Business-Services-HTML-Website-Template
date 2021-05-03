@@ -37,20 +37,19 @@
 *                            12. Testimonial Section
 *                            13. Search
 *                            14. Pricing
-*                            15. NewsLetter
-*                            16. Multi Language
-*                            17. Count Down
-*                            18. Toggle Light / Dark Mode
-?                               --18.a Dark Mode
-?                               --18.b Light Mode
-*                            19. Shop
-?                               --19.a Shop Items
-?                               --19.b Shop Cart Button
-?                               --19.c Shop Single
-*                            20. Contact Form
-* 		                       21. Triggered CSS 3 Plugin
-* 			                     22. Jarallax
-*                            23. TypeWriter
+*                            15. Multi Language
+*                            16. Count Down
+*                            17. Toggle Light / Dark Mode
+?                               --17.a Dark Mode
+?                               --17.b Light Mode
+*                            18. Shop
+?                               --18.a Shop Items
+?                               --18.b Shop Cart Button
+?                               --18.c Shop Single
+*                            19. Contact Form
+* 		                       20. Triggered CSS 3 Plugin
+* 			                     21. Jarallax
+*                            22. TypeWriter
 * ==============================================================================================
 */
 
@@ -115,7 +114,6 @@ $(document).ready(function () {
   init_isotope_filter();
   init_team();
   init_pricing();
-  init_news_letter();
   init_search();
   init_wow();
   init_cd_slider();
@@ -703,54 +701,7 @@ function init_pricing() {
 
 /*
 * =======================================
-!              15. NewsLetter
-* =======================================
-*/
-
-function init_news_letter() {
-  $(document).ready(function () {
-    $(".newsletter-signup > form").submit(function (e) {
-      e.preventDefault();
-      var validForm = true;
-      var inputArray = $(this).find("input.required");
-      inputArray.each(function (item) {
-        if ($(this).val() == "") {
-          validForm = false;
-          $(".newsletter-signup .error-message").show();
-          $('.newsletter-signup input.required').addClass('error');
-        }
-      });
-      if (validForm == true) {
-        var formContainer = $(".newsletter-signup");
-        var formData = $(this).serialize();
-        $.ajax({
-          type: $(this).attr("method"),
-          url: $(this).attr("action"),
-          data: formData,
-          cache: false,
-          dataType: "json",
-          contentType: "application/json; charset=utf-8",
-          encode: true,
-          error: function (err) {
-            console.log("Uh, oh. There was an error:", err);
-          },
-          success: function (data) {
-            console.log("Success! Here is the data:", data);
-          }
-        }).done(function (data) {
-          $(formContainer).hide();
-          $(".success-message").show();
-          $("svg").addClass("active");
-        });
-      }
-      return;
-    });
-  });
-}
-
-/*
-* =======================================
-!          16. Multi Language
+!          15. Multi Language
 * =======================================
 */
 
@@ -790,7 +741,7 @@ function init_multi_lang() {
 
 /*
 * =======================================
-!            17. Count Down
+!            16. Count Down
 * =======================================
 */
 function countdown() {
@@ -818,7 +769,7 @@ setInterval('countdown()', 5);
 
 /*
 * =======================================
-!          18. Toggle Light / Dark Mode
+!          17. Toggle Light / Dark Mode
 * =======================================
 */
 
@@ -861,7 +812,7 @@ function lightmode() {
 
 /*
 * =======================================
-!                19. Shop
+!                18. Shop
 * =======================================
 */
 
@@ -988,7 +939,7 @@ jQuery(document).ready(($) => {
 
 /*
 * =======================================
-!           20. Contact Form
+!           19. Contact Form
 * =======================================
 */
 
@@ -1051,7 +1002,7 @@ function init_contact_form() {
 
 /*
 * =======================================
-!        21. Triggered CSS 3 Plugin
+!        20. Triggered CSS 3 Plugin
 * =======================================
 */
 
@@ -1124,7 +1075,7 @@ $("#contact").inViewport(function (px) {
 });
 /*
 * =======================================
-!           22. Jarallax
+!           21. Jarallax
 * =======================================
 */
 function init_jarallax() {
@@ -1137,7 +1088,7 @@ function init_jarallax() {
 
 /*
 * =======================================
-!           23. TypeWriter
+!           22. TypeWriter
 * =======================================
 */
 

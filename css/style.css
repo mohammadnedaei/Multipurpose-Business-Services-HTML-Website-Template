@@ -7704,13 +7704,8 @@ svg circle {
 .subscribe-container {
     text-align: center;
     margin: 0 auto;
-    padding: 1em;
-    width: 90%;
-    max-width: 320px;
-}
-
-.newsletter-signup input {
-    margin: 5%;
+    width: 100%;
+    max-width: 450px;
 }
 
 .newsletter-signup h3 {
@@ -7808,12 +7803,6 @@ svg > .checkmark-check {
 #newsbtn {
     visibility: hidden;
 }
-
-.news-btn {
-    margin-top: 60px;
-    left: 5%;
-}
-
 
 /*
 * ==============================
