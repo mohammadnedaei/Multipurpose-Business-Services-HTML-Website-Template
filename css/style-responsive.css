@@ -738,6 +738,10 @@
         width: 120px;
     }
 
+    .tab-icon-des {
+        font-size: 14px;
+    }
+
     .alt-tabs-icon {
         font-size: 32px;
     }
