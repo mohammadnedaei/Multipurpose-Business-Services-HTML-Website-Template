@@ -27,11 +27,11 @@ Contributions are always welcome!
 
 
 ## Demo
-[Creative Themes - Intro Page](https://creative-themes.ir)
+[Creative Themes - Intro Page](https://mohammadnedaei.github.io/Multipurpose-Business-Services-HTML-Website-Template)
 
 ## Documentation
 
-[Documentation](https://creative-themes.ir/CTDocs/)
+[Documentation](https://mohammadnedaei.github.io/Multipurpose-Business-Services-HTML-Website-Template/documentation/index.html)
 
 
 ## Features
