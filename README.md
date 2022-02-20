@@ -71,7 +71,7 @@ If you have any feedback, please reach out to us at nedaei2002@gmail.com
 
 ## Screenshots
 
-![Website Screenshots](https://drive.google.com/file/d/1-D8p9wegTWa13Nu5C5K9b5m2Ctxq-Jj_/view?usp=sharing)
+[Website Screenshots](https://drive.google.com/file/d/1-D8p9wegTWa13Nu5C5K9b5m2Ctxq-Jj_/view?usp=sharing)
 
 
 ## Support
