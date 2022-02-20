@@ -6,6 +6,11 @@
 This template is a modern, Responsive & powerful Multi-Purpose One Page + Multi Page HTML5 Template powered by Bootstrap & unique jQuery plugins. You can use a total of fantastic 150+ HTML Templates in Bit to explore your business and build anything faster & smarter. it is using Bootstrap 5 released with a large number of new features & bug fixes.
 
 ## Appendix
+![Website Screenshot](https://s6.uupload.ir/files/1_gonm.png)
+![Website Screenshot](https://s6.uupload.ir/files/2.5_y5mo.png)
+![Website Screenshot](https://s6.uupload.ir/files/3_ku31.png)
+![Website Screenshot](https://s6.uupload.ir/files/5_uqk7.png)
+
 
 We always want everything to be updated, so You'll be the first one using new features. The latest version of jQuery which is jQuery 3.5 allows us to use magnificent new & powerful libraries to make Bit more powerful than any other HTML5 template. Bit uses CSS3 to power UI design in a different way. Everything is customizable without any performance loss or a large number of codes. Tiny CSS codes with huge power. Bit also follows a nice & new design created by fantastic UI / UX Designers. Every part of Bit has been made by love for You, So make sure to fully check it out. You can check out BIT using its nice Documentation. Also, BIT's Documentation is different as we wanted everything to be unique & modern.
 
@@ -66,7 +71,7 @@ If you have any feedback, please reach out to us at nedaei2002@gmail.com
 
 ## Screenshots
 
-![Website Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Website Screenshots](https://drive.google.com/file/d/1-D8p9wegTWa13Nu5C5K9b5m2Ctxq-Jj_/view?usp=sharing)
 
 
 ## Support
